@@ -1,0 +1,151 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+4,fresher,medium,What is output of cout << 5 + 2;,52,error,7,none,3
+4,fresher,medium,What is output of cout << 10 / 3;,3.33,3,4,error,2
+4,fresher,medium,What is output of cout << 10 % 3;,3,0,2,1,4
+4,fresher,medium,What is output of cout << true && false;,1,error,0,none,3
+4,fresher,medium,What is output of cout << 5 > 3;,0,error,none,1,4
+4,fresher,hard,What is a constructor?,destroys object,copies object,initializes object,moves object,3
+4,fresher,hard,What is a destructor?,initializes object,releases resources,copies object,moves object,2
+4,fresher,hard,Which symbol starts destructor name?,!,~,#,%,2
+4,fresher,hard,What is a copy constructor?,construct from int,construct from pointer,construct from same type,construct from file,3
+4,fresher,hard,What is a move constructor?,copy resources,delete resources,transfer resources,hide resources,3
+4,junior,medium,What is output of int x=5; cout << x++;,6,4,error,5,4
+4,junior,medium,What is output of int x=5; cout << ++x;,6,5,4,error,1
+4,junior,medium,What is output of cout << 2 + 3 * 4;,20,14,24,10,2
+4,junior,medium,What is output of cout << (2 + 3) * 4;,14,24,20,10,3
+4,junior,medium,"What is output of string s = ""hello""; cout << s.size();",4,error,6,5,4
+4,junior,hard,What is reference?,copy of variable,alias to variable,new variable,temporary only,2
+4,junior,hard,What is pointer?,stores value,stores type,stores class,stores address,4
+4,junior,hard,What is nullptr?,zero integer,dangling pointer,null pointer literal,void pointer,3
+4,junior,hard,What is dangling pointer?,pointer to invalid memory,pointer to null,pointer to int,pointer to class,1
+4,junior,hard,What is memory leak?,freed memory reused,stack overflow,allocated memory not freed,compile error,3
+4,mid,medium,"What is output of vector<int> v{1,2,3}; cout << v[1];",1,2,3,error,2
+4,mid,medium,"What is output of string s = ""abc""; cout << s[0];",b,c,error,a,4
+4,mid,medium,What is output of cout << sizeof(char);,2,1,4,8,2
+4,mid,medium,What is output of cout << sizeof(int) >= 2;,0,error,none,1,4
+4,mid,medium,What is output of bool x = false; cout << !x;,0,error,none,1,4
+4,mid,hard,What is RAII?,random access iterator,resource tied to object lifetime,run after initialization,reference and array integration,2
+4,mid,hard,Why use smart pointers?,faster syntax,avoid classes,automatic ownership management,replace references,3
+4,mid,hard,What does unique_ptr represent?,shared ownership,exclusive ownership,raw pointer,null pointer,2
+4,mid,hard,What does shared_ptr represent?,exclusive ownership,stack ownership,no ownership,shared ownership,4
+4,mid,hard,What does weak_ptr avoid?,reference cycles,memory allocation,inheritance,templates,1
+4,senior,medium,What is virtual function?,compile time constant,supports runtime polymorphism,template function,inline function,2
+4,senior,medium,Why use virtual destructor in base class?,faster compile,smaller object,proper derived cleanup,no heap use,3
+4,senior,medium,What is object slicing?,object split in heap,vector resize bug,derived part lost when copied to base,thread race,3
+4,senior,medium,What is pure virtual function?,always inline,must be overridden,always static,always private,2
+4,senior,medium,What is abstract class?,class with pure virtual function,class with only private members,class without constructor,class without destructor,1
+4,senior,hard,What is rule of three about?,three loops only,copy constructor assignment destructor,three pointer types,three access modifiers,2
+4,senior,hard,What is rule of five about?,five STL containers,special member functions with moves,five inheritance levels,five thread states,2
+4,senior,hard,What is lvalue reference?,binds to named object only,binds to temporary only,is raw pointer only,is smart pointer only,1
+4,senior,hard,What is rvalue reference?,binds only to const,binds only to arrays,binds only to pointers,binds to temporary for moves,4
+4,senior,hard,What is move semantics for?,copy memory deeply,transfer ownership efficiently,avoid destructors,disable templates,2
+4,senior,hard,What is template?,generic code mechanism,exception handler only,inheritance keyword,namespace alias,1
+4,senior,hard,What is STL?,stack trace logger,system type linker,standard template library,static thread layer,3
+4,senior,hard,What does std::sort require commonly?,raw pointers only,random access iterators,map only,queue only,2
+4,senior,hard,What is undefined behavior?,known runtime exception,compile warning only,program has no guaranteed meaning,linker optimization only,3
+4,senior,hard,Why prefer initializer list for const members?,it makes class virtual,they must be initialized directly,it avoids templates,it disables copies,2
+4,fresher,medium,What is output of int x=5; cout << x++;,5,6,4,error,1
+4,fresher,medium,What is output of int x=5; cout << ++x;,5,6,4,error,2
+4,fresher,medium,What is output of cout << (2+3)*4;,14,24,10,20,4
+4,fresher,medium,What is output of cout << 2+3*4;,14,20,24,10,1
+4,fresher,medium,What is output of bool x=false; cout << !x;,0,error,none,1,4
+4,fresher,hard,What is default constructor?,constructor with one arg,constructor with no args,copy constructor,destructor,2
+4,fresher,hard,What is parameterized constructor?,constructor with args,constructor with no args,copy constructor,move constructor,1
+4,fresher,hard,What is function overloading?,same name same params,same name different params,different name same params,virtual dispatch,2
+4,fresher,hard,What is operator overloading?,customize operator behavior,replace operators,delete operators,hide operators,1
+4,fresher,hard,What is const member function?,returns const only,is static only,cannot modify object state,is virtual only,3
+4,junior,easy,Which container stores unique sorted keys?,vector,deque,stack,set,4
+4,junior,easy,Which container stores key value pairs?,vector,set,map,array,3
+4,junior,easy,Which container gives dynamic contiguous array?,list,vector,map,stack,2
+4,junior,easy,Which container supports push_front efficiently?,vector,array,string,deque,4
+4,junior,easy,Which header provides smart pointers?,vector,memory,algorithm,utility,2
+4,junior,medium,"What is output of vector<int> v{1,2,3}; cout << v.size();",3,2,1,error,1
+4,junior,medium,"What is output of string s=""abc""; cout << s[1];",a,b,c,error,2
+4,junior,medium,What is output of cout << sizeof(char);,2,4,8,1,4
+4,junior,medium,What is output of cout << sizeof(double) >= sizeof(int);,1,0,error,none,1
+4,junior,medium,"What is output of int a=3; int b=4; cout << max(a,b);",3,4,error,none,2
+4,junior,hard,What is pass by reference?,callee gets copy only,callee gets alias to original,callee gets pointer only,callee gets moved object only,2
+4,junior,hard,What is pass by value?,callee gets alias,callee gets copy,callee gets raw address,callee gets reference wrapper,2
+4,junior,hard,Why use const reference parameter?,force move only,avoid copy for read only access,allocate on heap,disable polymorphism,2
+4,junior,hard,What is deep copy?,copy pointer address only,move resources only,copy owned resources independently,share all ownership,3
+4,junior,hard,What is shallow copy?,copies handles only,copies full ownership,moves ownership,deletes ownership,1
+4,mid,easy,Which keyword enables runtime polymorphism on member function?,inline,static,mutable,virtual,4
+4,mid,easy,Which keyword prevents overriding commonly?,final,friend,typedef,extern,1
+4,mid,easy,Which keyword checks overriding correctness?,virtual,override,explicit,constexpr,2
+4,mid,easy,Which keyword disallows implicit conversion constructor?,mutable,explicit,volatile,register,2
+4,mid,easy,Which cast is safest for downcast with polymorphic base?,static_cast,reinterpret_cast,dynamic_cast,const_cast,3
+4,mid,medium,What is output when deleting derived via base pointer without virtual destructor?,always safe,compile error,undefined behavior,stack overflow,3
+4,mid,medium,What is output of bool x = dynamic_cast<Derived*>(basePtr)!=nullptr; cout << x;,1,0,error,none,1
+4,mid,medium,What is output of vector<int> v; v.push_back(1); cout << v.back();,0,error,none,1,4
+4,mid,medium,"What is output of string s=""abc""; s += ""d""; cout << s;",abc,abcd,error,none,2
+4,mid,medium,"What is output of int arr[3]={1,2,3}; cout << arr[2];",1,2,error,3,4
+4,mid,hard,What is object slicing?,object split in heap,derived part lost when copied to base by value,vector resize issue,thread scheduling issue,2
+4,mid,hard,Why prefer emplace_back sometimes?,sort automatically,avoid iterators,construct in place,guarantee no realloc,3
+4,mid,hard,What is exception safety basic guarantee?,operation always succeeds,no leaks and valid state,no changes on failure,program never throws,2
+4,mid,hard,What does noexcept indicate?,function is inline,function is constexpr,function promises not to throw,function is virtual,3
+4,mid,hard,Why use std::move?,force deep copy,delete object,enable move semantics,cast to pointer,3
+4,senior,medium,What is output of unique_ptr<int> p(new int(5)); cout << *p;,0,5,error,none,2
+4,senior,medium,What is output of shared_ptr<int> p = make_shared<int>(7); cout << *p;,0,error,7,none,3
+4,senior,medium,What is output of cout << std::is_move_constructible<vector<int>>::value;,1,0,error,none,1
+4,senior,medium,What is output of auto p = make_unique<int>(3); cout << *p;,0,error,none,3,4
+4,senior,medium,"What is output of vector<int> v{1,2}; v.emplace_back(3); cout << v.size();",2,1,3,error,3
+4,senior,hard,Why prefer unique_ptr by default?,shared ownership is faster,exclusive ownership is simplest,raw pointers free automatically,weak_ptr owns uniquely,2
+4,senior,hard,What problem does weak_ptr solve?,replace stack allocation,break shared ownership cycles,enable virtual dispatch,avoid templates,2
+4,senior,hard,What is Rule of Zero?,write five special members,never use constructors,let members manage resources so special members unnecessary,use only raw pointers,3
+4,senior,hard,Why can vector outperform list despite inserts?,list is contiguous,vector avoids moves,better cache locality,list has O1 random access,3
+4,senior,hard,What is undefined behavior from returning reference to local?,deep copy,move elision,strict aliasing only,dangling reference,4
+4,fresher,medium,What is output of int a=10; cout << a/2;,2,10,error,5,4
+4,fresher,medium,What is output of int a=9; cout << a%2;,2,0,error,1,4
+4,fresher,medium,What is output of bool x=true; cout << x;,0,1,error,none,2
+4,fresher,medium,What is output of int x=5; cout << x*2;,5,2,error,10,4
+4,fresher,medium,What is output of cout << 3+3*3;,18,9,error,12,4
+4,fresher,hard,What is inline function?,executed at runtime,expanded at compile time,stored in heap,stored in stack,2
+4,fresher,hard,What is static variable?,shared across instances,local only,temporary only,heap only,1
+4,fresher,hard,What is friend function?,only public access,access private members,no class access,only static access,2
+4,fresher,hard,What is namespace?,store variables,avoid name conflict,store memory,store classes,2
+4,fresher,hard,What is header file?,code execution,data storage,file storage,code declarations,4
+4,junior,easy,Which container is LIFO?,queue,vector,list,stack,4
+4,junior,easy,Which container is FIFO?,stack,vector,list,queue,4
+4,junior,easy,Which container supports random access?,list,map,set,vector,4
+4,junior,easy,Which container stores sorted unique keys?,map,vector,list,set,4
+4,junior,easy,Which container stores duplicates sorted?,multiset,set,map,vector,1
+4,junior,medium,"What is output of vector<int> v{1,2}; v.push_back(3); cout << v.size();",2,1,error,3,4
+4,junior,medium,"What is output of string s=abc; s+= ""d""; cout << s;",abcd,abc,error,none,1
+4,junior,medium,"What is output of int arr[2]={1,2}; cout << arr[1];",1,0,error,2,4
+4,junior,medium,"What is output of cout << max(5,10);",5,error,none,10,4
+4,junior,medium,"What is output of cout << min(5,10);",10,error,none,5,4
+4,junior,hard,What is function pointer?,pointer to variable,pointer to function,pointer to class,pointer to object,2
+4,junior,hard,What is lambda expression?,class function,loop function,anonymous function,data function,3
+4,junior,hard,What is capture list?,store variables,capture variables in lambda,delete variables,loop variables,2
+4,junior,hard,What is auto keyword?,loop keyword,data keyword,file keyword,type inference,4
+4,junior,hard,What is range based loop?,iterate file,iterate container,iterate class,iterate memory,2
+4,mid,easy,Which keyword allocates memory?,alloc,malloc,new,create,3
+4,mid,easy,Which keyword frees memory?,free,remove,clear,delete,4
+4,mid,easy,Which keyword avoids name conflict?,static,inline,namespace,const,3
+4,mid,easy,Which keyword prevents override?,override,virtual,const,final,4
+4,mid,easy,Which keyword enforces override?,virtual,final,const,override,4
+4,mid,medium,What is output of int* p = new int(5); cout << *p;,0,error,none,5,4
+4,mid,medium,What is output of int a=5; int* p=&a; cout << *p;,0,error,none,5,4
+4,mid,medium,What is output of int a=5; int& r=a; cout << r;,0,error,none,5,4
+4,mid,medium,What is output of int a=5; int b=a; cout << b;,0,error,none,5,4
+4,mid,medium,What is output of int a=5; a+=3; cout << a;,5,3,error,8,4
+4,mid,hard,What is segmentation fault?,compile error,invalid memory access,data error,file error,2
+4,mid,hard,What is stack overflow?,heap full,compile error,data error,too deep recursion,4
+4,mid,hard,What is heap memory?,static allocation,stack allocation,dynamic allocation,file allocation,3
+4,mid,hard,What is stack memory?,dynamic memory,file memory,function calls,data memory,3
+4,mid,hard,What is smart pointer?,manual memory,stack memory,file memory,auto memory management,4
+4,senior,easy,Which STL algorithm sorts?,arrange,order,sort,align,3
+4,senior,easy,Which STL finds element?,search,locate,get,find,4
+4,senior,easy,Which STL counts elements?,size,length,count,measure,3
+4,senior,easy,Which STL reverses container?,flip,swap,reverse,rotate,3
+4,senior,easy,Which STL copies elements?,clone,duplicate,copy,move,3
+4,senior,medium,"What is output of vector<int> v{1,2,3}; reverse(v.begin(),v.end()); cout << v[0];",1,2,error,3,4
+4,senior,medium,"What is output of vector<int> v{1,2,3}; sort(v.begin(),v.end()); cout << v[2];",2,1,error,3,4
+4,senior,medium,"What is output of string s=""abc""; reverse(s.begin(),s.end()); cout << s;",abc,error,none,cba,4
+4,senior,medium,"What is output of vector<int> v{1,2}; v.insert(v.begin(),0); cout << v[0];",1,2,error,0,4
+4,senior,medium,"What is output of vector<int> v{1,2}; v.erase(v.begin()); cout << v[0];",1,error,none,2,4
+4,senior,hard,What is move semantics?,copy memory,delete memory,transfer ownership efficiently,hide memory,3
+4,senior,hard,What is perfect forwarding?,copy args,delete args,forward args preserving type,hide args,3
+4,senior,hard,What is template specialization?,generic template,delete template,custom template behavior,loop template,3
+4,senior,hard,What is constexpr?,runtime eval,loop eval,compile time evaluation,data eval,3
+4,senior,hard,What is SFINAE?,loop rule,substitution failure rule,data rule,file rule,2

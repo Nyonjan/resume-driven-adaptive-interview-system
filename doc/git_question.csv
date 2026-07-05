@@ -1,0 +1,101 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+54,fresher,easy,What is Git?,A database,A version control system,A programming language,A cloud host,2
+54,fresher,easy,Which command initializes a new Git repository?,git start,git init,git new,git create,2
+54,fresher,easy,How do you check the current state of your working directory?,git log,git diff,git status,git check,3
+54,fresher,easy,Which command is used to add files to the staging area?,git push,git add,git commit,git stage,2
+54,fresher,medium,What is the purpose of the .gitignore file?,To delete files,To hide the repo,To list files Git should ignore,To store passwords,3
+54,fresher,medium,Which command records the changes in the repository?,git save,git commit,git record,git upload,2
+54,fresher,medium,How do you see the history of commits?,git show,git log,git history,git status,2
+54,fresher,hard,"What is the ""Staging Area"" in Git?",A branch name,A deleted state,A middle ground before committing,A backup server,3
+54,fresher,hard,Which command copies an existing Git repository?,git download,git clone,git replicate,git copy,2
+54,fresher,hard,What does 'git config --global' do?,Sets settings for all repos,Deletes settings,Sets settings for one repo,None,1
+54,junior,easy,Which command creates a new branch?,git branch,git checkout -b,git new-branch,Both 1 and 2,4
+54,junior,easy,How do you switch from one branch to another?,git move,git switch / git checkout,git change,git jump,2
+54,junior,medium,"What is a ""Merge Conflict""?",Two branches changed same line,A failed upload,A deleted file,A server error,1
+54,junior,medium,Which command incorporates changes from a remote repo into current?,git push,git pull,git export,git sync,2
+54,junior,medium,What is the difference between git fetch and git pull?,Fetch doesn't merge changes,Pull is only for data,Fetch is faster,No difference,1
+54,junior,hard,How do you remove a file from Git without deleting it locally?,git rm --cached,git rm,git delete,git exclude,1
+54,junior,hard,"What is a ""Remote"" in Git?",A backup drive,A version of the repo on the web,A physical cable,None,2
+54,mid,easy,Which command is used to upload local changes to a remote?,git upload,git push,git send,git publish,2
+54,mid,easy,What does 'git checkout -b <name>' do?,Creates and switches to branch,Deletes a branch,Lists branches,None,1
+54,mid,medium,"What is ""Rebasing"" in Git?",Deleting history,Moving/combining commits on a base,Creating a new repo,None,2
+54,mid,medium,How do you undo the last commit but keep changes staged?,git reset --soft HEAD~1,git revert,git undo,git reset --hard,1
+54,mid,medium,What is 'git stash' used for?,Saving uncommitted work temporarily,Deleting code,Committing code,None,1
+54,mid,hard,What is the difference between a Soft Reset and a Hard Reset?,Hard reset deletes local changes,Soft reset deletes local changes,No difference,None,1
+54,mid,hard,How do you view the changes inside a specific commit?,git show <hash>,git log,git diff,git view,1
+54,mid,hard,What is 'git cherry-pick'?,Applying a specific commit to current,Deleting a commit,Picking a branch name,None,1
+54,senior,easy,"What is a ""Head"" in Git?",Pointer to latest commit in current,The first commit,The top of the code,None,1
+54,senior,medium,How do you change the message of the most recent commit?,git commit --amend,git commit --fix,git edit,None,1
+54,senior,medium,"What is ""Gitflow""?",A branching model for workflow,A GUI tool,A type of merge,None,1
+54,senior,medium,"What is a ""Fast-forward"" merge?",Pointer moves to latest commit,A merge with conflicts,A deleted merge,None,1
+54,senior,hard,What is 'git reflog' used for?,Recording updates to tips of branches,Recovering deleted files,Reading log files,None,1
+54,senior,hard,How do you find which commit introduced a bug?,git bisect,git blame,git find,git search,1
+54,senior,hard,"What is a ""Detached HEAD"" state?",Head points to a specific commit not branch,A broken repo,A deleted branch,None,1
+54,senior,hard,What is the purpose of 'git rebase -i'?,Interactive rebasing/squashing,Deleting branches,Renaming files,None,1
+54,senior,hard,"What is the ""index"" in Git internals?",The staging area,The .git folder,A list of users,None,1
+54,senior,hard,How do you clean untracked files from working directory?,git clean -f,git remove,git wipe,None,1
+54,senior,hard,What is 'git blame' used for?,Finding who changed each line,Deleting code,Finding errors,None,1
+54,senior,hard,"What is a ""Bare"" repository?",Repository without working directory,A new repo,A repo with one branch,None,1
+54,senior,hard,How do you merge a branch while ensuring a merge commit is made?,git merge --no-ff,git merge --force,git merge --commit,None,1
+54,senior,hard,"What are ""Hooks"" in Git?",Type of branches,Scripts that run on actions,Pointer names,None,2
+54,senior,hard,What is the 'HEAD~2' syntax?,Second branch,Second repo,Two commits before HEAD,None,3
+54,senior,hard,How do you squash the last 3 commits?,git squash 3,git combine,git rebase -i HEAD~3,None,3
+54,senior,hard,What is 'git rev-parse'?,Command to sort log,Command to get commit hashes/paths,Command to delete data,None,2
+54,senior,hard,"What is ""Three-way merge""?",Merge with 3 conflicts,Merge of 3 branches,Merge using base and two branch tips,None,3
+54,senior,hard,How do you track an empty directory in Git?,Git cannot track empty dirs,Add a .gitkeep file,It happens automatically,None,2
+54,senior,hard,What is the 'ORIG_HEAD'?,A backup branch,Previous state of HEAD,The first commit ever,None,2
+54,senior,hard,How do you revert a commit that was already pushed?,git delete,git revert <hash>,git reset,None,2
+54,senior,hard,What is the internal format Git uses for objects?,JSON,Plain text,zlib compressed blobs/trees,XML,3
+54,senior,hard,What is 'git gc'?,Delete old code,Global commit,Garbage collector to optimize repo,None,3
+54,senior,hard,What is 'git submodule'?,A type of branch,A plugin,A repo inside another repo,None,3
+54,senior,hard,What is the difference between 'git merge' and 'git rebase'?,Merge is faster,No difference,Rebase rewrites history merge doesn't,None,3
+54,fresher,easy,What is the default name of the first branch in Git?,primary,master or main,root,first,2
+54,fresher,easy,Which command shows the URL of the remote repository?,git url,git remote -v,git link,git remote show,2
+54,fresher,easy,How do you stage all modified and deleted files?,git stage,git add -A,git add .,Both 2 and 3,4
+54,fresher,medium,What does 'git diff' show?,Commit history,List of all files,Changes between working directory and index,Branch names,3
+54,fresher,medium,How do you remove a file from the staging area?,git rm <file>,git reset <file>,git unstage <file>,git pull,2
+54,fresher,medium,What is a 'commit hash'?,A file name,A user ID,A unique 40-character SHA-1 ID,A branch password,3
+54,fresher,hard,Which command shows a summarized version of the log?,git log --short,git log --oneline,git log --summary,git log --min,2
+54,fresher,hard,What is the purpose of 'git commit -a'?,Adds new files only,Deletes all files,Stages and commits modified files,None,3
+54,junior,easy,How do you rename a branch locally?,git rename,git move,git branch -m <newname>,git branch -r <newname>,3
+54,junior,easy,What is 'origin' in Git?,The first commit,The local folder,The default name for the remote repo,None,3
+54,junior,medium,How do you see which branches have been merged into master?,git branch --done,git log --merged,git branch --merged master,None,3
+54,junior,medium,Which command is used to see the difference between two branches?,git compare,git diff branch1..branch2,git check branch1 branch2,None,2
+54,junior,medium,What is the purpose of 'git push -u'?,Unlocks the remote,Updates all branches,Sets the upstream tracking branch,None,3
+54,junior,hard,How do you apply the changes of the last stash and remove it?,git stash apply,git stash pop,git stash drop,git stash clear,2
+54,junior,hard,What is the 'working tree'?,The .git folder,The staging area,The actual files on your disk,None,3
+54,mid,easy,How do you delete a local branch?,git branch -del <name>,git rm branch,git branch -d <name>,None,3
+54,mid,easy,How do you delete a remote branch?,git remote rm,git branch -rd <name>,git push origin --delete <name>,None,3
+54,mid,medium,What does 'git checkout -- <file>' do?,Stages the file,Deletes the file,Discards changes in working directory,None,3
+54,mid,medium,What is a 'conflict marker'?,A red error message,A deleted line,Head/<<<<<<< / ======= symbols,None,3
+54,mid,medium,How do you see the commit history for a specific file?,git show <file>,git file-history,git log -- <file>,None,3
+54,mid,hard,What is 'git merge --squash'?,Deletes the branch after merge,Compresses the files,Merges changes into one single commit,None,3
+54,mid,hard,What is 'git revert'?,Deletes history,Resets the HEAD,Creates a new commit that undoes changes,None,3
+54,mid,hard,What is a 'tracking branch'?,A hidden branch,A branch used for logs,A local branch linked to a remote branch,None,3
+54,senior,easy,What is 'HEAD'?,The master branch,The project name,A pointer to the current branch tip,None,3
+54,senior,medium,What is 'git archive' used for?,Backing up the .git folder,Deleting old commits,Creating a zip/tar of the repo,None,3
+54,senior,medium,How do you view the reflog for a specific branch?,git log --ref,git show-ref,git reflog <branch>,None,3
+54,senior,medium,What is 'git remote prune origin'?,Deletes the repo,Deletes the remote,Removes local references to deleted remote branches,None,3
+54,senior,hard,What is 'git show-branch'?,Lists all branch names,Deletes branches,Shows branches and their commits,None,3
+54,senior,hard,What is 'git fsck'?,Fixes merge conflicts,Formats the code,Checks the integrity of the objects,None,3
+54,senior,hard,What is a 'tree object' in Git internals?,Represents a file,Represents a commit,Represents a directory/folder,None,3
+54,senior,hard,What is a 'blob object'?,Represents a branch,Represents a tag,Represents file content,None,3
+54,senior,hard,What is the difference between 'git reset' and 'git checkout' on files?,No difference,Reset is faster,Reset changes index checkout changes working tree,None,3
+54,senior,hard,What is 'git rerere'?,Remote Repo Reset,Random Result,Reuse Recorded Resolution of conflicts,None,3
+54,senior,hard,How do you find commits containing a specific string?,git grep,"git find ""string""","git log -S ""string""",None,3
+54,senior,hard,What is 'git bundle'?,Compresses the whole repo,A type of merge,Packages objects/refs into a single file,None,3
+54,senior,hard,What is 'git filter-branch'?,Tool to search files,Tool to sort logs,Tool to rewrite history (e.g. remove files),None,3
+54,senior,hard,How do you list all untracked files?,git status -u,git ls-files --others --exclude-standard,Both 1 and 2,None,3
+54,senior,hard,What is 'git describe'?,Shows branch status,Shows file contents,Gives a readable name based on latest tag,None,3
+54,senior,hard,What is the '.git/hooks' directory for?,Storing passwords,Storing CSS,Client-side or server-side scripts,None,3
+54,senior,hard,What is 'git merge-base'?,Finds the first commit,Finds the last commit,Finds the best common ancestor of two commits,None,3
+54,senior,hard,How do you check if a branch is fully merged into another?,git log --done,git check-merge,git branch --merged <target>,None,3
+54,senior,hard,What is 'git update-index --assume-unchanged'?,Deletes a file,Ignores a file globally,Tells Git to stop tracking local changes to a file,None,3
+54,senior,hard,What is 'git replace'?,Renames a branch,Renames a user,Allows replacing one object with another,None,3
+54,senior,hard,What is 'git read-tree'?,Reads a file,Reads a commit,Reads a tree into the index,None,3
+54,senior,hard,What is a 'lightweight tag'?,A branch,A tag with a message and signature,A pointer to a specific commit,None,3
+54,senior,hard,What is an 'annotated tag'?,A simple pointer,A branch,Tag stored as a full object with message,None,3
+54,senior,hard,What is 'git shortlog'?,Shortens commit hashes,Deletes logs,Summarizes 'git log' output by author,None,3
+54,senior,hard,What is 'git verify-pack'?,Verifies a user,Verifies a commit,Checks the contents of a pack file,None,3
+54,senior,hard,What is the purpose of 'git write-tree'?,Saves a file,Creates a commit,Creates a tree object from the current index,None,3
+54,senior,hard,How do you change the author of the last commit?,git config user.name,git edit-author,"git commit --amend --author=""Name <email>""",None,3

@@ -1,0 +1,151 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+29,fresher,easy,Which storage engine is the default in MySQL 8.0?,MyISAM,Memory,CSV,InnoDB,4
+29,fresher,easy,How do you see the structure of a table named 'Orders'?,SHOW Orders,SELECT Orders,DESCRIBE Orders,VIEW Orders,3
+29,fresher,easy,Which command displays all databases in MySQL?,LIST DATABASES,SHOW DATABASES,GET DATABASES,DISPLAY DB,2
+29,fresher,easy,What is the MySQL command-line escape character?,/,#,\, ,3
+29,fresher,medium,How do you limit the number of rows returned to 10?,TOP 10,LIMIT 10,FETCH 10,ROWCOUNT 10,2
+29,fresher,medium,Which function returns the current version of MySQL?,GET_VERSION(),SYS_VER(),VERSION(),DATABASE(),3
+29,fresher,medium,How do you concatenate two strings in MySQL?,a + b,CONCAT(a b),a || b,a . b,2
+29,fresher,medium,Which numeric type is best for exact currency values?,FLOAT,DOUBLE,INT,DECIMAL,4
+29,fresher,hard,What is the result of SELECT '1' + 1 in MySQL?,11,2,Error,0,2
+29,fresher,hard,Which command is used to log into MySQL from terminal?,login mysql,connect root,mysql start,mysql -u root -p,4
+29,junior,easy,What does the AUTO_INCREMENT attribute do?,Sorts rows,Encrypts data,Generates unique IDs,Deletes old rows,3
+29,junior,easy,Which storage engine does NOT support transactions?,InnoDB,MyISAM,Memory,NDB,2
+29,junior,easy,How do you change a user's password in MySQL?,ALTER USER,CHANGE PASS,SET PASSWORD,Both 1 and 3,4
+29,junior,medium,What is the difference between DELETE and TRUNCATE in MySQL?,Delete is row-by-row,Truncate resets Auto_Inc,Both 1 and 2,No difference,3
+29,junior,medium,How do you add a column to an existing table?,UPDATE TABLE,MODIFY TABLE,ALTER TABLE,ADD COLUMN,3
+29,junior,medium,Which command shows the performance profile of a query?,SHOW PROFILE,GET PLAN,ANALYZE,EXPLAIN,4
+29,junior,medium,How do you select the first 5 characters of a string?,SUBSTR(str 5),LEFT(str 5),First(5),Take(5),2
+29,junior,hard,What is a MySQL 'Trigger'?,Stored code on events,A hardware button,A type of join,A backup tool,1
+29,junior,hard,Which command prevents others from reading a table during a task?,STOP ACCESS,FREEZE,LOCK TABLES,DISABLE,3
+29,junior,hard,What is the purpose of the 'mysql' system database?,Stores web data,Stores user/privileges,Stores logs,Stores images,2
+29,mid,easy,Which log file tracks all changes to the database?,Error log,General log,Binary log,Slow query log,3
+29,mid,easy,How do you find the size of a MySQL database?,SHOW SIZE,CHECK DISK,Query information_schema,LIST SIZE,3
+29,mid,medium,What is the benefit of a 'Covering Index' in MySQL?,Reads data from index only,Encrypts columns,Sorts tables,None,1
+29,mid,medium,How do you perform a case-insensitive search in MySQL?,Use COLLATE,Use LIKE,Both 1 and 2,Use UPPER,3
+29,mid,medium,Which statement creates a copy of a table structure and data?,CLONE TABLE,CREATE TABLE AS SELECT,COPY TABLE,DUPLICATE TABLE,2
+29,mid,medium,How do you remove all privileges from a user?,DELETE USER,DROP USER,REVOKE ALL,CLEAR PERMS,3
+29,mid,hard,What is the 'Buffer Pool' in InnoDB?,A CPU cache,Memory for caching data,A disk partition,A backup tool,2
+29,mid,hard,What does 'Low_Priority' do in a DELETE statement?,Speeds up delete,Ignores locks,Waits for reads to finish,Deletes later,3
+29,mid,hard,How do you implement a 'Virtual Column' in MySQL?,Generated Columns,View,Subquery,Metadata,1
+29,mid,hard,What is the 'Query Cache' status in MySQL 8.0?,Enabled,Default,Improved,Deprecated/Removed,4
+29,senior,easy,Which tool is used for logical backups in MySQL?,mysqladmin,mysqldump,mysqlcheck,mysqllog,2
+29,senior,medium,What is 'Master-Slave Replication' used for?,Writing speed,Read scaling and backups,Deleting data,None,2
+29,senior,medium,How do you find long-running queries in MySQL?,Slow Query Log,Processlist,Both 1 and 2,Error Log,3
+29,senior,medium,What is 'GTID' in MySQL replication?,General Table ID,Global Transaction ID,Group Text ID,None,2
+29,senior,hard,How do you handle 'Metadata Locking' issues?,Kill the process,Wait,Check open transactions,All of above,4
+29,senior,hard,What is the purpose of the 'Redo Log'?,User tracking,Sorting data,Crash recovery,None,3
+29,senior,hard,What is 'MVCC' in the context of InnoDB?,Manual View Control,Multi-Value Code,None,Multi-Version Concurrency,4
+29,senior,hard,How do you optimize a 'Pagination' query with millions of rows?,Deferred Join or Seek method,Use OFFSET 1000000,Use ORDER BY RAND(),Use LIMIT,1
+29,senior,hard,What is the difference between a 'Global' and 'Session' variable?,Global affects all users,Session is local to current,Both are true,None,3
+29,senior,hard,What is 'Table Partitioning'?,Deleting columns,Splitting large tables,Merging DBs,None,2
+29,senior,hard,How do you prevent 'Zombie' connections in MySQL?,Set wait_timeout,Restart server daily,Increase Max_Connections,None,1
+29,senior,hard,What is the purpose of 'OPTIMIZE TABLE'?,Deletes data,Changes schema,Reclaims space/defrags,None,3
+29,senior,hard,What is 'Dual Master' replication?,Master and two Slaves,Two servers acting as Master,No master,None,2
+29,senior,hard,How do you encrypt data at rest in MySQL?,Use MD5,Use SHA256,InnoDB Data-at-Rest Encryption,Not possible,3
+29,senior,hard,What is 'JSON' support in MySQL used for?,Formatting HTML,Storing semi-structured data,Speeding up joins,None,2
+29,senior,hard,What is the 'Information_Schema' database?,Metadata about all DBs,User data,System logs,None,1
+29,senior,hard,How do you check for fragmented indexes?,SHOW INDEX FROM table,Check error log,Check data_free in status,None,3
+29,senior,hard,What is 'Force Index' used for?,Telling optimizer which index,Deleting an index,Renaming an index,None,1
+29,senior,hard,What is 'Deadlock Detection' in InnoDB?,Stops the server,Alerts the user,Auto-rolls back one transaction,None,3
+29,senior,hard,How do you scale writes in a MySQL environment?,Add more Slaves,Sharding or Galera Cluster,Use more indexes,None,2
+29,fresher,easy,Which keyword is used to remove a database permanently?,DELETE DATABASE,REMOVE DATABASE,ERASE DATABASE,DROP DATABASE,4
+29,fresher,easy,What is the default port number for MySQL?,8080,5432,3306,1433,3
+29,fresher,easy,Which command shows the current user logged into MySQL?,GET USER,SELECT USER(),SHOW USER,WHOAMI,2
+29,fresher,easy,How do you list all tables in the current database?,LIST TABLES,GET TABLES,DISPLAY TABLES,SHOW TABLES,4
+29,fresher,medium,What is the result of SELECT 10 % 3 in MySQL?,3,0,1,3.33,3
+29,fresher,medium,Which statement is used to create a new user in MySQL?,ADD USER,INSERT USER,CREATE USER,NEW USER,3
+29,fresher,medium,Which function returns the number of days between two dates?,DATE_SUB(),DAY_COUNT(),DATEDIFF(),DIFFDATE(),3
+29,fresher,medium,What is the purpose of the PRIMARY KEY?,Link to other tables,Uniquely identify rows,Sort the table,Store large text,2
+29,fresher,hard,What is the maximum length of a VARCHAR column in MySQL 5.0.3+?,1024,65535,255,Unlimited,2
+29,fresher,hard,Which command checks the status of the MySQL server?,mysql check,mysqladmin status,server status,mysql_info,2
+29,junior,easy,Which operator is used for pattern matching with wildcards?,MATCH,REGEXP,CONTAINS,LIKE,4
+29,junior,easy,How do you add a primary key to an existing table?,UPDATE TABLE ADD PK,SET PRIMARY KEY,ALTER TABLE ADD PRIMARY KEY,MODIFY TABLE PK,3
+29,junior,medium,What is the difference between NOW() and CURDATE()?,CURDATE includes time,No difference,NOW includes time,NOW is only for UTC,3
+29,junior,medium,Which join returns all rows from the right table and matched from left?,LEFT JOIN,INNER JOIN,RIGHT JOIN,CROSS JOIN,3
+29,junior,medium,How do you find the unique values in a column?,SELECT DISTINCT,SELECT UNIQUE,SELECT DIFFERENT,SELECT SINGLE,1
+29,junior,hard,What is the purpose of the ENUM data type?,Store numbers only,Store a list of strings,Store images,Store boolean values,2
+29,junior,hard,Which command clears all data from a table but keeps the structure?,DELETE ALL,DROP TABLE,REMOVE DATA,TRUNCATE TABLE,4
+29,mid,easy,Which MySQL storage engine is optimized for high-speed reads?,InnoDB,Archive,CSV,MyISAM,4
+29,mid,easy,What does the EXPLAIN keyword do before a SELECT statement?,Runs query twice,Shows query plan,Formats output,Deletes data,2
+29,mid,medium,How do you create an index on a column named 'email'?,CREATE INDEX idx_email ON Users(email),ADD INDEX email,SET INDEX(email),CREATE KEY email,1
+29,mid,medium,Which function is used to convert a string to uppercase?,UPPER(),UCASE(),Both 1 and 2,CAPS(),3
+29,mid,medium,What is the purpose of the HAVING clause?,Filter rows,Sort groups,Filter groups,Join tables,3
+29,mid,hard,What is a 'Stored Function' in MySQL?,A database trigger,Reusable code returning value,A system log,A table backup,2
+29,mid,hard,How do you prevent duplicate entries in a non-primary key column?,INDEX only,NOT NULL,UNIQUE constraint,CHECK,3
+29,mid,hard,What is the purpose of the SET DEFAULT command?,Encrypt column,Assign value if NULL,Change data type,None,2
+29,senior,easy,What is a 'Database Cluster'?,A single large table,Group of linked servers,A type of index,A user group,2
+29,senior,medium,How do you implement 'Point-in-Time Recovery'?,Using Binary Logs,Using Error Logs,Using Slow Logs,Using General Logs,1
+29,senior,medium,What is the 'Slow Query Log' used for?,Stopping queries,Backing up data,Identifying bottlenecks,None,3
+29,senior,medium,What is the purpose of 'Replication Filters'?,Speed up network,Selectively sync databases,Encrypt data,None,2
+29,senior,hard,How do you handle 'Buffer Pool Contention'?,Reduce RAM,Increase buffer pool instances,Delete indexes,None,2
+29,senior,hard,What is 'InnoDB Page Splitting'?,Costly disk operation on inserts,A way to delete data,A backup method,None,1
+29,senior,hard,What is the difference between 'Statement-based' and 'Row-based' replication?,No difference,SBR is faster for all,SBR logs SQL RBR logs rows,None,3
+29,senior,hard,How do you resolve 'Slave Lag'?,Increase disk speed,Parallel replication workers,Both 1 and 2,None,3
+29,senior,hard,What is 'Online DDL' in MySQL?,Editing code via web,Deleting data live,Schema changes without locking,None,3
+29,senior,hard,What is the 'InnoDB Deadlock Monitor'?,A hardware firewall,Tool to log deadlocks,A backup script,None,2
+29,senior,hard,How do you optimize 'In-Memory' tables?,Use more SSDs,Use MEMORY storage engine,Use MyISAM,None,2
+29,senior,hard,What is 'Semi-Synchronous Replication'?,At least one slave receives,All slaves receive,No slaves receive,None,1
+29,senior,hard,What is the impact of 'Table-level Locking'?,Speeds up writes,No impact,Blocks concurrent writes,None,3
+29,senior,hard,How do you implement 'Invisible Indexes'?,DROP INDEX,ALTER INDEX ... INVISIBLE,Use a view,None,2
+29,senior,hard,What is the 'MySQL Document Store'?,NoSQL JSON features,A file server,A help manual,None,1
+29,senior,hard,What is the 'Adaptive Hash Index'?,A manual index,A security key,InnoDB internal optimization,None,3
+29,senior,hard,How do you check current InnoDB transactions?,SELECT * FROM USERS,SHOW PROCESSLIST,SHOW ENGINE INNODB STATUS,None,3
+29,senior,hard,What is 'Multi-Source Replication'?,Slave with multiple masters,Master with multiple slaves,No master,None,1
+29,senior,hard,How do you perform a 'Checksum' on a table?,VERIFY TABLE,CHECKSUM TABLE,CHECK DATA,None,2
+29,senior,hard,What is the purpose of 'Resource Groups' in MySQL 8.0?,Store images,Manage CPU affinity/priority,Manage users,None,2
+29,senior,hard,What is 'Persistent Optimizer Statistics'?,Stats that never change,Manual stats,Stats stored on disk for stability,None,3
+29,senior,hard,How do you prevent 'SQL Injection' in PHP/MySQL?,String replace,Addslashes,Prepared Statements (PDO),None,3
+29,senior,hard,What is the 'Undo Log' used for?,Logging errors,Rollbacks and MVCC,Sorting data,None,2
+29,senior,hard,How do you handle 'XA Transactions'?,Distributed transactions,Local transactions,Fast transactions,None,1
+29,senior,hard,What is the purpose of 'MySQL Shell'?,A GUI for tables,A backup script,Advanced CLI/Scripting tool,None,3
+29,fresher,easy,Which data type is best for storing a person's birthdate?,VARCHAR,DATE,INT,TIME,2
+29,fresher,easy,What is the keyword to remove all records from a table without deleting it?,TRUNCATE,REMOVE,DELETE,ERASE,1
+29,fresher,easy,Which command shows the active connections to the database?,LIST USERS,GET STATUS,SHOW ACTIVE,SHOW PROCESSLIST,4
+29,fresher,easy,Which operator is used to combine strings in MySQL?,+,||,CONCAT(),.,3
+29,fresher,medium,How do you select the current timestamp in MySQL?,SELECT TIME(),SELECT NOW(),SELECT TODAY(),SELECT CLOCK(),2
+29,fresher,medium,Which statement is used to add a new database?,NEW DATABASE,ADD DATABASE,CREATE DATABASE,MAKE DATABASE,3
+29,fresher,medium,How do you find the number of characters in a string?,COUNT(),SIZE(),WIDTH(),LENGTH(),4
+29,fresher,hard,What is the default value of an AUTO_INCREMENT column if not specified?,0,NULL,1,Random,3
+29,fresher,hard,Which command is used to see the CREATE TABLE statement of an existing table?,DESCRIBE TABLE,GET SCHEMA,SHOW TABLE,SHOW CREATE TABLE,4
+29,junior,easy,Which clause is used to filter records based on a range?,IN,LIKE,BETWEEN,WHERE RANGE,3
+29,junior,easy,What is a 'Primary Key'?,A foreign key,A unique identifier,A backup key,A hidden key,2
+29,junior,medium,How do you update multiple columns in one statement?,SET col1=val1 AND col2=val2,SET col1=val1 col2=val2,UPDATE col1 val1 col2 val2,None,2
+29,junior,medium,What happens if you use DELETE without a WHERE clause?,Deletes first row,Throws error,Deletes all rows,Deletes last row,3
+29,junior,medium,Which function is used to round a number to 2 decimal places?,TRUNC(num 2),ROUND(num 2),FIX(num 2),LIMIT(num 2),2
+29,junior,hard,What is the difference between a 'Global' and 'Local' variable?,No difference,Local is faster,Global is for all Local is for session,Global is for tables,3
+29,junior,hard,How do you change the data type of an existing column?,UPDATE TABLE ... TYPE,ALTER TABLE ... MODIFY,SET COLUMN TYPE,None,2
+29,mid,easy,Which engine is best for read-heavy analytical tasks in older MySQL?,InnoDB,Memory,MyISAM,Archive,3
+29,mid,easy,What is the 'information_schema' used for?,Storing user data,System logs,Template storage,Metadata about the DB,4
+29,mid,medium,How do you perform a 'Full-Text Search' in MySQL?,LIKE '%...%',MATCH() AGAINST(),SEARCH(),FIND(),2
+29,mid,medium,What is the 'Query Execution Plan' tool?,DESCRIBE,ANALYZE,SHOW PLAN,EXPLAIN,4
+29,mid,medium,How do you rename a table in MySQL?,RENAME TABLE,ALTER TABLE RENAME,Both 1 and 2,UPDATE TABLE NAME,3
+29,mid,hard,What is a 'Compound Index'?,Index on multiple columns,Index on multiple tables,Encrypted index,None,1
+29,mid,hard,How do you prevent 'SQL Injection' in a MySQL query?,Using SELECT *,Prepared Statements,String concatenation,None,2
+29,mid,hard,What is the 'Invisible Index' feature (MySQL 8.0+)?,Encrypted index,Index without a name,Index not used by optimizer,None,3
+29,senior,easy,What is 'MySQL Replication'?,Backing up to disk,Deleting old data,Sorting tables,Copying data to another server,4
+29,senior,medium,What is 'Master-Slave' lag?,Slow master server,Delay in slave processing,Network outage,None,2
+29,senior,medium,How do you optimize a query with a large OFFSET?,Use LIMIT only,Increase RAM,Use a 'Seek' (where id > x),None,3
+29,senior,medium,What is a 'Deadlock'?,A server crash,Two queries waiting for each other,A full hard drive,None,2
+29,senior,hard,What is 'Multi-Version Concurrency Control' (MVCC)?,A backup strategy,Managing concurrent access via versions,A join type,None,2
+29,senior,hard,What is 'InnoDB Redo Log'?,Error log,User log,Buffer for crash recovery,None,3
+29,senior,hard,How do you handle 'Hot Spot' contention on a single row?,Add more indexes,Split the data or use queuing,Restart the server,None,2
+29,senior,hard,What is 'Galera Cluster'?,A backup tool,True Multi-Master replication,A load balancer,None,2
+29,senior,hard,What is the impact of 'Foreign Key' checks on bulk inserts?,Speeds up performance,No impact,Slows down performance,None,3
+29,senior,hard,How do you implement 'Sharding' in MySQL?,Using a single large table,Using views,Application-level data partitioning,None,3
+29,senior,hard,What is the 'Performance Schema'?,A backup schema,A type of index,Tool for monitoring server events,None,3
+29,senior,hard,What is 'Point-in-Time Recovery'?,Restoring to yesterday,Restoring to a specific second,Deleting data,None,2
+29,senior,hard,How do you find unused indexes?,Manual check,Error log,Query performance_schema,None,3
+29,senior,hard,What is 'Semi-Synchronous' replication?,All slaves acknowledge,At least one slave acknowledges,No slaves acknowledge,None,2
+29,senior,hard,What is 'Table Partitioning'?,Breaking a table into logical parts,Deleting a table,Renaming columns,None,1
+29,senior,hard,How do you manage 'Connection Pooling'?,Restarting MySQL daily,Using a proxy like ProxySQL,Using more RAM,None,2
+29,senior,hard,What is 'Query Rewriting'?,Manual typing,Deleting code,Optimizing the SQL before execution,None,3
+29,senior,hard,What is 'InnoDB Buffer Pool' size?,Disk space for logs,Memory dedicated to caching data,CPU cache,None,2
+29,senior,hard,How do you perform a 'Blue-Green' database deployment?,Renaming a table,Updating CSS,Switching traffic between two DBs,None,3
+29,senior,hard,What is 'GTID'?,General Table ID,Global Transaction Identifier,Group Text ID,None,2
+29,senior,hard,What is the 'Dual' table in MySQL?,A table with two columns,A dummy table for expressions,A backup table,None,2
+29,senior,hard,How do you handle 'Silent' data corruption?,Restarting server,Checksums and regular backups,Using MyISAM,None,2
+29,senior,hard,What is 'Write-Ahead Logging'?,Logging changes before applying,Logging after a crash,Logging user names,None,1
+29,senior,hard,How do you monitor 'Lock Wait' time?,Check the slow log,Check the error log,SHOW ENGINE INNODB STATUS,None,3
+29,senior,hard,What is 'UDF' (User Defined Function)?,A Python script,C/C++ extensions for MySQL,A Jinja template,None,2
+29,senior,hard,What is the maximum number of columns in a MySQL table?,255,1024,4096 (engine dependent),Unlimited,3

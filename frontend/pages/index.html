@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview AI - Your Interview Practice Assistant</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-header">
+      <div class="logo">
+        <h1 id="siteLogoName">Interview Me</h1>
+      </div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+
+        <h2 id="heroTitle">Practice and test your interview readiness.</h2>
+        <p id="heroTagline">Personalized Interview Practice Based on Resume and Performance.</p>
+        <div class="hero-buttons">
+          <button id="gettingStartedBtn" class="cta-btn">Start Practicing</button>
+          <a href="#how-it-works" class="secondary-btn">See How It Works &rarr;</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="steps" id="how-it-works">
+    <div class="container">
+      <div class="steps-header">
+        <h2>How it works</h2>
+        <p>We turn your past experience into a personalized practice session in just four steps.</p>
+      </div>
+
+      <div class="steps-grid four-cols">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>We read your resume</h3>
+          <p>Our system scans your uploaded file to quickly understand your skills, tools, and past experience.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>We suggest roles</h3>
+          <p>Based on your background, we recommend job titles that fit you best so you're practicing for the right
+            positions.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>You start practicing</h3>
+          <p>You’ll answer technical questions based on your actual skills. If you’re doing well, the questions adjust
+            and get harder—just like in a real interview.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>We give you feedback</h3>
+          <p>Once you finish, you get clear notes on what you answered well and exactly where you can improve before the
+            real thing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience Section -->
+  <section class="target-audience" id="who-this-is-for">
+    <div class="container">
+      <div class="audience-header">
+        <h2>Who this is for</h2>
+      </div>
+
+      <div class="audience-grid">
+        <!-- Audience 1 -->
+        <div class="audience-card">
+          <img src="images/students_learning.png" alt="Students learning" class="audience-img" id="img-audience-1" />
+          <h3>Students & New Grads</h3>
+          <p>Preparing for placements and not totally sure what technical questions they'll actually ask you.</p>
+        </div>
+
+        <!-- Audience 2 -->
+        <div class="audience-card">
+          <img src="images/graduate_professional.png" alt="Graduate professional" class="audience-img" id="img-audience-2" />
+          <h3>Active Job Seekers</h3>
+          <p>You have the skills, but want to practice explaining your past projects smoothly under pressure.</p>
+        </div>
+
+        <!-- Audience 3 -->
+        <div class="audience-card">
+          <img src="images/developer_workspace.png" alt="Developer workspace" class="audience-img" id="img-audience-3" />
+          <h3>Developers Leveling Up</h3>
+          <p>Aiming for a new stack or senior role and need a safe space to practice harder technical questions.</p>
+        </div>
+      </div>
+
+      <div class="audience-footer">
+        <p>Basically, if you have an interview coming up, this is for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview / What You'll Get Section -->
+  <section class="preview" id="preview">
+    <div class="container">
+      <div class="preview-header">
+        <h2>Your interview insights, visualized</h2>
+        <p>See exactly how your resume transforms into a personalized practice plan and detailed performance breakdown.
+        </p>
+      </div>
+
+      <div class="preview-grid">
+        <!-- Block 1: Skill Analysis -->
+        <div class="dashboard-card">
+          <div class="card-title">
+            <span>Skill Analysis</span>
+            <small>Extracted from Resume</small>
+          </div>
+          <div class="skills-preview">
+            <span class="skill-tag">React <small>Advanced</small></span>
+            <span class="skill-tag">Node.js <small>Mid</small></span>
+            <span class="skill-tag">AWS <small>Senior</small></span>
+            <span class="skill-tag">PostgreSQL <small>Advanced</small></span>
+            <span class="skill-tag">TypeScript <small>Advanced</small></span>
+          </div>
+        </div>
+
+        <!-- Block 2: Job Matches -->
+        <div class="dashboard-card">
+          <div class="card-title">
+            <span>Role Recommendations</span>
+            <small>Based on your profile</small>
+          </div>
+          <div class="recommendation-list">
+            <div class="recommendation-item">
+              <div class="item-info">
+                <strong>Frontend Engineer</strong>
+                <p>Top match for your UI skills</p>
+              </div>
+              <div class="match-score">94%</div>
+            </div>
+            <div class="recommendation-item">
+              <div class="item-info">
+                <strong>Fullstack Developer</strong>
+                <p>Matches your backend experience</p>
+              </div>
+              <div class="match-score secondary">88%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 3: Interview Session -->
+        <div class="dashboard-card">
+          <div class="card-title">
+            <span>Adaptive Interview</span>
+            <small>Question 4 of 10</small>
+          </div>
+          <div class="interview-preview">
+            <div class="difficulty-bar">
+              <span>Difficulty</span>
+              <div class="dots"><span class="active"></span><span class="active"></span><span
+                  class="active"></span><span></span><span></span></div>
+              <small>Hard</small>
+            </div>
+            <div class="question-box">
+              <p>"Explain how you would optimize a React application that is experiencing slow render times..."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 4: Feedback -->
+        <div class="dashboard-card">
+          <div class="card-title">
+            <span>Performance Insights</span>
+            <small>Session Summary</small>
+          </div>
+          <div class="insights-preview">
+            <div class="score-box">
+              <span class="score-val">82%</span>
+              <small>Overall Score</small>
+            </div>
+            <div class="bullet-insights">
+              <div class="insight-pill positive">Excellent technical depth</div>
+              <div class="insight-pill warning">Work on concise phrasing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages-header">
+        <span class="sub-title">Advantages</span>
+        <h2>Why use this platform</h2>
+        <p>Real results for job seekers who want to move forward</p>
+      </div>
+
+      <div class="advantages-grid">
+        <!-- Advantage 1 -->
+        <div class="advantage-card">
+          <img src="images/job-matching.png" alt="Job Matching" class="advantage-img" id="img-advantage-1">
+          <span class="card-tag">Precision</span>
+          <h3>Matches that actually fit your background</h3>
+          <p>No wasted time on jobs that don't suit your skills</p>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="advantage-card">
+          <img src="images/interview-confidence.png" alt="Interview Confidence" class="advantage-img" id="img-advantage-2">
+          <span class="card-tag">Confidence</span>
+          <h3>Walk in ready to answer anything</h3>
+          <p>Practice with questions designed for your experience level</p>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="advantage-card">
+          <img src="images/interview-clarity.png" alt="Interview Clarity" class="advantage-img" id="img-advantage-3">
+          <span class="card-tag">Clarity</span>
+          <h3>Know exactly where you stand</h3>
+          <p>See your skills mapped out in charts and data insights</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <details>
+          <summary>How does the system handle my resume data?</summary>
+          <div class="faq-content">
+            <p>Your privacy is our priority. We only process your resume to generate personalized interview sessions. We
+              don't store your personal documents once the analysis is complete.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details>
+          <summary>What kind of feedback do I receive?</summary>
+          <div class="faq-content">
+            <p>You receive a detailed breakdown of your performance, including an overall success score, technical
+              strength analysis, and specific actionable advice for improvement.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details>
+          <summary>Does it support non-technical roles?</summary>
+          <div class="faq-content">
+            <p>Currently, we are optimized for technical and engineering roles. We plan to expand our adaptive interview
+              models to support other professional fields in the near future.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to master your performance?</h2>
+        <p>Join thousands of engineers who used personalized practice to land their dream roles at top-tier tech firms.
+        </p>
+        <button class="cta-btn" onclick="document.getElementById('gettingStartedBtn').click()">Start Practicing
+          Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2 class="footer-logo">AdaptivePrep</h2>
+          <p>Resume-driven precision for the modern technical workforce.</p>
+        </div>
+        <div class="footer-column">
+          <h3>PRODUCT</h3>
+          <ul>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#preview">Features</a></li>
+            <li><a href="#faq">Security</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-copyright">
+            <p>© 2024 Resume-Driven Adaptive Interview Practice System. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sign Up Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignupModal">×</span>
+      <h2 class="modal-title">Create Account</h2>
+
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="fullName">Full Name :</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signupEmail">Email :</label>
+          <input type="email" id="signupEmail" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signupPassword">Password :</label>
+          <input type="password" id="signupPassword" name="password" placeholder="Enter your password" required
+            minlength="8">
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password :</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"
+            required>
+        </div>
+
+        <button type="submit" class="auth-submit-btn">Sign Up</button>
+      </form>
+
+      <div class="auth-footer">
+        Already have an account? <a href="javascript:void(0);" id="goToSignin" class="auth-link">Log In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSigninModal">×</span>
+      <h2 class="modal-title">Log In</h2>
+
+      <form id="signinForm">
+        <div class="input-group">
+          <label for="signinEmail">Email :</label>
+          <input type="email" id="signinEmail" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="signinPassword">Password :</label>
+          <input type="password" id="signinPassword" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="auth-submit-btn">Log In</button>
+      </form>
+
+      <div class="auth-footer">
+        Don't have an account? <a href="javascript:void(0);" id="goToSignup" class="auth-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
+
+
+</body>
+
+</html>

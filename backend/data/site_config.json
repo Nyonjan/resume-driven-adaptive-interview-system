@@ -1,0 +1,13 @@
+{
+  "hero_image_url": null,
+  "site_tagline": "Personalized Interview Practice Based on Resume and Performance",
+  "interview_q_count": 10,
+  "site_name": "",
+  "contact_email": "",
+  "audience_1_image_url": "http://127.0.0.1:5000/static/uploads/audience_1_image_1778439803.jpg",
+  "audience_2_image_url": "http://127.0.0.1:5000/static/uploads/audience_2_image_1778439866.jpg",
+  "audience_3_image_url": "http://127.0.0.1:5000/static/uploads/audience_3_image_1778439878.jpg",
+  "advantage_1_image_url": "http://127.0.0.1:5000/static/uploads/advantage_1_image_1778439940.jpg",
+  "advantage_2_image_url": "http://127.0.0.1:5000/static/uploads/advantage_2_image_1778439963.jpg",
+  "advantage_3_image_url": "http://127.0.0.1:5000/static/uploads/advantage_3_image_1778439971.jpg"
+}

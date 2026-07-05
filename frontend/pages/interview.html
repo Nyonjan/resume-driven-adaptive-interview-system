@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep - Interview Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/interview.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m16 6-4 4-4-4" />
+                        <path d="M12 2v8" />
+                        <rect width="20" height="12" x="2" y="10" rx="2" />
+                    </svg>
+                </div>
+                <h1 class="brand-name">Interview <em>Me</em></h1>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="../images/user-avatar.png" alt="User Avatar" id="userAvatar">
+                </div>
+                <div class="user-info">
+                    <span class="user-name" id="userName">Jon Kon</span>
+                    <span class="user-email" id="userEmail">jon@gmail.com</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <p class="section-label">Main Menu</p>
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                <span>Interview Prep</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" x2="9" y1="12" y2="12" />
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Unified Interview Hero -->
+            <header class="interview-hero">
+                <div class="hero-main">
+                    <div class="welcome-area">
+                        <h2>Ready to shine, <span id="welcomeName">Candidate</span>?</h2>
+                        <p id="heroSubtitle">We've prepared a personalized interview session based on your profile. ✨</p>
+                    </div>
+                    
+                    <!-- Dynamic Job Context Card -->
+                    <div id="jobContextCard" class="job-context-card hidden">
+                        <div class="context-header">
+                            <span class="context-tag">TARGET ROLE</span>
+                            <h3 id="displayJobTitle">Full Stack Developer</h3>
+                        </div>
+                        <div class="context-body">
+                            <div class="skills-breakdown">
+                                <div class="skill-group">
+                                    <span class="group-label">Matched Skills</span>
+                                    <div id="matchedSkillsPills" class="pill-container"></div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Missing from Resume</span>
+                                    <div id="missingSkillsPillsHero" class="pill-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </header>
+
+            <section class="interview-prep-section">
+
+                <!-- Missing Skills Selection (Focus Areas) -->
+                <div id="missingSkillsSection" class="missing-skills-selection-card hidden">
+                    <div class="card-header-flex">
+                        <div class="title-group">
+                            <h3>Customize Your Interview</h3>
+                            <p>Select which missing skills you'd like to be tested on today.</p>
+                        </div>
+                        <button id="toggleAllMissing" class="secondary-action-btn">Include All</button>
+                    </div>
+                    <div id="missingSkillsPills" class="pill-container interactive"></div>
+                </div>
+
+                <!-- Interview Mode Selection -->
+                <div class="mode-selection-container">
+                    <div class="section-title">
+                        <h3>Select Interview Mode</h3>
+                    </div>
+                    <div class="modes-grid">
+                        <div class="mode-card" data-mode="quick">
+                            <div class="mode-info">
+                                <h4>⚡ Quick</h4>
+                                <p>5 Questions</p>
+                            </div>
+                        </div>
+                        <div class="mode-card selected" data-mode="standard">
+                            <div class="mode-info">
+                                <h4>⭐ Standard</h4>
+                                <p>10 Questions</p>
+                            </div>
+                        </div>
+                        <div class="mode-card" data-mode="deep">
+                            <div class="mode-info">
+                                <h4>🧠 Deep Dive</h4>
+                                <p>20 Questions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-summary-card">
+                    <div class="card-header">
+                        <div class="header-main">
+                            <h3>Your Core Skills</h3>
+                        </div>
+                        <div class="header-actions">
+                            <label class="select-all-label">
+                                <input type="checkbox" id="selectAllCheckbox" checked>
+                                <span>Select All</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="skillsListContainer" class="interview-skills-grid">
+                        <!-- Populated by JS -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i> Loading your profile...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="start-action-container">
+                    <button id="startInterviewBtn" class="cta-btn primary large">
+                        <i class="fas fa-play"></i> Start Interview
+                    </button>
+                    <p class="hint-text">The interview will consist of questions tailored to your specific experience
+                        levels.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/interview.js"></script>
+</body>
+
+</html>

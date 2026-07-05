@@ -1,0 +1,101 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+44,fresher,easy,What is Docker?,A virtual machine,A programming language,A containerization platform,A cloud provider,3
+44,fresher,easy,What is a Docker Image?,A running instance,A read-only template for containers,A hardware driver,A text file,2
+44,fresher,easy,Which command is used to list all running containers?,docker ls,docker images,docker run,docker ps,4
+44,fresher,easy,What is the name of the file used to define a Docker image?,Configfile,Docker.config,Manifest,Dockerfile,4
+44,fresher,medium,How do you start a container from an image named 'nginx'?,docker start nginx,docker build nginx,docker run nginx,docker up nginx,3
+44,fresher,medium,Which command removes a stopped container?,docker rmi,docker delete,docker rm,docker stop,3
+44,fresher,medium,What does the '-d' flag do in 'docker run'?,Deletes the container,Runs in detached mode (background),Defines a variable,Downloads the image,2
+44,fresher,hard,What is Docker Hub?,A public registry for images,A local folder,A code editor,A hardware server,1
+44,fresher,hard,How do you stop a running container?,docker stop <id>,docker kill <id>,Both 1 and 2,docker end,3
+44,fresher,hard,Which command builds an image from a Dockerfile?,docker create,docker make,docker build,docker image new,3
+44,junior,easy,How do you see the logs of a container?,docker show logs,docker logs <id>,docker cat,docker print,2
+44,junior,easy,Which command lists all locally stored images?,docker ps,docker list,docker inventory,docker images,4
+44,junior,medium,How do you map a host port 8080 to container port 80?,docker run -p 80:8080,docker run -p 8080:80,docker run -port 80,None,2
+44,junior,medium,What is the purpose of the '.dockerignore' file?,Excludes files from the build context,Deletes files after build,Ignores runtime errors,None,1
+44,junior,medium,How do you execute a command inside a running container?,docker exec -it <id> bash,docker run bash,docker enter,docker ssh,1
+44,junior,hard,What is the difference between an Image and a Container?,No difference,Image is faster,Image is the blueprint Container is the instance,Container is the blueprint,3
+44,junior,hard,Which Dockerfile instruction specifies the base image?,START,BASE,ROOT,FROM,4
+44,mid,easy,What is 'Docker Compose'?,Tool for defining multi-container apps,A type of image,A networking driver,A backup tool,1
+44,mid,easy,Which command starts services defined in a compose file?,docker-compose start,docker-compose run,docker-compose up,docker-compose build,3
+44,mid,medium,What is a Docker Volume used for?,Persistent data storage,Speeding up builds,Network security,None,1
+44,mid,medium,What is the difference between 'COPY' and 'ADD' in a Dockerfile?,COPY is faster,ADD can fetch remote URLs and extract tar files,No difference,ADD is only for metadata,2
+44,mid,medium,How do you prune all unused Docker objects?,docker delete all,docker clean,docker remove unused,docker system prune,4
+44,mid,hard,What is a 'Multi-stage build'?,Building on 2 servers,A build with 2 users,Using multiple FROM statements to optimize image size,None,3
+44,mid,hard,Which instruction sets the working directory inside the container?,CD,DIR,WORKDIR,FOLDER,3
+44,mid,hard,What is the purpose of 'EXPOSE' in a Dockerfile?,Documents which ports are intended to be open,Opens ports on the host,Sets an IP address,None,1
+44,senior,easy,What is 'Docker Swarm'?,Native clustering for Docker,A third-party UI,A virus,A database,1
+44,senior,medium,What are the three main types of Docker networks?,LAN WAN VPN,Bridge Host None,Public Private Hybrid,None,2
+44,senior,medium,What is the 'Entrypoint' instruction used for?,Sets the user,Sets the version,None,Configures the container to run as an executable,4
+44,senior,medium,How do you limit a container's CPU usage?,Only via host OS,docker limit cpu,None,#NAME?,4
+44,senior,hard,What is the 'Overlay' network driver used for?,Communication between containers on different hosts,Local testing,Encrypted storage,None,1
+44,senior,hard,What is a 'Docker Context'?,A way to manage multiple Docker environments,A log file,A build stage,None,1
+44,senior,hard,What is the difference between 'CMD' and 'ENTRYPOINT'?,CMD can be overridden by CLI arguments,ENTRYPOINT cannot be overridden,Both 1 and 2,None,3
+44,senior,hard,How do you see the low-level information of a Docker object?,docker view,docker info,docker inspect,docker show-all,3
+44,senior,hard,What is 'Namespace' in Docker internals?,A naming convention,Provides isolation of resources (PID Net etc),A type of volume,None,2
+44,senior,hard,What are 'Control Groups' (cgroups) used for?,Naming containers,Sorting images,None,Resource limiting and monitoring,4
+44,senior,hard,What is 'Layer Caching'?,Reusing unchanged instructions to speed up builds,Storing logs,Caching website data,None,1
+44,senior,hard,How do you create a custom Docker network?,docker net new,docker make network,docker network create,None,3
+44,senior,hard,What is 'Docker Secret' used for?,Hashing passwords,Storing sensitive data in Swarm,Hiding images,None,2
+44,senior,hard,What is the 'Dangling' image?,An image with no tag or relationship to a container,A corrupted image,A system image,None,1
+44,senior,hard,How do you update a container with a new image without downtime?,Restarting the server,Deleting the old container,Rolling updates (Swarm/K8s),None,3
+44,senior,hard,What is 'Bind Mount'?,Mounting a specific host path into a container,A virtual volume,A network bridge,None,1
+44,senior,hard,What is the 'Docker Daemon'?,The background service managing Docker objects,The CLI tool,The user interface,None,1
+44,senior,hard,Which instruction triggers once a child image is built from the current?,TRIGGER,ONBUILD,POSTBUILD,None,2
+44,senior,hard,What is 'Tini' often used for in Docker?,A logging tool,A shell,None,As an init process to handle signals/zombies,4
+44,senior,hard,How do you check Docker's disk usage?,docker size,docker system df,docker info,None,2
+44,senior,hard,What is 'Container Orchestration'?,Managing lifecycle of containers at scale,Writing Dockerfiles,Naming containers,None,1
+44,senior,hard,What is 'Docker Content Trust'?,Using digital signatures for image data,Encrypting volumes,Password protecting Docker Hub,None,1
+44,senior,hard,What is 'Healthcheck' in a Dockerfile?,A virus scanner,Instruction to check if container is still working,A log checker,None,2
+44,senior,hard,What is 'Privileged' mode?,Container has admin password,Container is encrypted,Container has access to all host devices,None,3
+44,senior,hard,What is the 'Build Context'?,The set of files accessible to the 'docker build' command,The terminal environment,The CPU usage,None,1
+44,fresher,easy,What is the command to download an image from Docker Hub?,docker push,docker get,docker fetch,docker pull,4
+44,fresher,easy,How do you list all containers including stopped ones?,docker ps -all,docker list,docker ps -a,docker containers,3
+44,fresher,easy,Which instruction in a Dockerfile defines the command to run at startup?,RUN,START,EXEC,CMD,4
+44,fresher,medium,How do you name a container during 'docker run'?,--name <name>,-n <name>,--id <name>,-title <name>,1
+44,fresher,medium,What happens to a container's data when it is deleted (without volumes)?,It is persisted,It goes to Docker Hub,It is compressed,It is lost,4
+44,fresher,medium,Which command shows the Docker version installed?,docker --version,docker -v,Both 1 and 2,docker info,3
+44,fresher,hard,What is the difference between RUN and CMD?,No difference,RUN executes during build CMD executes at runtime,CMD is for builds,RUN is for runtime,2
+44,fresher,hard,How do you remove all stopped containers at once?,docker rm all,docker container prune,docker stop --all,docker clean,2
+44,junior,easy,Which command is used to tag a local image?,docker rename,docker tag,docker label,docker mark,2
+44,junior,easy,What is 'localhost' in the context of a default Docker container?,The container itself,The host machine,The Docker Daemon,The internet,1
+44,junior,medium,How do you view the resource usage (CPU/Mem) of containers?,docker stats,docker top,docker inspect,docker usage,1
+44,junior,medium,Which command builds an image from a Dockerfile in the current directory?,docker build .,docker build -f,docker create .,docker image new,1
+44,junior,medium,What is the purpose of 'ENV' in a Dockerfile?,Sets environment variables,Sets the base image,Sets the entrypoint,None,1
+44,junior,hard,What is the default network driver for a new container?,Host,None,Overlay,Bridge,4
+44,junior,hard,How do you copy a file from the host to a running container?,docker push,docker mv,docker cp,docker scp,3
+44,mid,easy,What is the 'docker-compose.yml' file format?,JSON,XML,YAML,TOML,3
+44,mid,easy,Which command stops and removes all resources defined in a compose file?,docker-compose stop,docker-compose down,docker-compose rm,docker-compose clean,2
+44,mid,medium,How do you persist data even after a container is deleted?,Using Volumes,Using Cache,Using Images,Using Layers,1
+44,mid,medium,What is a 'Distroless' image?,An image with no OS,An image containing only the app and dependencies,A broken image,None,2
+44,mid,medium,How do you share an image with a teammate?,Push to a registry (Docker Hub),Send the Dockerfile,Export as a tar file,All of the above,4
+44,mid,hard,What is 'Multi-stage builds' main benefit?,Faster build time,More security,Both 1 and 3,Reduced final image size,4
+44,mid,hard,What is the 'Build Context' in Docker?,The files sent to the daemon for the build,The OS version,The RAM usage,None,1
+44,mid,hard,How do you set a non-root user in a Dockerfile?,SET USER,USER <username>,AUTH <username>,None,2
+44,senior,easy,What is the 'Docker Engine'?,A web browser,The core software that runs containers,A GUI tool,A type of OS,2
+44,senior,medium,What is 'Docker Machine'?,Tool to install Docker on virtual hosts,A physical server,A type of container,None,1
+44,senior,medium,How do you run a command as a specific user in 'docker exec'?,--user <name>,-u <name>,Both 1 and 2,None,3
+44,senior,medium,What is 'Container Escape'?,A security vulnerability,A command to exit bash,A backup strategy,None,1
+44,senior,hard,What is the purpose of 'docker-stack'?,Deploying multi-container apps to Swarm,Building images,Managing local volumes,None,1
+44,senior,hard,What are 'Linux Namespaces'?,A Docker Hub feature,A naming convention,Kernel feature providing isolation,None,3
+44,senior,hard,What is 'OverlayFS'?,A type of network,A cloud storage,A union mount filesystem used by Docker,None,3
+44,senior,hard,How do you change the storage driver in Docker?,Use docker config,It cannot be changed,Edit /etc/docker/daemon.json,None,3
+44,senior,hard,What is the 'OOM Killer'?,A virus,Kernel process that kills containers using too much RAM,A debugging tool,None,2
+44,senior,hard,What is 'gVisor' or 'Kata Containers'?,A Docker GUI,Sandboxed container runtimes for security,A logging tool,None,2
+44,senior,hard,How do you limit 'Memory' usage of a container?,--memory <limit>,--ram <limit>,docker set mem,None,1
+44,senior,hard,What is 'Docker Scan'?,Vulnerability scanning for images,A network tool,A log analyzer,None,1
+44,senior,hard,What is 'Tini' used for in containers?,A tiny init process to handle signals,A database,A compression tool,None,1
+44,senior,hard,What is 'Docker App'?,A mobile app,A tool to package/share applications,A desktop UI,None,2
+44,senior,hard,How do you implement 'Secrets' in Docker Compose?,Hardcoding in ENV,Using a .txt file,Using the secrets: key,None,3
+44,senior,hard,What is 'Daemonless' container execution?,Running containers without a central service,Running without a CPU,None,None,1
+44,senior,hard,What is 'Sidecar Pattern'?,Running a supporting container next to the main app,A type of network,A backup method,None,1
+44,senior,hard,What is 'Docker BuildKit'?,Next-gen build engine for Docker,A third party tool,A UI for builds,None,1
+44,senior,hard,How do you verify the integrity of an image?,Check the file size,Check the name,None,Check the content hash (Digest),4
+44,senior,hard,What is 'Rootless Docker'?,Running Docker without root privileges,A Docker version for IoT,None,None,1
+44,senior,hard,What is 'Docker Registry HTTP API'?,A web server,The API used by the engine to talk to registries,A type of volume,None,2
+44,senior,hard,What is 'Ambient Capabilities' in Docker?,A type of volume,None,Linux capabilities passed to unprivileged users,None,3
+44,senior,hard,What is 'Copy-on-Write' (CoW)?,Strategy to share data until modified,A type of join,A backup script,None,1
+44,senior,hard,How do you debug a 'CrashLoopBackOff' (in K8s/Docker context)?,Check logs and entrypoint,Add more RAM,Restart the host,None,1
+44,senior,hard,What is 'Docker Object Labels'?,Key-value metadata for images/containers,A naming rule,A security key,None,1
+44,senior,hard,What is 'Seccomp' in Docker?,A compression tool,Secure Computing mode to filter system calls,A network driver,None,2
+44,senior,hard,How do you implement 'Resource Reservation' in Compose?,Using ENV,Using volumes,Using the reservations: key under deploy,None,3

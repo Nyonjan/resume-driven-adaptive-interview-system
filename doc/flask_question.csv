@@ -1,0 +1,132 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+24,fresher,easy,What is the purpose of the __name__ argument in Flask(__name__)?,Finds resources/templates,Sets app name,Defines port,Starts server,1
+24,fresher,easy,Which decorator is used to register a function as a route?,@app.path,@app.url,@app.route,@app.link,3
+24,fresher,easy,What is the default HTTP method for any defined route in Flask?,POST,GET,PUT,DELETE,2
+24,fresher,easy,Which function is used to render an external HTML file?,get_html(),load_view(),render_template(),show_page(),3
+24,fresher,medium,How do you access URL parameters like /user/<name> in a view?,request.args,request.form,Function arguments,request.params,3
+24,fresher,medium,What happens if you run app.run(debug=True) in production?,Increased speed,Security risk,Nothing,Auto-scaling,2
+24,fresher,medium,What is the correct way to redirect a user to a route named login?,redirect(login),redirect(url_for('login')),move('login'),jump('login'),2
+24,fresher,medium,Which object is used to handle incoming form data from a POST request?,request.data,request.form,request.json,request.files,2
+24,fresher,medium,What is the default folder name where Flask looks for templates?,html,views,templates,pages,3
+24,fresher,hard,What is the output of print(url_for('index' _external=True))?,/index,Full URL (http://...),index.html,Error,2
+24,fresher,hard,Which method is used to add a URL rule without using decorators?,app.add_url_rule(),app.route_add(),app.link(),app.set_path(),1
+24,fresher,hard,How do you set a cookie in a Flask response?,request.set_cookie(),response.set_cookie(),session['cookie']=val,g.set_cookie(),2
+24,junior,easy,Which object is used to store data across multiple requests?,request,g,session,cookie,3
+24,junior,easy,What is a Blueprint used for in a Flask project?,Database schema,Application modularity,Testing,API Documentation,2
+24,junior,easy,How do you access the query string ?id=10 in a route?,request.form['id'],request.args.get('id'),request.id,request.values['id'],2
+24,junior,medium,What is the difference between g and session?,g is permanent,session is request-level,g is request-level,no difference,3
+24,junior,medium,Which hook runs before every request in a Flask application?,@app.start,@app.before_request,@app.pre_request,@app.init,2
+24,junior,medium,How do you return a JSON response in Flask 2.0+?,json.dumps(dict),return dict,make_json(dict),jsonify_all(),2
+24,junior,medium,What does the teardown_appcontext decorator do?,Starts database,Closes resources,Cleans templates,Deletes session,2
+24,junior,medium,In @app.route('/id/<int:id>'): what does int: do?,Type validation,Number increment,Error logging,SQL injection fix,1
+24,junior,hard,What is the effect of the SECRET_KEY config?,Encrypts DB,Signs session cookies,Hides routes,Minifies CSS,2
+24,junior,hard,Which command is used to run a Flask app from the terminal?,python start,flask run,run-flask,flask start,2
+24,junior,hard,How can you handle a 404 error with a custom function?,@app.error(404),@app.errorhandler(404),@app.on_404,catch(404),2
+24,junior,hard,What is the Flask Request Context?,Global state,Thread-local state,Database state,Static state,2
+24,mid,easy,Which library does Flask use for its templating engine?,Mako,Jinja2,Django Templates,Mustache,2
+24,mid,easy,What is the purpose of the flask-sqlalchemy extension?,Template engine,ORM integration,Unit testing,Form validation,2
+24,mid,medium,How do you perform a database migration in Flask?,flask db upgrade,python migrate,flask push,db.sync(),1
+24,mid,medium,Which object would you use to store a user_id during a login session?,request.user,session,g.user,flask.user,2
+24,mid,medium,What is the behavior of abort(401)?,Throws exception,Returns 401 status,Restarts server,Logs out user,2
+24,mid,medium,How do you create a many-to-many relationship in Flask-SQLAlchemy?,Foreign Key,Association Table,Backref only,Primary Key,2
+24,mid,medium,Why is it recommended to use a Factory Pattern for app creation?,Easier testing,Better speed,Simpler code,Native Flask requirement,1
+24,mid,hard,What is the result of with app.app_context():?,Access to request,Access to current_app,Opens DB,Nothing,2
+24,mid,hard,How do you handle background tasks in a Flask app?,Threading,Celery/Task Queues,Multiprocessing,asyncio,2
+24,mid,hard,What does the after_this_request(func) helper do?,Runs after next req,Runs after current req,Runs after app close,Schedules task,2
+24,mid,hard,Which security header prevents XSS in Flask (via CSP)?,CSRF,Content-Security-Policy,CORS,Strict-Transport,2
+24,mid,hard,What happens if you use session.permanent = True?,Session never ends,Ends per PERMANENT_SESSION_LIFETIME,Ends on browser close,Encrypts session,2
+24,senior,easy,Which WSGI server is commonly used to deploy Flask?,Apache,Gunicorn,Node.js,Nginx,2
+24,senior,medium,How do you implement Token-based authentication in Flask?,Flask-Login,PyJWT,Session,Cookies,2
+24,senior,medium,What is the purpose of a Flask Signal?,Inter-app comms,Event notification,Error logging,Database triggers,2
+24,senior,medium,How can you scale a Flask app to handle high traffic?,Load balancer,Use app.run(),Add more HTML,Reduce Blueprints,1
+24,senior,hard,What is the Global Interpreter Lock (GIL) impact on Flask?,Speeds up requests,Limits CPU-bound tasks,Disables async,Affects templates,2
+24,senior,hard,How would you implement a rate limiter in Flask?,Flask-Limiter,Time.sleep(),If-statements,Cron job,1
+24,senior,hard,Which method is best for profiling Flask performance?,cProfile,Print statements,Debug=True,Logging,1
+24,senior,hard,What is the risk of using pickle for session storage?,Speed,Remote Code Execution,Memory leak,Size limit,2
+24,senior,hard,How does Flask handle concurrent requests by default?,Processes,Threads,Event loop,Sequential,2
+24,senior,hard,What is the purpose of the application dispatcher pattern?,Load balancing,Multiple Flask apps,Security,Caching,2
+24,senior,hard,How do you prevent Circular Imports in large Flask apps?,Use Blueprints,Import in functions,Both 1 and 2,Global variables,3
+24,senior,hard,Which Flask extension is best for building REST APIs?,Flask-RESTful,Flask-Admin,WTForms,Boto3,1
+24,senior,hard,What is the advantage of using a Streamed Response?,Large data transfers,Encryption,SEO,Mobile support,1
+24,senior,hard,How do you mock a database for Flask unit testing?,Monkeypatching,SQLAlchemy-mock,In-memory SQLite,JSON files,3
+24,fresher,easy,What is the correct way to start a Flask app in a script?,app.run(),app.start(),flask.run(),run_app(),1
+24,fresher,easy,Which status code represents a successful resource creation?,200,201,204,400,2
+24,fresher,easy,How do you define a route for the URL /user/admin?,@app.route('/user/admin'),@app.path(/user/admin),@app.url(/user/admin),@app.link(/user/admin),1
+24,fresher,easy,Default behavior of flask run if FLASK_APP is not set?,Looks for app.py,Throws error,Starts empty server,Opens browser,1
+24,fresher,medium,What is the output of {{ 5 + 5 }} in a Jinja2 template?,5 + 5,10,Error,None,2
+24,fresher,medium,How do you handle a trailing slash in @app.route('/home/')?,/home works only,/home/ works only,Both work (strict_slashes),Neither works,3
+24,fresher,medium,Which object is used to check if a user is flashed a message?,get_flashed_messages(),request.messages,session.messages,flash.get(),1
+24,fresher,medium,What happens if you return a tuple like ('Hello' 404) from a view?,String response,Custom status code,Error,JSON response,2
+24,fresher,medium,Which method is used to get the raw data of a request?,request.raw,request.get_data(),request.stream,request.body,2
+24,fresher,hard,How do you prevent Jinja2 from escaping HTML in a variable?,| safe,| raw,| escape,| nofilter,1
+24,fresher,hard,What is the result of flask.has_request_context() outside a route?,TRUE,FALSE,Error,None,2
+24,junior,easy,Which Flask extension is used for RESTful API building?,Flask-RESTful,Flask-API,Flask-Web,Flask-Routes,1
+24,junior,easy,What does config.from_pyfile('config.cfg') method do?,Loads JSON,Loads Python file,Loads Env vars,Loads XML,2
+24,junior,easy,How do you access the current timestamp in a Jinja2 template?,datetime.now(),Now is not available,Pass it via view,clock(),3
+24,junior,medium,Main difference between redirect() and url_for()?,URLs vs Paths,Response vs String,No difference,Templates,2
+24,junior,medium,How do you test a POST request using the Flask test_client?,client.post('/' data=d),client.send('/' POST),client.request(POST),client.push(d),1
+24,junior,medium,What happens to g during a redirect?,It persists,It is cleared,It moves to session,It moves to cookie,2
+24,junior,medium,Which decorator executes a function after the response is settled?,@app.after_request,@app.teardown_request,@app.finalize,@app.end,2
+24,junior,medium,How do you iterate a list in a template?,{% for i in list %},<for i in list>,{{ for i in list }},[for i in list],1
+24,junior,hard,What is a context processor in Flask?,Database tool,Global template variable,Error handler,Route protector,2
+24,junior,hard,How do you access the original exception in an errorhandler?,e,request.error,g.error,session.error,1
+24,junior,hard,What is the purpose of the itsdangerous library?,Encrypted DB,Sign data for sessions,Malware scan,Password hashing,2
+24,mid,easy,Which command applies migrations to a database?,flask db upgrade,flask db migrate,flask db push,flask db sync,1
+24,mid,easy,What is the primary role of Werkzeug in Flask?,ORM,WSGI utility library,Template engine,Form validator,2
+24,mid,medium,How do you implement custom 404 for a specific Blueprint?,bp.errorhandler(404),app.errorhandler(404),=ERROR(404),blueprint.on(404),1
+24,mid,medium,What is the 'Application Context' useful for?,Handling HTTP requests,Accessing app config,Storing user sessions,Setting cookies,2
+24,mid,medium,How do you handle large file uploads to save memory?,request.files.save(),request.stream.read(),Use a buffer,Chunking data,1
+24,mid,medium,What is the impact of setting SERVER_NAME in config?,Enables subdomains,Changes port,Speeds up app,Disables CSS,1
+24,mid,medium,Which Flask method is used to signal a '401 Unauthorized'?,abort(401),stop(401),raise Unauthorized,return 401,1
+24,mid,hard,How do you run a function in a separate thread in Flask?,Standard threading,Celery,multiprocessing,Not possible,1
+24,mid,hard,What does session.permanent_session_lifetime control?,Cookie expiry,DB storage time,Server timeout,Browser cache,1
+24,mid,hard,Why use Blueprint.record() instead of app decorators?,Deferred setup,Performance,Security,Testing,1
+24,senior,easy,Which WSGI server is commonly used to deploy Flask?,Apache,Gunicorn,Node.js,Nginx,2
+24,senior,medium,How do you implement Token-based authentication in Flask?,Flask-Login,PyJWT,Session,Cookies,2
+24,senior,medium,Which pattern avoids circular imports in large apps?,Application Factory,Singleton,Decorator,Observer,1
+24,senior,medium,How do you ensure a task runs after the request is sent?,After_this_request,Background worker,Thread.start(),All of above,2
+24,senior,medium,What is the risk of using app.run(host='0.0.0.0')?,Exposes to network,Slows down app,Disables debug,None,1
+24,senior,medium,How do you stream a large CSV response in Flask?,Response(generate()),render_template(),jsonify(),send_file(),1
+24,senior,hard,How does Flask-SQLAlchemy handle connection pooling?,Via SQLAlchemy,Manual threads,Flask context,It doesn't,1
+24,senior,hard,How do you implement WebSockets in a Flask application?,Flask-SocketIO,Native Flask,Jinja2,request.socket,1
+24,senior,hard,What is a Signal in Flask (using Blinker library)?,Event dispatcher,Database trigger,Error alert,Route redirect,1
+24,senior,hard,How do you mock current_user in Flask-Login for tests?,Patching the property,Setting session,Hardcoding ID,Using g,1
+24,senior,hard,What does PRESERVE_CONTEXT_ON_EXCEPTION config do?,Keeps context for debug,Deletes context,Restarts server,Logs to DB,1
+24,senior,hard,How do you scale a Flask app horizontally?,Load balancer + Gunicorn,Increase RAM,Add more Blueprints,Use app.run(),1
+24,senior,hard,Difference between @app.route and @app.add_url_rule?,Decorators vs Method,No difference,Speed,Access control,1
+24,senior,hard,How do you implement a sub-domain in a Flask Blueprint?,subdomain parameter,request.host,Custom converter,Config variable,1
+24,senior,hard,Purpose of the copy_current_request_context decorator?,Async task context,Template rendering,Database sync,Logging,1
+24,senior,hard,How do you profile the execution time of Flask routes?,Werkzeug Profiler,Print statements,Debug toolbar,cProfile,1
+24,senior,hard,What is the best way to handle long-running CPU tasks?,Task queue (Celery),Threads,Async functions,Increase timeout,1
+24,mid,easy,Which extension handles database migrations?,Flask-Migrate,Flask-Alembic,Flask-DB,Flask-Update,1
+24,mid,easy,What does the flask.current_app object represent?,The root process,Proxy to active app,Client browser,DB connection,2
+24,mid,easy,How do you define a custom CLI command?,@app.cli.command(),@app.cmd(),@app.action(),@app.terminal(),1
+24,mid,easy,Which method removes a session key in Flask?,session.pop('key'),session.delete('key'),session.remove('key'),session.clear_key(),1
+24,mid,easy,Purpose of render_template_string function?,Renders static files,Renders Jinja2 from string,HTML to PDF,Minifies HTML,2
+24,mid,easy,Which HTTP method is not idempotent by design?,GET,PUT,POST,DELETE,3
+24,mid,easy,Check if request is AJAX in modern Flask?,request.is_xhr,request.is_json,X-Requested-With header,request.mode,3
+24,mid,medium,If @app.before_request returns a value?,Continues to view,Aborts view/Returns value,Throws error,Logs warning,2
+24,mid,medium,Access underlying Werkzeug object for uploaded file?,file.stream,file.raw,file.object,file.data,1
+24,mid,medium,Signal triggered before template rendered?,request_started,before_render_template,template_rendered,appcontext_pushed,2
+24,mid,medium,How to handle custom exception globally?,@app.errorhandler(Exception),@app.catch(Exception),@app.on_exception,try/except,1
+24,mid,medium,Ensure Blueprint uses its own static folder?,static_folder='static',url_prefix='/bp',template_folder='templates',static_url_path,1
+24,mid,medium,Data persisting only during one request?,session,g,current_app,request.args,2
+24,mid,medium,Risk of mutable object as default route argument?,Memory leak,Shared state across reqs,SQL injection,No risk,2
+24,mid,medium,Enable JSON pretty-printing in Flask?,JSONIFY_PRETTYPRINT_REGULAR=True,app.json.pretty=True,jsonify(indent=4),request.pretty,1
+24,mid,medium,Preferred password hashing method in Flask?,MD5,SHA1,Werkzeug security helpers,Base64,3
+24,mid,medium,Default cookie name for sessions?,flask_session,session,cookie_id,app_session,2
+24,mid,hard,How does Flask handle teardown of request context?,Garbage collection,teardown_request funcs,Closes socket,Restarts worker,2
+24,mid,hard,Applying decorator below @app.route?,Decorator runs after route,Runs before route,Route ignored,Syntax Error,1
+24,mid,hard,Custom URL converter for UUIDs?,Subclass BaseConverter,Regex string,Lambda,Subclass PathConverter,1
+24,mid,hard,Purpose of LocalProxy object?,Speeds up lookups,Thread-safe context access,Caches DB,Minifies JSON,2
+24,mid,hard,How is g object isolated in multi-threading?,Process IDs,Thread-local storage,Global dicts,DB locks,2
+24,senior,easy,Restricting a Flask route to only HTTPS?,@app.requires_https,Check request.is_secure,app.config,ssl_only,2
+24,senior,easy,Flask extension for admin interface?,Flask-Admin,Flask-Manager,Flask-Super,Flask-Dash,1
+24,senior,easy,Benefit of using flask-cors?,Speeds up API,Allows cross-origin reqs,Encrypts cookies,Validates forms,2
+24,senior,medium,How to share DB connection across Blueprints?,Define in factory,Hardcode,Use session,Use request.args,1
+24,senior,medium,Risk of using pickle for session?,Slow,Remote Code Execution (RCE),Cookie size,Incompatibility,2
+24,senior,medium,Purpose of PRESERVE_CONTEXT_ON_EXCEPTION?,Stops server,Keep context for debug,Deletes logs,Encrypts errors,2
+24,senior,hard,Purpose of copy_current_request_context?,Access request in threads,Clones DB,Backs up app,Restores session,1
+24,senior,hard,How to implement custom session interface?,Subclass SessionInterface,Modify app.config,Use middleware,Change secret key,1
+24,senior,hard,Flask signal library?,Blinker,Requests,SQLAlchemy,Jinja,1
+24,senior,hard,Difference between @app.route and @app.add_url_rule?,Decorators vs Method,No difference,Speed,Access control,1

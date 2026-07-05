@@ -1,0 +1,6 @@
+skill,experience_level,difficulty,question,option1,option2,option3,option4,correct
+linux,fresher,easy,What is the core part of the Linux operating system?,Shell,Kernel,Terminal,GUI,2
+python,junior,medium,Which of the following is used to define a block of code in Python?,Parentheses,Brackets,Indentation,Quotation marks,3
+javascript,mid,hard,What is the result of '1' + 1 in JavaScript?,2,11,NaN,Error,2
+flask,fresher,easy,Which decorator is used to define a route in Flask?,@app.route,@app.link,@app.path,@app.url,1
+mysql,senior,hard,Which join returns all records when there is a match in either left or right table?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL OUTER JOIN,4

@@ -1,0 +1,150 @@
+sql,fresher,easy,Which command is used to fetch data from a table?,GET,SELECT,EXTRACT,OPEN,2
+sql,fresher,easy,What does the keyword DISTINCT do?,Sorts data,Removes duplicates,Filters NULLs,Joins tables,2
+sql,fresher,easy,Which clause is used to filter records in a query?,GROUP BY,WHERE,ORDER BY,HAVING,2
+sql,fresher,easy,What is the default sort order of the ORDER BY clause?,DESC,ASC,RANDOM,INDEX,2
+sql,fresher,medium,How do you select all columns from a table named Users?,SELECT all FROM Users,SELECT * FROM Users,SELECT columns FROM Users,SELECT Users,2
+sql,fresher,medium,Which operator is used to search for a specified pattern in a column?,LIKE,IN,SEARCH,BETWEEN,1
+sql,fresher,medium,What is the result of SELECT 5 + NULL?,5,0,NULL,Error,3
+sql,fresher,medium,How do you find the total number of rows in a table?,SUM(),TOTAL(),COUNT(*),ROWS(),3
+sql,fresher,hard,Which join returns all rows from the left table even if no match in right?,INNER JOIN,RIGHT JOIN,LEFT JOIN,FULL JOIN,3
+sql,fresher,hard,How do you select records where the name starts with A?,LIKE 'A%',LIKE '%A',LIKE '_A',LIKE '[A]',1
+sql,junior,easy,What is a Primary Key?,A unique identifier,A foreign reference,A sorted index,A hidden column,1
+sql,junior,easy,Which function is used to find the highest value in a column?,MAX(),TOP(),HIGH(),UPPER(),1
+sql,junior,easy,How do you delete all data from a table without deleting the table structure?,DELETE TABLE,DROP TABLE,TRUNCATE TABLE,REMOVE TABLE,3
+sql,junior,medium,What is the difference between WHERE and HAVING?,WHERE filters rows HAVING filters groups,No difference,HAVING is faster,WHERE is for Joins,1
+sql,junior,medium,Which constraint ensures that a column cannot have a NULL value?,UNIQUE,NOT NULL,CHECK,DEFAULT,2
+sql,junior,medium,How do you join two tables on a common column?,JOIN ON,LINK BY,ATTACH,COMBINE,1
+sql,junior,medium,What does the UNION operator do?,Joins columns,Combines result sets of two SELECTs,Multiplies data,Groups data,2
+sql,junior,hard,What is a Foreign Key?,A key used for encryption,A link between two tables,A secondary index,A unique constraint,2
+sql,junior,hard,Which SQL statement is used to add a new column to a table?,UPDATE TABLE,ALTER TABLE,CHANGE TABLE,MODIFY TABLE,2
+sql,junior,hard,What is an Index used for?,To store data,To speed up data retrieval,To encrypt data,To delete duplicates,2
+sql,mid,easy,What is the purpose of the GROUP BY clause?,To sort data,To arrange identical data into groups,To filter NULLs,To join tables,2
+sql,mid,easy,Which command is used to change existing data in a table?,CHANGE,MODIFY,UPDATE,REPLACE,3
+sql,mid,medium,What is the difference between INNER JOIN and OUTER JOIN?,Inner returns matches only,Outer returns matches only,No difference,Inner is slower,1
+sql,mid,medium,How do you find the second highest salary?,Subquery with MAX,LIMIT 1 OFFSET 1,Top 2,Both 1 and 2,4
+sql,mid,medium,What is a View in SQL?,A virtual table,A physical table,A CSS property,A database backup,1
+sql,mid,medium,Which function returns the current date and time?,GETDATE(),NOW(),CURRENT_TIMESTAMP,All of the above,4
+sql,mid,hard,What is a Stored Procedure?,A precompiled SQL code block,A temporary table,A log file,An index type,1
+sql,mid,hard,What is the purpose of a Database Trigger?,Automatic code execution on events,To stop queries,To backup data,To format HTML,1
+sql,mid,hard,How do you prevent SQL Injection?,String concatenation,Parameterized queries,Manual escaping,Using SELECT *,2
+sql,mid,hard,What is Database Normalization?,Organizing data to reduce redundancy,Deleting old data,Sorting records,Joining tables,1
+sql,senior,easy,What is a Transaction?,A single unit of work,A money transfer,A user login,A table row,1
+sql,senior,medium,What do ACID properties stand for?,Atomicity Consistency Isolation Durability,Alpha Code Ion Data,Access Control In Data,None,1
+sql,senior,medium,What is the difference between a Clustered and Non-Clustered index?,Clustered defines physical order,Non-Clustered is faster,No difference,Clustered is for text only,1
+sql,senior,medium,How do you handle deadlocks in a database?,Retry logic or Isolation levels,Restart server,Delete the data,Ignore them,1
+sql,senior,hard,What is a Window Function?,Function performing calculation across rows,A function for Windows OS,A GUI tool,A type of Join,1
+sql,senior,hard,What is the purpose of the EXPLAIN statement?,To show query execution plan,To comment code,To rename a table,To debug Python,1
+sql,senior,hard,What is the difference between RANK and DENSE_RANK?,Rank skips numbers after ties,Dense_rank skips numbers,No difference,Rank is for strings,1
+sql,senior,hard,What is Sharding?,Horizontal partitioning of data,Vertical partitioning,Deleting data,Encrypting data,1
+sql,senior,hard,What is a Common Table Expression (CTE)?,A temporary result set using WITH,A permanent table,A type of index,A backup file,1
+sql,senior,hard,What is the purpose of Database Replication?,Data availability and load balancing,Data deletion,Formatting data,None,1
+sql,senior,hard,How do you optimize a slow query?,Add indexes and check execution plan,Add more RAM,Restart the DB,Use more Joins,1
+sql,senior,hard,What is a Self Join?,A table joined with itself,A join between two DBs,A join without a key,None,1
+sql,senior,hard,What is the difference between DELETE and TRUNCATE?,Delete is DML and can be rolled back,Truncate is faster,Both 1 and 2,None,3
+sql,senior,hard,What is an Upsert?,Insert or Update if exists,Update and Sort,Upload and Set,None,1
+sql,senior,hard,What is the COALESCE function used for?,Returns first non-null value,Joins strings,Counts rows,Deletes NULLs,1
+sql,senior,hard,What is the purpose of Materialized Views?,To store query results physically,To hide columns,To sort data,None,1
+sql,senior,hard,How do you implement Pagination in SQL?,Using LIMIT and OFFSET,Using WHERE,Using GROUP BY,Using JOIN,1
+sql,senior,hard,What is a Composite Key?,A primary key with multiple columns,A key for images,A hidden key,None,1
+sql,senior,hard,What is Isolation Level?,Controls visibility of changes to others,Controls speed,Controls storage,None,1
+sql,senior,hard,What is the purpose of the CASE statement?,Conditional logic in queries,To store files,To rename tables,None,1
+sql,fresher,easy,Which clause is used to sort the result-set?,SORT BY,ORDER BY,ALIGN BY,GROUP BY,2
+sql,fresher,easy,Which SQL statement is used to insert new data into a database?,INSERT INTO,ADD RECORD,UPDATE,INSERT NEW,1
+sql,fresher,medium,How do you select all records where the City is NOT 'Berlin'?,SELECT * FROM Users WHERE City != 'Berlin',SELECT * FROM Users WHERE City <> 'Berlin',Both 1 and 2,SELECT * FROM Users WHERE City NOT 'Berlin',3
+sql,fresher,medium,What is the correct SQL to return all records from Users where the FirstName is 'Peter' and the LastName is 'Jackson'?,SELECT * FROM Users WHERE FirstName='Peter' AND LastName='Jackson',SELECT * FROM Users WHERE FirstName='Peter' OR LastName='Jackson',SELECT * FROM Users WHERE Name='Peter Jackson',None of these,1
+sql,fresher,hard,What is the purpose of the % wildcard in a LIKE operator?,Matches any single character,Matches zero or more characters,Matches only numbers,Matches only letters,2
+sql,fresher,hard,Which SQL keyword is used to change the name of a column in the result set?,SET,ALIAS,AS,NAME,3
+sql,junior,easy,What is the difference between a database and a table?,A database is a collection of tables,A table is a collection of databases,No difference,Database is for storage table is for display,1
+sql,junior,easy,Which constraint uniquely identifies each record in a table?,UNIQUE,PRIMARY KEY,FOREIGN KEY,CHECK,2
+sql,junior,medium,How do you select records where the 'Price' is between 10 and 20?,WHERE Price BETWEEN 10 AND 20,WHERE Price > 10 AND < 20,WHERE Price IN (10 20),WHERE Price >= 10 OR <= 20,1
+sql,junior,medium,What is the result of a SELECT statement that uses a GROUP BY clause without an aggregate function?,Error in most SQL dialects,Returns all rows,Returns unique values of grouped columns,Returns only the first row,3
+sql,junior,hard,What is the difference between a LEFT JOIN and an INNER JOIN?,Left join includes unmatched rows from left table,Inner join includes unmatched rows,No difference,Left join is faster,1
+sql,junior,hard,Which command is used to add a 'Unique' constraint to an existing table?,ALTER TABLE Users ADD UNIQUE (Email),UPDATE TABLE Users SET UNIQUE (Email),MODIFY TABLE Users UNIQUE (Email),INSERT UNIQUE (Email) INTO Users,1
+sql,mid,easy,Which operator is used to combine the result-set of two or more SELECT statements (including duplicates)?,UNION,UNION ALL,JOIN,COMBINE,2
+sql,mid,easy,What does the MIN() function return?,The smallest value of the selected column,The first value,The average value,Zero,1
+sql,mid,medium,How can you return the number of records in the 'Orders' table?,SELECT COUNT(*) FROM Orders,SELECT COLUMNS(*) FROM Orders,SELECT SUM(*) FROM Orders,SELECT LEN(*) FROM Orders,1
+sql,mid,medium,What is a subquery?,A query inside another query,A backup query,A deleted query,A query that runs on the client side,1
+sql,mid,hard,What is the purpose of the SQL AUTO_INCREMENT field?,To generate a unique number for new rows,To sort data automatically,To increase the size of the DB,To speed up searches,1
+sql,mid,hard,How do you select all records from a table where a column 'Address' is NULL?,WHERE Address IS NULL,WHERE Address = NULL,WHERE Address == NULL,WHERE Address IS EMPTY,1
+sql,mid,hard,What is the difference between CHAR and VARCHAR?,Char is fixed length Varchar is variable,Varchar is fixed Char is variable,No difference,Char stores only numbers,1
+sql,mid,hard,Which SQL clause is used to filter the results of an aggregate function?,WHERE,HAVING,GROUP BY,ORDER BY,2
+sql,senior,easy,What is a Database Schema?,The logical structure of the database,The physical hardware,A list of users,A type of query,1
+sql,senior,medium,What is a 'Composite Primary Key'?,A primary key consisting of 2 or more columns,A key used for encryption,A key that links to another DB,None of these,1
+sql,senior,medium,Which isolation level prevents 'Dirty Reads' but allows 'Non-repeatable reads'?,Read Uncommitted,Read Committed,Repeatable Read,Serializable,2
+sql,senior,medium,What is 'Vertical Partitioning'?,Splitting a table into multiple tables with fewer columns,Splitting rows across servers,Deleting old columns,Adding more indexes,1
+sql,senior,hard,What is the 'Execution Plan' in a database?,The sequence of operations used to access data,A schedule for backups,A security policy,A list of active users,1
+sql,senior,hard,What is the effect of an 'Index Seek' vs an 'Index Scan'?,Seek is more efficient as it navigates the B-tree,Scan is always faster,Seek reads every row,No difference,1
+sql,senior,hard,What is a 'Correlated Subquery'?,A subquery that uses values from the outer query,A subquery that runs independently,A subquery that returns multiple columns,None of these,1
+sql,senior,hard,What is the purpose of the 'SAVEPOINT' command?,To set a point to which a transaction can roll back,To save the database to disk,To backup a single table,To end a transaction,1
+sql,senior,hard,How does a 'B-Tree' index improve search performance?,By keeping data sorted and allowing logarithmic search time,By compressing data,By randomizing data locations,By removing duplicates,1
+sql,senior,hard,What is 'Database Denormalization'?,Adding redundancy to improve read performance,Removing all tables,Sorting data alphabetically,Encrypting the schema,1
+sql,senior,hard,What is the purpose of the 'LEAD()' window function?,To access data from a subsequent row in the same result set,To find the first row,To count total rows,To sort in reverse,1
+sql,senior,hard,What is a 'Deadlock'?,Two tasks waiting for each other to release a lock,A crashed server,A deleted index,A full disk,1
+sql,senior,hard,What is the 'Phantm Read' problem in transactions?,New rows appearing in a result set between two reads,Deleted rows reappearing,Data changing values,The database becoming invisible,1
+sql,senior,hard,How do you implement a 'Self-Join' to find employees and their managers in the same table?,JOIN Table E1 ON E1.ManagerID = E2.EmployeeID,JOIN Table ON ID=ID,SELECT * FROM Table1 Table2,None of these,1
+sql,senior,hard,What is the 'ACID' property 'Atomicity'?,All parts of a transaction succeed or none do,Data is always consistent,Transactions are isolated,Data is stored permanently,1
+sql,senior,hard,What is a 'Covering Index'?,An index that contains all columns needed for a query,An index that covers the entire DB,A primary key,A unique constraint,1
+sql,senior,hard,What is the purpose of the 'RECURSIVE' keyword in a CTE?,To allow the CTE to reference itself for hierarchical data,To run the query forever,To delete child rows,To sort data,1
+sql,senior,hard,What is the difference between 'CROSS JOIN' and 'INNER JOIN'?,Cross join produces a Cartesian product,Inner join requires a condition,Both 1 and 2,No difference,3
+sql,senior,hard,What is 'Multi-Version Concurrency Control' (MVCC)?,A method to allow concurrent access without locking,A way to store multiple DB versions,A backup strategy,None of these,1
+sql,senior,hard,What is the purpose of 'Fill Factor' in an index?,The percentage of space on each leaf-level page to be filled,The speed of the index,The size of the index file,The number of columns in the index,1
+sql,senior,hard,What is a 'Non-clustered Index'?,An index where the logical order is different from physical,The primary key,A table without an index,None of these,1
+sql,senior,hard,What is 'Write-Ahead Logging' (WAL)?,Changes are logged before being applied to the DB,Logging after a crash,Logging only user logins,None of these,1
+sql,senior,hard,What is 'Selectivity' in the context of an index?,The ratio of unique values to total rows,The speed of a SELECT query,The number of Joins,None of these,1
+sql,senior,hard,How do you find duplicate rows in a table?,GROUP BY all columns HAVING COUNT(*) > 1,SELECT DISTINCT,WHERE ID != ID,Using a LEFT JOIN,1
+sql,senior,hard,What is the 'CAP Theorem' in distributed databases?,Consistency Availability Partition Tolerance,Coding Access Privacy,Cost Availability Performance,None of these,1
+sql,senior,hard,What is the purpose of a 'Check Constraint'?,To limit the value range that can be placed in a column,To check if the server is on,To validate user passwords,To format dates,1
+sql,senior,hard,What is the 'N+1' problem in SQL?,Executing one query for parent and N for children,Adding 1 to every row,Having N+1 tables,None of these,1
+sql,senior,hard,What is the 'ST_Distance' function used for in Spatial SQL?,Calculating distance between two geometries,Calculating time,Measuring file size,None of these,1
+sql,senior,hard,How do you drop an existing database?,DROP DATABASE dbname,DELETE DATABASE dbname,REMOVE DATABASE dbname,TRUNCATE DATABASE dbname,1
+sql,senior,hard,What is the purpose of the 'EXISTS' operator?,To test for the existence of any record in a subquery,To check if a table exists,To check if a user is logged in,None of these,1
+sql,fresher,easy,What does the 'NOT NULL' constraint do?,Allows empty values,Prevents null values,Removes duplicates,Sorts data,2
+sql,fresher,easy,Which SQL keyword is used to sort the result-set in descending order?,DESC,DESCEND,REVERSE,DOWN,1
+sql,fresher,easy,How do you write 'is not equal to' in most SQL dialects?,!=,<>,Both 1 and 2,none of these,3
+sql,fresher,medium,Which function returns the average value of a numeric column?,AVG(),MEAN(),MEDIAN(),SUM(),1
+sql,fresher,medium,What is the purpose of the 'BETWEEN' operator?,Filter by range,Join two tables,Search for text,Calculate sums,1
+sql,fresher,medium,How do you select all columns from a table 'Products'?,SELECT ALL Products,SELECT * FROM Products,SELECT Products.*,GET * FROM Products,2
+sql,fresher,hard,What is the result of 'SELECT COUNT(column)' if the column has NULL values?,Includes NULLs,Excludes NULLs,Returns 0,Throws error,2
+sql,fresher,hard,Which SQL clause is used to group rows that have the same values?,ORDER BY,GROUP BY,SORT BY,CLUSTER BY,2
+sql,junior,easy,What is a 'Unique Key'?,Identifier that allows one NULL,Identifier that allows many NULLs,Same as Primary Key,Non-unique index,1
+sql,junior,easy,Which command is used to add a record to a table?,UPDATE,INSERT,ADD,SAVE,2
+sql,junior,medium,What is the difference between 'DELETE' and 'DROP'?,Delete removes rows Drop removes table,No difference,Drop is for rows,Delete is for DBs,1
+sql,junior,medium,Which join returns only rows where there is a match in both tables?,LEFT JOIN,RIGHT JOIN,INNER JOIN,FULL JOIN,3
+sql,junior,medium,How do you update the 'City' to 'Oslo' for all records in 'Users'?,UPDATE Users SET City='Oslo',UPDATE City='Oslo' IN Users,SET City='Oslo' FROM Users,MODIFY Users City='Oslo',1
+sql,junior,hard,What is the purpose of a 'Foreign Key' constraint?,Data encryption,Referential integrity,Speeding up queries,Sorting data,2
+sql,junior,hard,Which SQL operator is used to test for empty values?,IS NULL,= NULL,IS EMPTY,IS BLANK,1
+sql,mid,easy,What does 'TRUNCATE' do?,Deletes all rows quickly,Deletes the table,Renames columns,Backs up data,1
+sql,mid,easy,Which keyword is used to provide a temporary name to a table or column?,ALIAS,AS,NAME,SET,2
+sql,mid,medium,What is a 'Self-Join'?,Join with another DB,Join a table to itself,Join without keys,None,2
+sql,mid,medium,What is the purpose of the 'UNION' operator?,Combines rows,Combines columns,Multiplies data,Filters data,1
+sql,mid,medium,What is a 'Subquery'?,A query inside another,A deleted query,A fast query,A backup,1
+sql,mid,hard,What is the difference between 'UNION' and 'UNION ALL'?,Union removes duplicates,Union All is slower,No difference,Union All removes duplicates,1
+sql,mid,hard,Which function returns the number of characters in a string?,LEN() or LENGTH(),SIZE(),COUNT(),WIDTH(),1
+sql,mid,hard,How do you prevent a 'Cartesian Product' in a join?,Use a join condition,Use SELECT *,Use GROUP BY,Use ORDER BY,1
+sql,senior,easy,What is a 'Database Transaction'?,A sequence of operations as one unit,A single SELECT,A user login,A file backup,1
+sql,senior,medium,What is 'Normalization'?,Reducing data redundancy,Increasing data size,Encrypting passwords,Sorting rows,1
+sql,senior,medium,What is an 'Index'?,A pointer to data for speed,A table copy,A security key,A data type,1
+sql,senior,medium,What is the purpose of 'ACID' properties?,Ensure reliable transactions,Speed up HTML,Compress data,None,1
+sql,senior,hard,What is a 'Clustered Index'?,Physically reorders data on disk,Logical pointer only,Same as Unique key,None,1
+sql,senior,hard,What is 'Database Sharding'?,Horizontal data partitioning,Vertical partitioning,Data deletion,Encryption,1
+sql,senior,hard,What is a 'Deadlock'?,Circular dependency on locks,A fast query,A deleted table,None,1
+sql,senior,hard,What is the 'Isolation' level 'Serializable'?,Highest isolation level,Lowest isolation level,No isolation,None,1
+sql,senior,hard,What is a 'Materialized View'?,A view stored physically,A virtual view,A temporary table,None,1
+sql,senior,hard,What is 'Query Optimization'?,Improving query performance,Writing more code,Deleting data,None,1
+sql,senior,hard,What is the purpose of 'Window Functions'?,Calculate across related rows,Resize the screen,Filter columns,None,1
+sql,senior,hard,What is a 'Common Table Expression' (CTE)?,A temporary result set,A permanent table,A stored proc,None,1
+sql,senior,hard,What is 'Dirty Read'?,Reading uncommitted data,Reading old data,Reading encrypted data,None,1
+sql,senior,hard,What is the 'Execution Plan'?,Steps the DB takes to run a query,A backup schedule,A user list,None,1
+sql,senior,hard,What is 'Database Replication'?,Copying data to another server,Deleting data,Sorting data,None,1
+sql,senior,hard,What is 'SQL Injection'?,A security vulnerability,A data type,A join type,None,1
+sql,senior,hard,What is the 'HAVING' clause used for?,Filtering groups,Filtering rows,Sorting groups,None,1
+sql,senior,hard,What is 'Referential Integrity'?,Consistency between linked tables,Encrypted links,Fast links,None,1
+sql,senior,hard,What is 'B-Tree'?,An index data structure,A type of join,A database name,None,1
+sql,senior,hard,What is 'Star Schema'?,A data warehousing model,A circular join,A small table,None,1
+sql,senior,hard,What is 'Data Warehouse'?,System for data analysis,A physical storage room,A code repository,None,1
+sql,senior,hard,What is 'ETL'?,Extract Transform Load,Edit Text Line,Error Table Log,None,1
+sql,senior,hard,What is 'OLTP'?,Online Transaction Processing,Online Table Print,Offset Load Type,None,1
+sql,senior,hard,What is 'NoSQL'?,Non-relational database,No queries allowed,New SQL,None,1
+sql,senior,hard,What is 'Primary Key'?,Unique non-null identifier,Any unique column,A sorted column,None,1
+sql,senior,hard,What is 'Composite Key'?,Key with multiple columns,Key for images,Key for files,None,1
+sql,senior,hard,What is 'Stored Procedure'?,Saved SQL code for reuse,A backup file,A table log,None,1

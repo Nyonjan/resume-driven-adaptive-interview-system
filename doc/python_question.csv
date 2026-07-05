@@ -1,0 +1,161 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+1,fresher,easy,What keyword defines a function in Python?,def,func,define,lambda,1
+1,fresher,easy,Which data type is immutable?,list,tuple,set,dictionary,2
+1,fresher,easy,What does len() return?,type,memory,length,index,3
+1,fresher,easy,Which symbol is used for comments?,//,%,/*,#,4
+1,fresher,easy,Which function prints output?,print,display,echo,write,1
+1,fresher,easy,Which type stores decimal numbers?,int,float,str,bool,2
+1,fresher,easy,Which keyword returns value?,exit,break,return,pass,3
+1,fresher,easy,Which operator checks equality?,=,!=,==,<>,3
+1,fresher,easy,Which structure stores key value pairs?,list,dictionary,tuple,set,2
+1,fresher,easy,Which loop is used for iteration?,for,loop,iterate,repeat,1
+1,fresher,medium,What is list comprehension?,sorting method,loop shortcut,class type,file method,2
+1,fresher,medium,Which keyword handles exceptions?,catch,error,try,handle,3
+1,fresher,medium,What does isinstance do?,check value,check type,check size,check memory,2
+1,fresher,medium,Which method adds item to list?,add,insert,append,push,3
+1,fresher,medium,Which function takes input?,read,scan,get,input,4
+1,fresher,medium,Which keyword skips iteration?,skip,next,continue,pass,3
+1,fresher,medium,Which method removes last item?,pop,remove,delete,clear,1
+1,fresher,medium,Which function returns max value?,top,max,high,largest,2
+1,fresher,medium,Which keyword imports module?,include,using,import,require,3
+1,fresher,medium,What is tuple?,immutable sequence,mutable list,key value,loop,1
+1,fresher,hard,What is bytecode?,intermediate code,machine code,assembly code,source code,1
+1,fresher,hard,What is garbage collection?,allocation,deallocation,error,file,2
+1,fresher,hard,What is __init__?,destructor,constructor,loop,operator,2
+1,fresher,hard,What is lambda?,named function,class,loop,anonymous function,4
+1,fresher,hard,What is recursion?,loop,class,function calling itself,error,3
+1,junior,easy,What is a list?,unordered,ordered collection,set,tuple,2
+1,junior,easy,Which type is mutable?,tuple,str,int,list,4
+1,junior,easy,What does print do?,input,store,output,delete,3
+1,junior,easy,Which keyword creates class?,object,class,struct,define,2
+1,junior,easy,Which operator multiplies?,+,*, -,/,2
+1,junior,easy,Which keyword defines loop?,loop,iterate,for,run,3
+1,junior,easy,Which keyword ends loop?,stop,end,exit,break,4
+1,junior,easy,Which type stores text?,int,float,str,bool,3
+1,junior,easy,Which function converts to int?,str,float,int,bool,3
+1,junior,easy,Which keyword for condition?,when,if,check,case,2
+1,junior,medium,What is dictionary?,list type,key value store,set type,class,2
+1,junior,medium,What does keys return?,values,items,keys,all,3
+1,junior,medium,What is set?,unique values,ordered list,string type,class,1
+1,junior,medium,Which keyword handles errors?,catch,handle,try,fix,3
+1,junior,medium,Which loop runs until condition?,for,while,loop,repeat,2
+1,junior,medium,What is function?,variable,class,block of code,module,3
+1,junior,medium,Which keyword returns value?,output,return,end,give,2
+1,junior,medium,Which function sorts list?,order,arrange,sort,align,3
+1,junior,medium,What is slicing?,extract part,sort data,delete data,loop,1
+1,junior,medium,Which keyword used for else?,elif,else,otherwise,then,2
+1,junior,hard,What is OOP?,data structure,object concept,looping,sorting,2
+1,junior,hard,What is inheritance?,reuse code,delete code,loop code,sort code,1
+1,junior,hard,What is encapsulation?,hide data,show data,loop data,sort data,1
+1,junior,hard,What is polymorphism?,many forms,one form,no form,loop form,1
+1,junior,hard,What is abstraction?,hide details,show details,loop details,sort details,1
+1,mid,easy,What is module?,variable,file of code,class,loop,2
+1,mid,easy,Which keyword imports module?,include,require,import,use,3
+1,mid,easy,Which function reads file?,read,load,open,fetch,3
+1,mid,easy,Which function writes file?,write,save,put,store,1
+1,mid,easy,Which keyword handles exception?,catch,fix,try,handle,3
+1,mid,easy,Which type stores boolean?,int,bool,str,float,2
+1,mid,easy,Which keyword defines class?,object,struct,class,define,3
+1,mid,easy,Which operator divides?,//,*,%,/,4
+1,mid,easy,Which keyword creates loop?,loop,repeat,for,run,3
+1,mid,easy,Which function gets input?,read,get,scan,input,4
+1,mid,medium,What is decorator?,function modifier,class modifier,loop modifier,data type,1
+1,mid,medium,What is generator?,function,yield values,class,module,2
+1,mid,medium,Which keyword used in generator?,return,break,yield,pass,3
+1,mid,medium,What is iterator?,function,object for loop,class,module,2
+1,mid,medium,What is map?,apply function,sort data,delete data,loop,1
+1,mid,medium,What is filter?,filter data,sort data,loop data,delete data,1
+1,mid,medium,What is zip?,split list,combine lists,sort list,delete list,2
+1,mid,medium,What is lambda?,class,function name,anonymous function,loop,3
+1,mid,medium,What is global keyword?,access global var,local var,class var,loop var,1
+1,mid,medium,What is local variable?,outside function,inside function,class var,module var,2
+1,mid,hard,What is GIL?,thread lock,memory lock,file lock,data lock,1
+1,mid,hard,What is multiprocessing?,multiple loops,multiple processes,multiple files,multiple classes,2
+1,mid,hard,What is threading?,parallel threads,looping,data structure,sorting,1
+1,mid,hard,What is context manager?,resource handler,loop handler,data handler,file handler,1
+1,mid,hard,What is __str__?,string representation,integer representation,class name,loop,1
+1,senior,easy,What is class?,blueprint,variable,loop,function,1
+1,senior,easy,What is object?,class,instance,loop,variable,2
+1,senior,easy,Which keyword creates object?,none,new,create,init,1
+1,senior,easy,Which keyword defines function?,func,define,def,lambda,3
+1,senior,easy,Which keyword handles errors?,catch,try,fix,handle,2
+1,senior,easy,Which type is mutable?,tuple,str,int,list,4
+1,senior,easy,Which operator compares?,==,=,!=,<>,1
+1,senior,easy,Which loop iterates?,loop,repeat,for,run,3
+1,senior,easy,Which keyword returns?,exit,break,return,stop,3
+1,senior,easy,Which function outputs?,show,display,print,write,3
+1,senior,medium,What is abstraction?,hide details,show details,loop details,sort details,1
+1,senior,medium,What is encapsulation?,show data,hide data,loop data,sort data,2
+1,senior,medium,What is inheritance?,reuse code,delete code,loop code,sort code,1
+1,senior,medium,What is polymorphism?,one form,many forms,no form,loop form,2
+1,senior,medium,What is decorator?,function wrapper,class wrapper,loop wrapper,data wrapper,1
+1,senior,medium,What is generator?,yield values,class,loop,module,1
+1,senior,medium,What is iterator?,function,loop object,class,module,2
+1,senior,medium,What is lambda?,anonymous function,class,function name,loop,1
+1,senior,medium,What is module?,class,file of code,loop,variable,2
+1,senior,medium,What is package?,collection modules,collection class,collection loop,collection var,1
+1,senior,hard,What is GIL?,thread lock,memory lock,file lock,data lock,1
+1,senior,hard,What is multiprocessing?,parallel processes,parallel loops,parallel files,parallel classes,1
+1,senior,hard,What is threading?,parallel threads,looping,data structure,sorting,1
+1,senior,hard,What is context manager?,resource handler,loop handler,data handler,file handler,1
+1,senior,hard,What is metaclass?,class of class,function class,data class,loop class,1
+1,fresher,easy,Which keyword defines variable assignment?,==,:=,=,let,3
+1,fresher,easy,Which function converts to float?,int,str,float,bool,3
+1,fresher,easy,Which structure allows duplicates?,set,dict,list,tuple,3
+1,fresher,easy,Which keyword creates loop condition?,if,for,loop,while,4
+1,fresher,easy,Which type stores characters?,int,str,bool,float,2
+1,fresher,medium,Which function returns minimum value?,max,low,least,min,4
+1,fresher,medium,Which keyword handles multiple conditions?,else,elif,case,when,2
+1,fresher,medium,Which method clears list?,remove,clear,delete,pop,2
+1,fresher,medium,Which keyword skips execution?,continue,break,pass,skip,3
+1,fresher,medium,Which function converts to string?,int,float,str,bool,3
+1,fresher,hard,What is dynamic typing?,compile time typing,type decided at runtime,manual typing,static typing,2
+1,fresher,hard,What is interpreter?,compiles code,stores code,executes code line by line,links code,3
+1,fresher,hard,What is indentation error?,wrong spacing,error in loop,error in syntax,error in import,1
+1,fresher,hard,What is namespace?,data structure,container for variables,class type,loop type,2
+1,fresher,hard,What is module import path?,location of modules,loop path,file path,class path,1
+1,junior,easy,Which keyword is used for logical and?,&&,and,||,or,2
+1,junior,easy,Which keyword is used for logical or?,||,&&,or,and,3
+1,junior,easy,Which keyword negates condition?,no,!,not,FALSE,3
+1,junior,easy,Which function gets type?,typeof,type,class,kind,2
+1,junior,easy,Which keyword defines block?,block,define,space,indent,4
+1,junior,medium,What is shallow copy?,copy values,copy references,copy memory,copy file,2
+1,junior,medium,What is deep copy?,copy full object,copy ref only,copy file,copy class,1
+1,junior,medium,Which module used for copy?,clone,duplicate,copy,mirror,3
+1,junior,medium,What is default argument?,preset value,dynamic value,loop value,class value,1
+1,junior,medium,What is keyword argument?,unnamed arg,named argument,loop arg,class arg,2
+1,junior,hard,What is method overriding?,new method created,same method redefined,loop method,deleted method,2
+1,junior,hard,What is method overloading?,same name different params,new class,loop method,data method,1
+1,junior,hard,What is MRO?,memory resource object,module read order,method run object,method resolution order,4
+1,junior,hard,What is duck typing?,type by class,type by behavior,type by loop,type by variable,2
+1,junior,hard,What is slots?,restrict attributes,add attributes,delete attributes,loop attributes,1
+1,mid,easy,Which module handles dates?,time,calendar,datetime,all,4
+1,mid,easy,Which module handles math?,math,calc,number,count,1
+1,mid,easy,Which module handles random?,rand,number,random,shuffle,3
+1,mid,easy,Which keyword handles file close?,close,end,stop,exit,1
+1,mid,easy,Which method opens file?,read,load,start,open,4
+1,mid,medium,What is threading used for?,parallel tasks,sequential tasks,file tasks,loop tasks,1
+1,mid,medium,What is multiprocessing used for?,looping,parallel processes,file handling,data sorting,2
+1,mid,medium,What is async?,blocking code,file code,non blocking code,loop code,3
+1,mid,medium,What is await?,loop result,file result,class result,wait async result,4
+1,mid,medium,What is event loop?,loop iterator,async executor,file handler,data type,2
+1,mid,hard,What is memory leak?,memory freed,unused memory retained,memory error,file error,2
+1,mid,hard,What is reference counting?,count loops,track object refs,count files,count data,2
+1,mid,hard,What is serialization?,bytes to object,file read,object to bytes,file write,3
+1,mid,hard,What is deserialization?,bytes to object,object to bytes,file write,file read,1
+1,mid,hard,What is pickle?,serialization module,math module,file module,data module,1
+1,senior,easy,Which keyword defines generator?,yield,return,break,pass,1
+1,senior,easy,Which keyword handles exceptions?,catch,error,try,handle,3
+1,senior,easy,Which function reads input?,read,get,scan,input,4
+1,senior,easy,Which function outputs?,show,display,write,print,4
+1,senior,easy,Which type stores mapping?,list,set,tuple,dict,4
+1,senior,medium,What is descriptor?,attribute manager,class manager,loop manager,data manager,1
+1,senior,medium,What is context manager?,resource handler,class handler,loop handler,data handler,1
+1,senior,medium,What is with statement?,loop control,class define,manage resources,data handle,3
+1,senior,medium,What is __enter__?,start context,end context,loop context,class context,1
+1,senior,medium,What is __exit__?,start context,end context,loop context,class context,2
+1,senior,hard,What is metaprogramming?,code that manipulates code,loop coding,data coding,file coding,1
+1,senior,hard,What is reflection?,inspect objects,loop objects,file objects,data objects,1
+1,senior,hard,What is dynamic import?,import at runtime,compile time import,file import,class import,1
+1,senior,hard,What is concurrency?,multiple loops,multiple tasks,multiple files,multiple classes,2
+1,senior,hard,What is parallelism?,simultaneous execution,sequential execution,file execution,data execution,1

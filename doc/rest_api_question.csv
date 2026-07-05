@@ -1,0 +1,141 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+55,fresher,easy,Which HTTP method is commonly used to fetch data?,POST,GET,PUT,DELETE,2
+55,fresher,easy,Which HTTP method is commonly used to create resource?,GET,PUT,PATCH,POST,4
+55,fresher,easy,Which HTTP method fully updates resource?,GET,POST,PUT,DELETE,3
+55,fresher,easy,Which HTTP method partially updates resource?,PUT,POST,GET,PATCH,4
+55,fresher,easy,Which HTTP method removes resource?,GET,PUT,DELETE,POST,3
+55,fresher,easy,Which status code means success?,404,200,500,401,2
+55,fresher,easy,Which status code means resource created?,200,204,404,201,4
+55,fresher,easy,Which status code means no content?,200,201,204,400,3
+55,fresher,easy,Which status code means bad request?,401,400,403,404,2
+55,fresher,easy,Which status code means unauthorized?,400,403,500,401,4
+55,fresher,medium,Which status code means forbidden?,401,404,403,400,3
+55,fresher,medium,Which status code means not found?,403,400,500,404,4
+55,fresher,medium,Which status code means server error?,400,500,401,404,2
+55,fresher,medium,Which format is most common in REST APIs?,XML only,CSV only,JSON,YAML only,3
+55,fresher,medium,What does REST stand for?,Representational State Transfer,Remote State Transfer,Represent Data Service Tool,Resource State Trace,1
+55,fresher,medium,What does stateless mean in REST?,server stores all sessions,server stores no client session state,client stores nothing,request has no headers,2
+55,fresher,medium,Which header commonly sends auth token?,Accept,Authorization,Content-Length,Host,2
+55,fresher,medium,Which header tells response format client accepts?,Authorization,Host,Accept,Location,3
+55,fresher,medium,Which header tells body content type?,Accept,Authorization,Cache-Control,Content-Type,4
+55,fresher,medium,Which response code is best for invalid input?,500,200,301,400,4
+55,fresher,hard,Why is GET expected to be safe?,it always returns JSON,it should not change server state,it needs token,it is faster than POST,2
+55,fresher,hard,Why is idempotent important?,response is always same size,it avoids auth,repeating request has same effect,it replaces validation,3
+55,fresher,hard,Which methods are typically idempotent?,POST PATCH only,GET PUT DELETE,POST only,CONNECT only,2
+55,fresher,hard,When should 201 be returned?,after login failure,after successful creation,after server crash,after resource delete,2
+55,fresher,hard,When should 204 be returned?,resource not found,bad request only,auth failure only,success with no response body,4
+55,junior,easy,Which code is best for validation error?,200,201,400,500,3
+55,junior,easy,Which code is best when login token missing?,403,404,409,401,4
+55,junior,easy,Which code is best when user lacks permission?,401,403,404,400,2
+55,junior,easy,Which code is best for duplicate resource conflict?,200,204,409,500,3
+55,junior,easy,Which code is best when endpoint is missing?,400,401,409,404,4
+55,junior,easy,Which method is usually used for login request?,GET,POST,DELETE,HEAD,2
+55,junior,easy,Which method is usually used to replace user profile?,GET,POST,PUT,DELETE,3
+55,junior,easy,Which method is usually used to update one field?,PUT,GET,PATCH,POST,3
+55,junior,easy,What is endpoint?,database table,frontend page,API URL path,server log,3
+55,junior,easy,What is query parameter used for commonly?,authentication only,filtering and pagination,file upload only,encryption only,2
+55,junior,medium,Which URL is more RESTful for user 5 orders?,orders_users_5,getUserOrders5,users-orders-5-create,users/5/orders,4
+55,junior,medium,Which is better REST resource naming?,verbs only,plural nouns,camelCase actions,random naming,2
+55,junior,medium,Why avoid verbs in endpoint names?,verbs are faster,HTTP method already expresses action,verbs break JSON,verbs disable auth,2
+55,junior,medium,What is pagination used for?,encrypt response,authenticate user,limit large result sets,delete records,3
+55,junior,medium,What is filtering used for?,create resource,return subset of data,delete resource,hide server,2
+55,junior,medium,What is sorting in API used for?,validate token,order response items,compress body,cache auth,2
+55,junior,medium,What is versioning used for?,manage API changes,improve SQL only,replace auth only,hide endpoints,1
+55,junior,medium,Which is common API versioning style?,random number in body,password versioning,v1 in path,database versioning,3
+55,junior,medium,What does 304 indicate commonly?,bad request,created,no content,resource not modified,4
+55,junior,medium,What is ETag used for?,encryption,cache validation,database join,file upload,2
+55,junior,hard,Why should POST usually not be idempotent?,it always deletes data,repeating may create duplicates,it cannot send body,it skips auth,2
+55,junior,hard,Why is PUT considered idempotent?,it cannot change data,it always returns 204,same repeated update keeps same final state,it never sends body,3
+55,junior,hard,When is PATCH preferred over PUT?,full replacement,partial update,delete resource,fetch resource,2
+55,junior,hard,Why use 429 status code?,resource deleted,auth success,server migrated,too many requests,4
+55,junior,hard,What is rate limiting?,limit JSON size only,restrict request frequency,block GET only,reduce SQL columns,2
+55,junior,medium,What is JWT?,encrypted database,password hash,token with header payload signature,file format,3
+55,junior,medium,Where is JWT usually stored on client?,server memory,database only,file system,local storage or cookie,4
+55,junior,medium,Which part of JWT contains user data?,header,signature,payload,token id,3
+55,junior,medium,Which part ensures token integrity?,header,payload,signature,body,3
+55,junior,medium,What is refresh token used for?,store user password,get new access token,encrypt request,validate SQL,2
+55,junior,hard,Why should JWT not store sensitive data?,it is always encrypted,it is hidden from client,it is stored on server only,payload is base64 not encrypted,4
+55,junior,hard,What happens when JWT expires?,server crashes,client must refresh token,user deleted,data cleared,2
+55,junior,hard,Why use short lived access tokens?,increase DB speed,reduce JSON size,avoid cookies,reduce risk if leaked,4
+55,junior,hard,Where should refresh token be stored securely?,local storage,http only cookie,url param,session id,2
+55,junior,hard,What is token revocation?,create new token,extend expiry,invalidate token before expiry,compress token,3
+55,mid,medium,What is CORS?,database policy,cross origin request policy,file policy,loop policy,2
+55,mid,medium,Why does browser block cross origin requests?,performance reasons,storage limit,security reasons,syntax error,3
+55,mid,medium,Which header enables CORS?,Content-Type,Authorization,Access-Control-Allow-Origin,Cache-Control,3
+55,mid,medium,What is preflight request?,GET request,POST request,OPTIONS check before actual request,DELETE request,3
+55,mid,medium,Which method is used in preflight?,GET,POST,OPTIONS,PUT,3
+55,mid,hard,What happens if CORS not configured?,server crashes,browser blocks request,data lost,token invalid,2
+55,mid,hard,Why avoid wildcard origin in production?,performance issue,data corruption,security risk,file error,3
+55,mid,hard,What is same origin policy?,allow all requests,restrict cross origin access,disable cookies,enable caching,2
+55,mid,hard,What is credentials flag in CORS?,disable cookies,allow cookies and auth,store token,encrypt headers,2
+55,mid,hard,What header allows credentials?,Authorization,Access-Control-Allow-Credentials,Accept,Origin,2
+55,mid,medium,What is caching in API?,store passwords,store response for reuse,store DB only,store logs,2
+55,mid,medium,Which header controls caching?,Authorization,Content-Type,Cache-Control,Host,3
+55,mid,medium,What does no cache mean?,always revalidate,never store,always store,ignore cache,1
+55,mid,medium,What does max age define?,response size,request count,cache duration,user limit,3
+55,mid,medium,What is CDN used for?,store DB locally,encrypt data,manage tokens,serve cached content globally,4
+55,mid,hard,What is cache invalidation?,create new cache,remove outdated cache,compress cache,disable cache,2
+55,mid,hard,Why use ETag?,encrypt response,detect resource changes,store token,compress data,2
+55,mid,hard,What is conditional request?,request based on cache state,request without headers,request without auth,request without body,1
+55,mid,hard,Which status for not modified?,200,304,204,404,2
+55,mid,hard,Why caching improves performance?,increases DB size,reduces server load,slows network,adds latency,2
+55,senior,medium,What is idempotency key?,store session,encrypt data,limit rate,prevent duplicate requests,4
+55,senior,medium,Where is idempotency key used?,pure GET only,POST requests,DELETE only,OPTIONS only,2
+55,senior,medium,What problem does it solve?,slow response,auth failure,duplicate transactions,data loss,3
+55,senior,medium,What is webhook?,client polls server,DB trigger,server sends event to client,file upload,3
+55,senior,medium,What is polling?,server pushes data,client repeatedly asks server,DB replication,file sync,2
+55,senior,hard,Why prefer webhooks over polling?,faster CPU,less memory,real time and efficient,better UI,3
+55,senior,hard,What is exponential backoff?,constant retry,retry with increasing delay,stop retry,random retry,2
+55,senior,hard,What is API gateway?,database layer,file storage,single entry for services,frontend UI,3
+55,senior,hard,What is rate limiting algorithm example?,hash join,token bucket,binary search,merge sort,2
+55,senior,hard,What is circuit breaker?,retry always,cache data,encrypt data,stop failing requests temporarily,4
+55,mid,medium,What is OAuth?,authorization framework,authentication only,encryption method,db protocol,1
+55,mid,medium,What is difference between auth and authz?,permission vs identity,identity vs permission,same,none,2
+55,mid,medium,What is access token?,long password,db key,short lived credential,file id,3
+55,mid,medium,What is refresh token?,new password,long lived token,db key,file id,2
+55,mid,medium,Which flow is used for backend apps?,implicit flow,password flow,authorization code flow,device flow,3
+55,mid,hard,Why avoid implicit flow?,too slow,less secure,too large,not supported,2
+55,mid,hard,What is scope in OAuth?,data type,file size,permission range,token id,3
+55,mid,hard,What is client id?,user id,db id,app identifier,file id,3
+55,mid,hard,What is redirect URI?,error page,callback after auth,db path,file path,2
+55,mid,hard,Why use PKCE?,reduce size,secure public clients,increase speed,avoid db,2
+55,senior,medium,What is microservice?,large monolith,independent service unit,db cluster,file server,2
+55,senior,medium,Why use microservices?,faster coding,less testing,scalability and isolation,no deployment,3
+55,senior,medium,What is service discovery?,store services,find services dynamically,delete services,cache services,2
+55,senior,medium,What is load balancer?,store data,distribute traffic,encrypt data,route db,2
+55,senior,medium,What is reverse proxy?,database proxy,gateway to backend,file proxy,loop proxy,2
+55,senior,hard,What is API throttling?,delete requests,limit request rate,cache requests,encrypt requests,2
+55,senior,hard,What is burst traffic?,constant traffic,low traffic,sudden spike in requests,random traffic,3
+55,senior,hard,Why use retry mechanism?,avoid auth,handle transient failure,reduce load,delete cache,2
+55,senior,hard,What is timeout?,response size,request count,max wait for response,data size,3
+55,senior,hard,What is graceful degradation?,stop system,reduce features under load,crash server,delete data,2
+55,senior,medium,What is SQL injection?,file attack,loop attack,malicious query injection,cache attack,3
+55,senior,medium,How prevent SQL injection?,parameterized queries,plain queries,no auth,no db,1
+55,senior,medium,What is XSS?,db attack,script injection attack,file attack,loop attack,2
+55,senior,medium,How prevent XSS?,disable API,sanitize input,delete data,block user,2
+55,senior,medium,What is CSRF?,file attack,forged request attack,db attack,loop attack,2
+55,senior,hard,How prevent CSRF?,disable cookies,csrf token validation,block db,delete user,2
+55,senior,hard,What is HTTPS?,secure HTTP protocol,file protocol,db protocol,loop protocol,1
+55,senior,hard,Why use HTTPS?,compress data,encrypt data,store data,delete data,2
+55,senior,hard,What is HSTS?,disable HTTPS,force HTTPS,cache HTTP,encrypt DB,2
+55,senior,hard,What is man in middle attack?,delete data,intercept communication,store data,loop data,2
+55,mid,medium,What is pagination?,response limit,split large data,auth limit,file limit,2
+55,mid,medium,Which pagination type is best for large data?,offset pagination,no pagination,random pagination,cursor pagination,4
+55,mid,medium,What is offset pagination?,filter records,sort records,skip records based,delete records,3
+55,mid,medium,What is cursor pagination?,skip records,use pointer for next,sort records,delete records,2
+55,mid,medium,Why cursor pagination better?,less memory,consistent performance,less auth,less db,2
+55,mid,hard,What is N plus one problem?,multiple DB calls,cache issue,file issue,auth issue,1
+55,mid,hard,How reduce N plus one?,disable db,batch queries,remove API,delete cache,2
+55,mid,hard,What is API versioning strategy?,db version,path versioning,file version,loop version,2
+55,mid,hard,Why version APIs?,reduce size,avoid breaking changes,remove auth,delete db,2
+55,mid,hard,What is backward compatibility?,new clients only,db compatibility,old clients still work,file compatibility,3
+55,senior,medium,What is health check endpoint?,data endpoint,file endpoint,service status endpoint,loop endpoint,3
+55,senior,medium,What is logging?,data store,record events,file write,loop write,2
+55,senior,medium,What is monitoring?,store logs,track system metrics,delete logs,loop logs,2
+55,senior,medium,What is tracing?,store request,track request flow,delete request,loop request,2
+55,senior,medium,What is alerting?,store issues,notify issues,delete issues,loop issues,2
+55,senior,hard,What is blue green deployment?,one env deploy,two environments switch,db deploy,file deploy,2
+55,senior,hard,What is canary release?,gradual rollout,full rollout,rollback,delete deploy,1
+55,senior,hard,What is rollback?,delete system,revert deployment,cache system,loop system,2
+55,senior,hard,What is zero downtime deploy?,full downtime,no service interruption,partial downtime,no deploy,2
+55,senior,hard,What is SLA?,service agreement,data agreement,file agreement,loop agreement,1

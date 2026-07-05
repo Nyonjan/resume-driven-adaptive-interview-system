@@ -1,0 +1,98 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+50,fresher,easy,What is the time complexity to access an element in an array by index?,O(n),O(log n),O(1),O(n^2),3
+50,fresher,easy,Which data structure follows the LIFO principle?,Stack,Queue,Linked List,Tree,1
+50,fresher,easy,What is a linear data structure?,Tree,Graph,Hash Table,Array,4
+50,fresher,easy,Which data structure is used to implement recursion?,Queue,Heap,Stack,Deque,3
+50,fresher,medium,What is the main disadvantage of a static array?,Slow access,Fixed size,High memory,Hard to sort,2
+50,fresher,medium,In a Singly Linked List what does the last node point to?,Head,NULL,Middle,Itself,2
+50,fresher,medium,Which structure is best for First-Come-First-Served?,Stack,Priority Queue,Tree,Queue,4
+50,fresher,medium,Search complexity in a balanced BST?,O(n),O(log n),O(1),O(n log n),2
+50,fresher,hard,Max nodes at level i of a binary tree (root=0)?,2^i,i^2,2*i,2^(i-1),1
+50,fresher,hard,Which structure is used in BFS of a graph?,Stack,Binary Tree,Queue,Array,3
+50,junior,easy,What is a Circular Linked List?,No nodes,Last node to head,Two heads,None,2
+50,junior,easy,Which data structure stores key-value pairs?,Linked List,Array,Stack,Hash Table,4
+50,junior,medium,What is a Full Binary Tree?,0 or 2 children,Same level leaves,2 children always,None,1
+50,junior,medium,Insertion complexity at start of Singly Linked List?,O(n),O(log n),O(1),O(n^2),3
+50,junior,medium,What is a Deque?,Data entry queue,Double-ended queue,Digital queue,Deleted queue,2
+50,junior,hard,Which sort uses Divide and Conquer?,Bubble Sort,Merge Sort,Insertion Sort,Selection Sort,2
+50,junior,hard,What is the height of a NULL tree?,-1,0,1,Infinity,1
+50,mid,easy,What is a Priority Queue?,By priority value,By arrival time,Sorted array,None,1
+50,mid,easy,Structure for hierarchical relationships?,Array,Stack,Queue,Tree,4
+50,mid,medium,What is the Load Factor in a Hash Table?,m/n,n/m (entries/buckets),n*m,n+m,2
+50,mid,medium,Worst-case time complexity of QuickSort?,O(n log n),O(n),O(log n),O(n^2),4
+50,mid,medium,In a Min-Heap where is the smallest element?,Last leaf,Middle,Root,Left child,3
+50,mid,hard,What are Collisions in Hashing?,Empty slots,Large keys,Two keys same slot,None,3
+50,mid,hard,What is an AVL Tree?,A heap,Self-balancing BST,A complete tree,None,2
+50,mid,hard,Which BST traversal gives sorted order?,Pre-order,Post-order,In-order,Level-order,3
+50,senior,easy,What is a Graph?,Rows and Columns,Nodes and Edges,Keys and Values,None,2
+50,senior,medium,Difference between Adj. List and Adj. Matrix?,List uses more space,No difference,Matrix O(V^2) space,Matrix for trees,3
+50,senior,medium,What is Dynamic Programming?,Subproblems,Faster code,More RAM,None,1
+50,senior,medium,What is a Trie primarily used for?,Sorting numbers,Image storage,Autocomplete,None,3
+50,senior,hard,What is a B-Tree primarily used for?,Small arrays,Databases/Files,Recursion,None,2
+50,senior,hard,Dijkstra complexity with Binary Heap?,O(V^2),O(E log V),O(E+V),O(log E),2
+50,senior,hard,What is Amortized Analysis?,Average over sequence,Worst case only,Best case,None,1
+50,senior,hard,What is a Red-Black Tree?,Binary heap,B-Tree,Self-balancing BST,None,3
+50,senior,hard,Structure for Undo operations?,Stack,Queue,Tree,Graph,1
+50,senior,hard,Space Complexity of recursive DFS?,O(1),O(n^2),O(h) height,None,3
+50,senior,hard,What is a Bloom Filter?,Type of sort,Probabilistic set,Compression,None,2
+50,senior,hard,What is Topological Sort used for?,DAG Ordering,Sorting strings,Binary trees,None,1
+50,senior,hard,What is External Sorting?,Web server sort,User sorting,Non-RAM data sort,None,3
+50,senior,hard,What is a Segment Tree?,A heap,Range queries,Balanced BST,None,2
+50,senior,hard,What is a Suffix Tree used for?,Numerical analysis,Pattern matching,Traversal,None,2
+50,senior,hard,What is a Self-Organizing List?,Sorted list,Move to front,Circular list,None,2
+50,senior,hard,Bellman-Ford algorithm use case?,Maximum flow,Negative weights,Spanning tree,None,2
+50,senior,hard,What is a Spanning Tree?,Tree no leaves,Graph one edge,Connects all vertices,None,3
+50,senior,hard,What is Union-Find used for?,Merge arrays,Sort a tree,Disjoint partitions,None,3
+50,senior,hard,Cache Locality benefit of arrays?,Smaller size,Spatial performance,Easy code,None,2
+50,senior,hard,What is Heavy-Light Decomposition?,Tree path queries,Sorting,Hashing,None,1
+50,senior,hard,What is a Fenwick Tree used for?,Search tree,A heap,Prefix sums,None,3
+50,senior,hard,What is Maximum Flow?,Flow optimization,Sorting data,Backup,None,1
+50,senior,hard,What is Prim's Algorithm?,Shortest path,Sorting,Min Spanning Tree,None,3
+50,fresher,easy,Time complexity of searching in a linked list?,O(log n),O(n),O(1),O(n^2),2
+50,fresher,easy,Max children a node can have in a binary tree?,1,3,Unlimited,2,4
+50,fresher,medium,Data structure used for Breadth First Search (BFS)?,Stack,Heap,Queue,Tree,3
+50,fresher,medium,Time complexity to insert at the end of a dynamic array?,O(n),O(log n),O(n log n),O(1) (amortized),4
+50,fresher,medium,Which of these is a non-linear data structure?,Array,Linked List,Graph,Stack,3
+50,fresher,hard,Max nodes in a binary tree of height k?,2^k - 1,2^(k+1) - 1,2^(k-1) - 1,k^2,2
+50,fresher,hard,Circular queue of size N is full if?,front=rear,front=0 and rear=N-1,front=rear+1,None,2
+50,junior,easy,Most efficient structure to find min in a set?,Min-Heap,Stack,Linked List,Queue,1
+50,junior,easy,What is a leaf in a tree?,First node,Node with one child,Root node,Node with no children,4
+50,junior,medium,Complexity of deleting a node in DLL (pointer given)?,O(1),O(n),O(log n),O(n^2),1
+50,junior,medium,Which traversal visits the root node last?,Pre-order,In-order,Level-order,Post-order,4
+50,junior,medium,What is a Sparse Matrix?,Mostly zero elements,Many columns,No rows,Identity matrix,1
+50,junior,hard,Load factor of hash table (10 elements 20 slots)?,2,1,0.5,0.1,3
+50,junior,hard,Structure to convert infix to postfix?,Queue,Tree,Array,Stack,4
+50,mid,easy,Structure for browser Back button?,Queue,Priority Queue,Stack,Linked List,3
+50,mid,easy,Advantage of Linked List over Array?,Constant access,Dynamic size,Less memory,Cache friendly,2
+50,mid,medium,What is a Perfect Binary Tree?,All internals have 2 children and leaves same level,0 or 2 children,At least one child,None,1
+50,mid,medium,Where is the largest element in a Max-Heap?,Last leaf,Root,Random node,Left child,2
+50,mid,medium,Average search complexity in a Hash Table?,O(n),O(log n),O(1),O(n log n),3
+50,mid,hard,Edges in a complete graph with V vertices?,V^2,V(V-1)/2,V-1,2V,2
+50,mid,hard,Collision resolution using a list for each bucket?,Open Addressing,Linear Probing,Double Hashing,Chaining,4
+50,mid,hard,Height of a balanced BST with n nodes?,O(n),O(1),O(n log n),O(log n),4
+50,senior,easy,Data structure used by OS for job scheduling?,Queue,Stack,Tree,Graph,1
+50,senior,medium,Primary use of a Trie?,String prefix matching,Numerical sorting,Calculating hashes,Memory management,1
+50,senior,medium,Complexity of building a heap from n elements?,O(n log n),O(log n),O(n),O(n^2),3
+50,senior,medium,Structure for Dijkstra's algorithm?,Stack,Simple Queue,Binary Tree,Priority Queue,4
+50,senior,hard,Space complexity of Adjacency Matrix?,O(V),O(E+V),O(V^2),O(E),3
+50,senior,hard,Max ratio of longest to shortest path in Red-Black Tree?,1,3,log n,2,4
+50,senior,hard,Tree optimized for disk/database storage?,Binary Tree,AVL Tree,B-Tree,Splay Tree,3
+50,senior,hard,What is DSU used for?,Finding connected components,Sorting data,Merging arrays,Calculating paths,1
+50,senior,hard,Amortized complexity of Splay Tree operation?,O(n),O(log n),O(1),O(n log n),2
+50,senior,hard,Another name for Fenwick Tree?,Segment Tree,Binary Indexed Tree,AVL Tree,Suffix Tree,2
+50,senior,hard,What is a Hamiltonian Path?,Visits every vertex once,Visits every edge once,A cycle,A path with no edges,1
+50,senior,hard,Purpose of an Interval Tree?,Finding overlapping intervals,Sorting numbers,Storing strings,None,1
+50,senior,hard,Complexity of BFS for shortest path (unweighted)?,O(V^2),O(V+E),O(E log V),O(log V),2
+50,senior,hard,What is a Skip List?,Probabilistic alternative to balanced trees,List that skips nodes,Deleted list,Static array,1
+50,senior,hard,Structure to store a Suffix Array?,Trie,Heap,Stack,Array,4
+50,senior,hard,What is Double Hashing?,Hashing key twice,Two tables,Second hash for step size,None,3
+50,senior,hard,Successor of a node in a BST?,Smallest in right subtree,Largest in left subtree,The parent,The root,1
+50,senior,hard,What is a Complete Binary Tree?,Every node has 2 children,All leaves at level 1,Levels full except possibly last,None,3
+50,senior,hard,What is Path Compression in DSU?,Making nodes point to root during find,Deleting unused paths,Sorting the tree,None,1
+50,senior,hard,Complexity of KMP string matching?,O(n*m),O(log n),O(n^2),O(n+m),4
+50,senior,hard,What is a Treap?,A randomized BST,A type of heap,A tree with 3 children,None,1
+50,senior,hard,What is a Min-Max Heap?,Sorted array,Balanced tree,Supports both min/max extract,None,3
+50,senior,hard,Max degree of node in Fibonacci Heap (Amortized)?,O(n),O(1),O(sqrt n),O(log n),4
+50,senior,hard,Traversal for prefix notation?,In-order,Post-order,Level-order,Pre-order,4
+50,senior,hard,What is Self-balancing in AVL trees?,Sorting nodes,Maintaining height diff <= 1,Deleting nodes,None,2
+50,senior,hard,What is a B+ Tree?,Data only in leaves,Tree with positive nodes,Binary tree,None,1

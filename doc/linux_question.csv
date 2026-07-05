@@ -1,0 +1,151 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+48,fresher,easy,What is the core part of the Linux operating system?,Shell,Kernel,Terminal,GUI,2
+48,fresher,easy,Which command is used to list files in a directory?,dir,ls,list,show,2
+48,fresher,easy,Which command tells you the current directory you are in?,whoami,pwd,whereami,path,2
+48,fresher,easy,How do you create a new directory?,newdir,crdir,mkdir,md,3
+48,fresher,medium,How do you create an empty file?,create,new,make,touch,4
+48,fresher,medium,Which command is used to remove an empty directory?,rm,del,rmdir,erase,3
+48,fresher,medium,What does the 'cd ..' command do?,Move to root,Delete directory,None,Move up one level,4
+48,fresher,hard,Which command displays the content of a file?,read,cat,view,open,2
+48,fresher,hard,How do you clear the terminal screen?,cls,clean,clear,reset,3
+48,fresher,hard,What is the shortcut to stop a running process in terminal?,Ctrl+Z,Ctrl+X,Ctrl+P,Ctrl+C,4
+48,junior,easy,Which command is used to change file permissions?,chown,chperm,chmod,chval,3
+48,junior,easy,Who is the 'superuser' in Linux?,admin,boss,system,root,4
+48,junior,medium,How do you search for a string inside a file?,find,search,grep,look,3
+48,junior,medium,What does 'chmod 777' do?,Read only for all,Full access for everyone,No access,None,2
+48,junior,medium,Which command is used to see running processes?,list-proc,top / ps,view-tasks,None,2
+48,junior,hard,How do you redirect output to a file (overwriting)?,>>,|,>,<,3
+48,junior,hard,How do you append output to an existing file?,>,|, <,>>,4
+48,mid,easy,What is a 'Pipe' (|) used for?,Deleting files,Passing output to another command,Naming branches,None,2
+48,mid,easy,Which command changes the owner of a file?,chmod,chuser,setowner,chown,4
+48,mid,medium,How do you find the IP address of the machine?,netstat,ping,ifconfig / ip addr,route,3
+48,mid,medium,What is 'Sudo'?,Delete a user,Sort a file,None,Run command as root,4
+48,mid,medium,Which command shows disk usage of folders?,df,dd,du,ds,3
+48,mid,hard,What is the purpose of the /etc directory?,System configuration files,User files,Temporary files,Binaries,1
+48,mid,hard,How do you terminate a process by its ID?,stop <pid>,end <pid>,kill <pid>,halt <pid>,3
+48,mid,hard,What is a 'Symbolic Link'?,A file copy,A pointer/shortcut to a file,A hidden file,None,2
+48,senior,easy,Which directory contains system binaries?,/home,/bin,/tmp,/var,2
+48,senior,medium,What is the 'Cron' service used for?,Managing users,Printing files,None,Scheduling tasks,4
+48,senior,medium,What does 'SSH' stand for?,System Shell,Secure Shell,Standard Shell,None,2
+48,senior,medium,How do you see the last 10 lines of a file?,head,end,tail,last,3
+48,senior,hard,What is the 'Load Average' in Linux?,CPU utilization over time,RAM usage,Disk speed,None,1
+48,senior,hard,What is an 'Inode'?,A file name,A type of link,Data structure storing file metadata,None,3
+48,senior,hard,What is the difference between 'hard link' and 'soft link'?,Hard link points to inode Soft points to path,No difference,Soft is faster,None,1
+48,senior,hard,What is 'Swap' space used for?,Storing logs,Virtual memory on disk,Temporary files,None,2
+48,senior,hard,How do you check for open network ports?,ping,traceroute,None,netstat / ss,4
+48,senior,hard,What is the 'Zombie' process?,A virus,A fast process,Process that finished but has entry in table,None,3
+48,senior,hard,What is 'Kernel Panic'?,A user error,Critical system error/crash,A slow boot,None,2
+48,senior,hard,What is 'Init' or 'Systemd'?,A logging tool,A shell,None,The first process (PID 1),4
+48,senior,hard,How do you find all files larger than 100MB?,ls -large,find / -size +100M,search 100M,None,2
+48,senior,hard,What is the 'PATH' environment variable?,A file route,A user name,List of directories for executables,None,3
+48,senior,hard,What is 'Bash'?,A compiler,A text editor,None,A Unix shell and command language,4
+48,senior,hard,What is 'Apt' or 'Yum'?,Text editors,Package managers,File systems,None,2
+48,senior,hard,What is the '/proc' directory?,Storage for images,Backup folder,Virtual filesystem for kernel/process info,None,3
+48,senior,hard,What is 'LVM'?,Logical Volume Management,Linux Virtual Machine,Link View Mode,None,1
+48,senior,hard,How do you check the kernel version?,version,uname -a,kernel-info,None,2
+48,senior,hard,What is 'Umask'?,A user mask,Default permissions for new files,A hidden file,None,2
+48,senior,hard,What is 'Chroot'?,Changing the root directory for a process,Deleting root,Rebooting,None,1
+48,senior,hard,What is 'RAID'?,A type of shell,Redundant Array of Independent Disks,A memory leak,None,2
+48,senior,hard,How do you monitor log files in real-time?,cat,grep,tail -f,watch,3
+48,senior,hard,What is 'SELinux'?,A Linux version,A shell,None,Security-Enhanced Linux (Access control),4
+48,senior,hard,What is 'Journalctl' used for?,Editing files,Viewing systemd logs,Sorting data,None,2
+48,fresher,easy,Which command is used to move or rename files?,rn,move,mv,ren,3
+48,fresher,easy,What does the 'top' command display?,Top files,Running processes,Network speed,CPU temperature,2
+48,fresher,medium,How do you create a new empty file named 'test.txt'?,new test.txt,make test.txt,create test.txt,touch test.txt,4
+48,fresher,medium,Which command is used to delete a non-empty directory?,rmdir,del -dir,rm -r,erase,3
+48,fresher,hard,Which command shows the manual page for 'ls'?,help ls,info ls,read ls,man ls,4
+48,fresher,hard,What is the shortcut to exit the current terminal session?,Ctrl+E,Ctrl+D,Ctrl+X,Ctrl+Z,2
+48,junior,easy,Which character represents the home directory?,.,/,#, ~,4
+48,junior,easy,Which command shows the first 10 lines of a file?,tail,start,head,first,3
+48,junior,medium,How do you change the password for the current user?,password,setpass,change -p,passwd,4
+48,junior,medium,Which command is used to combine files or display their contents?,merge,group,cat,join,3
+48,junior,hard,What does 'chmod +x script.sh' do?,Deletes the script,Makes the script executable,Hides the script,None,2
+48,junior,hard,Which command is used to locate the path of an executable?,whereis,which,Both 1 and 2,find-bin,3
+48,mid,easy,What is a 'Daemon' in Linux?,A virus,A disk partition,A background process,A user group,3
+48,mid,easy,Which command shows the disk space available on filesystems?,du,ds,dk,df,4
+48,mid,medium,How do you run a process in the background?,Add '@' at the start,Use 'bg' command,Both 1 and 3,Add '&' at the end,4
+48,mid,medium,What is the purpose of the '/tmp' directory?,Storing logs,Storing temporary files,Storing user media,None,2
+48,mid,hard,How do you see all environment variables?,vars,env,list-env,showall,2
+48,mid,hard,What does the 'grep -i' flag do?,Inverts search,Shows line numbers,Case-insensitive search,None,3
+48,mid,hard,Which command is used to compare two files line by line?,cmp,check,diff,match,3
+48,senior,easy,What is the 'root' directory path?,\root,/,~,C:\,2
+48,senior,medium,What is the 'Sticky Bit' used for?,Speeds up file access,Prevents users from deleting others' files in a folder,Makes a file read-only,None,2
+48,senior,medium,What is 'Load Average' (1 5 15)?,Number of users,Disk speed,Average system load over 1 5 and 15 mins,None,3
+48,senior,medium,How do you reload the systemd manager configuration?,service reload,restart systemd,None,systemctl daemon-reload,4
+48,senior,hard,What is an 'Orphan Process'?,A process with no PID,A process whose parent has finished,A deleted process,None,2
+48,senior,hard,What is the difference between 'su' and 'sudo'?,No difference,sudo is older,su switches user sudo runs command as root,None,3
+48,senior,hard,What is 'NIC' bonding?,Naming a network,Combining multiple network interfaces for redundancy,Deleting a network,None,2
+48,senior,hard,What is the purpose of '/dev/null'?,A backup folder,A black hole that discards all data,A log file,None,2
+48,senior,hard,What is 'In-memory' filesystem in Linux?,ext4,ntfs,tmpfs,zfs,3
+48,senior,hard,How do you find which process is using port 80?,lsof -i :80,netstat -p,Both 1 and 2,None,3
+48,senior,hard,What is 'OOM' score?,Total RAM,Disk speed,None,Out Of Memory killer priority,4
+48,senior,hard,What is 'Strace' used for?,Sorting files,Tracing system calls and signals,Compiling code,None,2
+48,senior,hard,What is 'Hard Limit' vs 'Soft Limit' in ulimit?,No difference,Soft is for root only,None,Hard is absolute max Soft is current ceiling,4
+48,senior,hard,How do you check for file system errors?,chkdsk,fsck,scan,None,2
+48,senior,hard,What is 'Nice' value?,A greeting,Process priority (-20 to 19),A log level,None,2
+48,senior,hard,What is 'Swapiness'?,Amount of RAM,Disk size,Kernel parameter for using swap vs RAM,None,3
+48,senior,hard,What is 'Tee' command?,Deletes text,Reads from stdin and writes to stdout and files,Joins two files,None,2
+48,senior,hard,What is '/var/log/messages'?,User passwords,A browser history,General system messages and logs,None,3
+48,senior,hard,What is 'Chown -R'?,Renames a folder,Changes ownership recursively,Deletes a folder,None,2
+48,senior,hard,What is 'Grep -v'?,Validates the match,Verbose mode,Inverts the match (non-matching lines),None,3
+48,senior,hard,What is 'Tar -xvf'?,Creates an archive,Extracts files from a tar archive,Deletes an archive,None,2
+48,senior,hard,What is 'Cronjob' syntax for 'every midnight'?,* * * * *,0 0 * * *,12 12 * * *,None,2
+48,senior,hard,What is 'Fstab'?,A user list,A shell script,None,File used for mounting filesystems at boot,4
+48,senior,hard,What is 'W' command?,Shows weather,Shows who is logged on and what they are doing,Wipes disk,None,2
+48,senior,hard,What is 'Sestatus'?,Shows server status,Shows session status,None,Shows SELinux status,4
+48,senior,hard,What is 'Nohup'?,Runs a command even after logout,New hop,No help,None,1
+48,senior,hard,What is 'Hostnamectl'?,Tool to change/query the system hostname,A network tool,A user tool,None,1
+48,senior,hard,How do you view memory usage in MB?,ram -show,free -m,mem -v,None,2
+48,senior,hard,What is 'Kexec'?,A type of shell,A compiler,None,Booting a new kernel without a hardware reset,4
+48,senior,hard,What is 'Mount -a'?,Mounts one file,Mounts all filesystems mentioned in fstab,Unmounts all,None,2
+48,senior,hard,What is 'Alias'?,A custom shortcut for a command,A user name,A folder name,None,1
+48,fresher,easy,Which command is used to display the current date and time?,time,now,date,clock,3
+48,fresher,easy,How do you exit the 'vi' editor without saving changes?,:wq,:q!,:exit,:stop,2
+48,fresher,medium,Which command is used to find the location of a specific command?,find,locate,search,whereis,4
+48,fresher,medium,What does the 'head -n 5' command do?,Displays last 5 lines,Displays 5 files,None,Displays first 5 lines,4
+48,fresher,hard,Which command is used to see the disk partition table?,part-list,disk-show,fdisk -l,view-part,3
+48,fresher,hard,What is the result of 'echo $USER'?,The current username,The root name,A file list,None,1
+48,junior,easy,Which command is used to count lines words and characters?,count,wc,stat,total,2
+48,junior,easy,How do you create a hidden file in Linux?,Use 'hide' command,Use 'attrib' command,None,Start name with a dot (.),4
+48,junior,medium,What does the command 'ls -l' provide?,Long listing with details,List of links,List of logs,None,1
+48,junior,medium,Which command is used to change the group of a file?,chown,chgrp,groupmod,setgroup,2
+48,junior,hard,What is the purpose of the '/boot' directory?,Temporary files,User data,None,Contains kernel/bootloader files,4
+48,junior,hard,How do you search for files by name in the current directory?,"search ""file""","grep ""file""",None,"find . -name ""file""",4
+48,mid,easy,What is a 'Shell Script'?,A C++ program,File with sequence of commands,A database,None,2
+48,mid,easy,Which command is used to view the CPU information?,cpuinfo,lscpu,showcpu,None,2
+48,mid,medium,What is the 'Shebang' line at the start of a script?,#!script,#!/bin/bash,##start,None,2
+48,mid,medium,How do you make a shell script executable?,run script.sh,set script.sh,None,chmod +x script.sh,4
+48,mid,hard,What is the 'Environment Variable' for the current shell?,$HOME,$PATH,$SHELL,$USER,3
+48,mid,hard,Which command is used to see the history of commands?,log,cmd-list,None,history,4
+48,mid,hard,What does 'ps -ef' show?,Errors only,All running processes in detail,Files only,None,2
+48,senior,easy,What is the PID of the 'init' or 'systemd' process?,0,1,100,65535,2
+48,senior,medium,What is the purpose of the '/run' directory?,Volatile runtime data,System binaries,User home,None,1
+48,senior,medium,How do you limit the resources of a process?,stop,ulimit or cgroups,pause,None,2
+48,senior,medium,What is 'Kernel Modules'?,User apps,Code loaded into kernel at runtime,Static files,None,2
+48,senior,hard,What is the 'OOM Killer' algorithm based on?,CPU usage,Disk space,None,oom_score,4
+48,senior,hard,What is 'Context Switching'?,CPU switching between processes,Changing users,Changing directories,None,1
+48,senior,hard,What is 'Chroot Jail'?,A system error,Isolated environment for a process,A backup,None,2
+48,senior,hard,How do you check for hardware errors in Linux?,cat /proc/cpuinfo,free -m,None,dmesg,4
+48,senior,hard,What is 'IP Forwarding'?,Allowing Linux to act as a router,Renaming an IP,Deleting an IP,None,1
+48,senior,hard,What is 'Inotify'?,A logging tool,A shell,None,Kernel subsystem to monitor filesystems,4
+48,senior,hard,What is 'Loadable Kernel Module' (LKM)?,A user script,A text file,Object file that extends the kernel,None,3
+48,senior,hard,How do you see the shared library dependencies of a binary?,libs,show-deps,None,ldd,4
+48,senior,hard,What is 'Socket' in Linux?,A hardware port,Endpoint for communication,A file type,None,2
+48,senior,hard,What is 'Signal' (e.g. SIGKILL)?,Notification to a process,A network light,A user login,None,1
+48,senior,hard,What is 'Nice' vs 'Renice'?,No difference,Renice is for root only,None,Nice sets priority at start Renice changes it,4
+48,senior,hard,What is 'Zram'?,A type of SSD,Compressed RAM based swap device,A CPU cache,None,2
+48,senior,hard,How do you perform a 'Soft Reboot'?,systemctl reboot,init 6,Both 1 and 2,None,3
+48,senior,hard,What is 'Umask 022' result?,No access,None,Default permissions 755 for dirs, 644 for files,1
+48,senior,hard,What is 'Slab Allocator'?,A disk format,A type of shell,None,Kernel memory management mechanism,4
+48,senior,hard,What is 'VFS' (Virtual File System)?,A cloud drive,Abstraction layer above filesystems,A hidden folder,None,2
+48,senior,hard,How do you trace library calls of a process?,strace,ptrace,None,ltrace,4
+48,senior,hard,What is 'Swapiness' value of 0?,Maximize swapping,No swap allowed,None,Avoid swapping as much as possible,4
+48,senior,hard,What is 'Cgroups' v2?,A logging tool,Unified resource control hierarchy,A new shell,None,2
+48,senior,hard,What is 'Kdump'?,A file search tool,Kernel crash dumping mechanism,A user log,None,2
+48,senior,hard,What is 'Systemd-analyze' used for?,Editing files,Sorting data,None,Checking boot performance,4
+48,senior,hard,What is 'Netfilter'?,A web browser,Framework for network packet filtering,A file system,None,2
+48,senior,hard,How do you check the 'Entropy' level in Linux?,free -m,cat /proc/sys/kernel/random/entropy_avail,df -h,None,2
+48,senior,hard,What is 'Hugepages'?,Small icons,Big files,None,Memory management feature for large pages,4
+48,senior,hard,What is 'Iostat'?,Report Central Processing Unit statistics,Report user logins,Report file names,None,1
+48,senior,hard,What is 'Nslookup' vs 'Dig'?,No difference,Dig is for root only,None,Dig is more modern/detailed for DNS,4
+48,senior,hard,What is 'Hardening' a Linux server?,Making it faster,Securing it by reducing vulnerabilities,Adding more RAM,None,2

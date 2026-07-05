@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Interview Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m16 6-4 4-4-4" />
+                        <path d="M12 2v8" />
+                        <rect width="20" height="12" x="2" y="10" rx="2" />
+                    </svg>
+                </div>
+                <h1 class="brand-name">Interview <em>Me</em></h1>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="../images/avatar/avatar1.png" alt="User Avatar" id="userAvatar">
+                </div>
+                <div class="user-info">
+                    <span class="user-name" id="userName">Jon Kon</span>
+                    <span class="user-email" id="userEmail">jon@gmail.com</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <span class="group-label">MAIN MENU</span>
+                    <ul>
+                        <li class="active">
+                            <a href="#" data-section="dashboard">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-section="resume-analysis">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <path d="M12 18v-6" />
+                                    <path d="m9 15 3 3 3-3" />
+                                </svg>
+                                <span>Resume Analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-section="my-interviews">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                <span>My Interviews</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-section="skill-analytics">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                <span>Skill Analytics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-section="settings">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="logout-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" x2="9" y1="12" y2="12" />
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Overview View -->
+            <div id="dashboard-view" class="content-view">
+                <header class="content-header">
+                    <div class="header-left">
+                        <h1 id="welcomeGreeting">Welcome back!</h1>
+                        <p>Track your progress and start your next practice session.</p>
+                    </div>
+                </header>
+
+                <div class="dashboard-stats-row"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                    <div class="analytics-card" style="padding: 20px; text-align: center;">
+                        <span
+                            style="font-size: 0.8rem; font-weight: 600; color: var(--text-gray); text-transform: uppercase; letter-spacing: 0.5px;">Total
+                            Interviews</span>
+                        <h2 id="overviewTotalInterviews" style="font-size: 2rem; margin-top: 10px;">--</h2>
+                    </div>
+                    <div class="analytics-card" style="padding: 20px; text-align: center;">
+                        <span
+                            style="font-size: 0.8rem; font-weight: 600; color: var(--text-gray); text-transform: uppercase; letter-spacing: 0.5px;">Avg.
+                            Accuracy</span>
+                        <h2 id="overviewAvgAccuracy"
+                            style="font-size: 2rem; margin-top: 10px; color: var(--primary-green);">--%</h2>
+                    </div>
+                    <div class="analytics-card"
+                        style="padding: 20px; text-align: center; background: var(--highlight-bg);">
+                        <span
+                            style="font-size: 0.8rem; font-weight: 600; color: var(--primary-green); text-transform: uppercase; letter-spacing: 0.5px;">Readiness
+                            Score</span>
+                        <h2 id="overviewReadinessScore" style="font-size: 2rem; margin-top: 10px;">--%</h2>
+                    </div>
+                </div>
+
+                <div class="dashboard-main-grid" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 25px;">
+                    <div class="overview-left-col">
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <h3>Quick Actions</h3>
+                            </div>
+                            <div class="quick-actions-grid"
+                                style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 10px;">
+                                <button class="cta-btn secondary"
+                                    style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 25px; height: auto;"
+                                    onclick="document.querySelector('[data-section=\'resume-analysis\']').click()">
+                                    <i class="fas fa-file-upload" style="font-size: 1.5rem;"></i>
+                                    <span style="font-size: 0.9rem;">Analyze Resume</span>
+                                </button>
+                                <button class="cta-btn secondary"
+                                    style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 25px; height: auto;"
+                                    onclick="document.querySelector('[data-section=\'my-interviews\']').click()">
+                                    <i class="fas fa-play-circle" style="font-size: 1.5rem;"></i>
+                                    <span style="font-size: 0.9rem;">Start Practice</span>
+                                </button>
+                                <button class="cta-btn secondary"
+                                    style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 25px; height: auto; grid-column: span 2;"
+                                    onclick="document.querySelector('[data-section=\'skill-analytics\']').click()">
+                                    <i class="fas fa-chart-line" style="font-size: 1.5rem;"></i>
+                                    <span style="font-size: 0.9rem;">Review Performance</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overview-right-col">
+                        <div class="analytics-card" style="height: 100%;">
+                            <div class="card-header">
+                                <h3>Suggested Next Step</h3>
+                            </div>
+                            <div id="suggestedStepContainer" style="margin-top: 15px;">
+                                <div
+                                    style="background: #f8fafc; border-radius: 12px; padding: 20px; border: 1px solid #e2e8f0;">
+                                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                                        <div
+                                            style="width: 40px; height: 40px; background: #fffbeb; color: #f59e0b; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <h4 id="stepTitle" style="font-size: 1rem; color: var(--text-dark);">Complete
+                                            your first interview</h4>
+                                    </div>
+                                    <p id="stepDescription"
+                                        style="font-size: 0.85rem; color: var(--text-gray); margin-bottom: 20px; line-height: 1.5;">
+                                        Practice with a job matched interview to see how you perform against real-world
+                                        requirements.</p>
+                                    <button class="cta-btn" style="width: 100%; font-size: 0.9rem;"
+                                        onclick="document.querySelector('[data-section=\'my-interviews\']').click()">Start
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Analysis View -->
+            <div id="resume-analysis-view" class="content-view hidden">
+                <header class="content-header">
+                    <div class="header-left">
+                        <h1>Resume Analysis</h1>
+                        <p>We've parsed your resume to identify your top technical skills and experience.</p>
+                    </div>
+                    <div class="header-right">
+                        <button class="re-upload-btn" id="reUploadBtn" style="display: none;">
+                            <i class="fas fa-file-export"></i> Re-upload
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Upload View -->
+                <section class="upload-section" id="uploadSection">
+                    <div class="upload-card">
+                        <div class="upload-zone" id="uploadZone">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drag & Drop Resume</h3>
+                            <p>Limit 15MB per file • PDF, DOCX</p>
+                            <input type="file" id="fileInput" hidden accept=".pdf,.docx">
+                            <button class="cta-btn secondary"
+                                onclick="document.getElementById('fileInput').click()">Browse
+                                Files</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Results View -->
+                <section id="resultsView" style="display: none;">
+                    <!-- Main Results Grid: Row 1 -->
+                    <div class="experience-practice-grid">
+                        <!-- Technical Proficiency -->
+                        <div class="settings-card">
+                            <div class="card-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Technical Proficiency</h3>
+                            </div>
+                            <div class="skill-list" id="techSkillsList">
+                                <!-- Skills injected by JS -->
+                            </div>
+                            <div class="toggle-container" id="techSkillsToggleContainer" style="display: none;">
+                                <button class="toggle-btn" id="techSkillsToggleBtn">See More <i
+                                        class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks & Soft Skills -->
+                        <div class="tag-skills-container">
+                            <div class="settings-card">
+                                <div class="card-header">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h3>Frameworks & Tools</h3>
+                                </div>
+                                <div class="skill-tags" id="frameworksList">
+                                    <!-- Tags injected by JS -->
+                                </div>
+                            </div>
+                            <div class="settings-card" style="margin-top: 25px;">
+                                <div class="card-header">
+                                    <i class="fas fa-users"></i>
+                                    <h3>Soft Skills</h3>
+                                </div>
+                                <div class="skill-tags" id="softSkillsList">
+                                    <!-- Tags injected by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="skills-grid">
+                        <!-- Experience Summary -->
+                        <div class="settings-card" style="margin-bottom: 0;">
+                            <div class="card-header">
+                                <i class="fas fa-history"></i>
+                                <h3>Experience Timeline</h3>
+                            </div>
+                            <div class="experience-summary">
+                                <div class="total-exp">
+                                    <span class="exp-label">Total Professional Experience</span>
+                                    <span class="exp-value" id="totalExpValue">0 Years</span>
+                                </div>
+                                <ul class="timeline" id="expTimeline">
+                                    <!-- Experience blocks will be injected here -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Practice Card -->
+                        <div class="settings-card practice-card" style="margin-bottom: 0;">
+                            <div class="card-header">
+                                <i class="fas fa-bolt"></i>
+                                <h3>Ready to Practice?</h3>
+                            </div>
+                            <p>Target specific job requirements or practice based on your overall profile experience.
+                            </p>
+                            <div class="practice-actions">
+                                <button class="cta-btn" id="practiceMatchBtn">Practice with Matched Job</button>
+                                <button class="cta-btn secondary" id="practiceOverallBtn">Practice Overall
+                                    Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Recommendations Section -->
+                    <section id="jobRecommendationsSection" class="settings-card"
+                        style="display: none; margin-top: 25px;">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Matching Opportunities</h3>
+                        </div>
+                        <div class="jobs-table-container">
+                            <table class="jobs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Job Title</th>
+                                        <th>Match</th>
+                                        <th>Matched Skills</th>
+                                        <th>Missing Skills</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="jobsTableBody">
+                                    <!-- Jobs injected by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+            <!-- Settings View -->
+            <div id="settings-view" class="content-view hidden">
+                <header class="content-header">
+                    <div class="header-left">
+                        <h1>Account Settings</h1>
+                        <p>Manage your profile information and account security.</p>
+                    </div>
+                </header>
+
+                <div class="settings-container">
+                    <div class="settings-card">
+                        <div class="card-header-with-action">
+                            <h3>Profile Information</h3>
+                            <button type="button" id="editProfileBtn" class="edit-action-btn">
+                                <i class="fas fa-edit"></i> Edit Profile
+                            </button>
+                        </div>
+                        <form id="profileForm" class="settings-form">
+                            <!-- Profile Header: Avatar -->
+                            <div class="profile-header-section">
+                                <div class="avatar-upload">
+                                    <div class="avatar-preview">
+                                        <img src="../images/user-avatar.png" alt="Profile Preview" id="profilePreview">
+                                    </div>
+                                    <div class="avatar-actions hidden">
+                                        <button type="button" class="btn-secondary" id="openAvatarModalBtn">
+                                            <i class="fas fa-camera"></i> Change Avatar
+                                        </button>
+                                        <p class="help-text">Choose from our predefined avatars</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Profile Details: Fields -->
+                            <div class="profile-details-section">
+                                <div id="settingsMessage" class="settings-message hidden"></div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" value="Jon Kon"
+                                            placeholder="Enter your full name" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" value="jon@gmail.com"
+                                            placeholder="Enter your email" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="formActions" class="form-actions hidden">
+                                <button type="submit" class="cta-btn">Save Changes</button>
+                                <button type="button" id="cancelEditBtn" class="btn-secondary">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="settings-card security-card">
+                        <div class="card-header">
+                            <div class="icon-box">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="header-text">
+                                <h3>Security</h3>
+                                <p class="help-text">Manage your password and protect your account.</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="security-item">
+                                <div class="item-info">
+                                    <span class="item-label">Password</span>
+                                    <span class="item-value">••••••••••••</span>
+                                </div>
+                                <button class="btn-secondary" id="openChangePasswordModalBtn">Change Password</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other views placeholders (optional) -->
+            <div id="my-interviews-view" class="content-view hidden">
+                <header class="content-header">
+                    <div class="header-left">
+                        <h1>Interview Hub</h1>
+                        <p>Practice new interviews or review your past performance.</p>
+                    </div>
+                </header>
+
+                <!-- Quick Actions for starting new interviews -->
+                <div class="quick-practice-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                    <div class="practice-card-small"
+                        style="background: white; padding: 20px; border-radius: 16px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 15px; cursor: pointer; transition: transform 0.2s;"
+                        onclick="document.getElementById('practiceMatchBtn').click()">
+                        <div class="icon-box"
+                            style="background: #f0fdf4; color: #166534; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 4px;">Job Matched Practice</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-gray);">Target specific job requirements</p>
+                        </div>
+                    </div>
+                    <div class="practice-card-small"
+                        style="background: white; padding: 20px; border-radius: 16px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 15px; cursor: pointer; transition: transform 0.2s;"
+                        onclick="document.getElementById('practiceOverallBtn').click()">
+                        <div class="icon-box"
+                            style="background: #eff6ff; color: #1d4ed8; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 4px;">Overall Skill Practice</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-gray);">Practice based on your profile</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title" style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <h2 style="font-size: 1.1rem; font-weight: 700;">Recent Interview History</h2>
+                    <div style="flex-grow: 1; height: 1px; background: var(--border-color);"></div>
+                </div>
+
+
+                <div class="settings-card history-card">
+                    <div class="history-table-container">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Date</th>
+                                    <th style="width: 20%;">Interview Type</th>
+                                    <th style="width: 10%;">Total Qs</th>
+                                    <th style="width: 10%;">Correct</th>
+                                    <th style="width: 15%;">Accuracy</th>
+                                    <th style="width: 15%;">Rating</th>
+                                    <th style="width: 15%;">Actions</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="historyTableBody">
+                                <!-- History entries will be injected here -->
+                                <tr>
+                                    <td colspan="6" class="loading-cell">
+                                        <i class="fas fa-spinner fa-spin"></i> Loading history...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skill-analytics-view" class="content-view hidden">
+                <header class="content-header">
+                    <div class="header-left">
+                        <h1>Skill Analytics</h1>
+                        <p>Track your technical growth and identify areas for improvement.</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="filter-dropdown">
+                            <i class="fas fa-filter"></i>
+                            <select id="analyticsFilter">
+                                <option value="overall">Overall Performance</option>
+                                <option value="latest">Latest Interview</option>
+                                <option value="last5">Last 5 Interviews</option>
+                                <option value="last10">Last 10 Interviews</option>
+                            </select>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="analytics-dashboard-grid">
+                    <!-- Top Row: Stats Cards -->
+                    <div class="stats-row">
+                        <div class="analytics-card stat-card highlight">
+                            <div class="card-icon"><i class="fas fa-award"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-label">Strongest Skill</span>
+                                <h3 id="strongestSkill">--</h3>
+                            </div>
+                        </div>
+                        <div class="analytics-card stat-card warning">
+                            <div class="card-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-label">Weakest Skill</span>
+                                <h3 id="weakestSkill">--</h3>
+                            </div>
+                        </div>
+                        <div class="analytics-card stat-card focus">
+                            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-label">Recommended Focus</span>
+                                <h3 id="focusArea">--</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Middle Row: Skills and Radar -->
+                    <div class="main-analytics-row">
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <div>
+                                    <h3>Technical Proficiency</h3>
+                                    <small>Accuracy across core skills</small>
+                                </div>
+                            </div>
+                            <div class="skills-bar-container" id="analyticsSkillsList">
+                                <!-- Injected by JS -->
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <div>
+                                    <h3>Technical Profile</h3>
+                                    <small>Skill distribution & depth</small>
+                                </div>
+                            </div>
+                            <div class="chart-container-small">
+                                <canvas id="radarChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Difficulty and Trend -->
+                    <div class="secondary-analytics-row">
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <div>
+                                    <h3>Performance by Difficulty</h3>
+                                    <small>Accuracy per complexity level</small>
+                                </div>
+                            </div>
+                            <div class="chart-container-small">
+                                <canvas id="difficultyBarChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <div>
+                                    <h3>Performance Trend</h3>
+                                    <small>Progress over last 10 sessions</small>
+                                </div>
+                            </div>
+                            <div class="chart-container-small">
+                                <canvas id="trendLineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Avatar Selection Modal -->
+    <div id="avatarModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Select Your Avatar</h3>
+                <span class="close" id="closeAvatarModal">&times;</span>
+            </div>
+            <div class="avatar-grid" id="avatarGrid">
+                <!-- Avatars will be injected by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="saveAvatarBtn" class="cta-btn">Select Avatar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div id="passwordModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Change Password</h3>
+                <span class="close" id="closePasswordModal">&times;</span>
+            </div>
+            <form id="changePasswordForm" class="settings-form">
+                <div class="form-group">
+                    <label for="currentPassword">Current Password</label>
+                    <input type="password" id="currentPassword" required placeholder="Enter current password">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">New Password</label>
+                    <input type="password" id="newPassword" required placeholder="Enter new password (min 8 chars)">
+                </div>
+                <div class="form-group">
+                    <label for="confirmNewPassword">Confirm New Password</label>
+                    <input type="password" id="confirmNewPassword" required placeholder="Confirm new password">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="cta-btn">Update Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Job Selection Modal -->
+    <div id="jobModal" class="modal hidden">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Select a Job to Practice</h3>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Choose which job requirements you want to be interviewed against.</p>
+                <div class="job-selection-list" id="jobSelectionList">
+                    <!-- Jobs injected by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

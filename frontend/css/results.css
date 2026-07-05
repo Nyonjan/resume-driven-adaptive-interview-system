@@ -1,0 +1,223 @@
+.results-section {
+    padding: 16px;
+}
+
+.results-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    color: var(--text-muted);
+}
+
+.results-loading i {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Grid Layout for Results */
+.results-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0;
+}
+
+/* Card Styling */
+.summary-card, .skill-analysis-card, .difficulty-analysis-card {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.summary-card {
+    grid-column: span 2;
+}
+
+.skill-analysis-card {
+    grid-column: 1 / 2;
+}
+
+.difficulty-analysis-card {
+    grid-column: 2 / 3;
+}
+
+.summary-header {
+    background: var(--bg-light);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.summary-header h2 {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.summary-body, .skill-body, .difficulty-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Overall Performance Layout */
+.chart-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chart-container {
+    flex: 0 0 160px;
+    height: 160px;
+    position: relative;
+}
+
+.stats-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+    width: 100%;
+}
+
+.stat-box {
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.text-success {
+    color: #10b981;
+}
+
+.text-danger {
+    color: #ef4444;
+}
+
+/* Skill & Difficulty Analysis Layout */
+.skill-chart-container, .difficulty-chart-container {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.skills-list-container, .difficulty-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-card, .difficulty-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-info, .difficulty-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.skill-card-name, .difficulty-card-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.skill-stats, .difficulty-stats {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.skill-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-strong {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.badge-moderate {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+.badge-weak {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.insights-container {
+    padding: 0 16px 16px 16px;
+}
+
+.insight-item {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 3px solid var(--primary-color);
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 0 6px 6px 0;
+    color: var(--text-dark);
+    font-size: 0.85rem;
+}
+
+/* Responsiveness */
+@media (max-width: 1100px) {
+    .results-content {
+        grid-template-columns: 1fr;
+    }
+    .summary-card, .skill-analysis-card, .difficulty-analysis-card {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .chart-row {
+        flex-direction: column;
+    }
+
+    .chart-container {
+        margin: 0 auto;
+    }
+}

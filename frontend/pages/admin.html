@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Portal – Interview Me</title>
+  <meta name="description" content="Secure admin control panel for the Interview Me platform." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Admin Specific Styles -->
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       AUTH GATE: Instant check to prevent flash
+  ═══════════════════════════════════════════════════════════ -->
+  <script src="../js/admin.js"></script>
+  <div id="loginScreen">
+    <!-- Brand -->
+    <div class="login-brand">
+      <div class="logo-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 6-4 4-4-4" />
+          <path d="M12 2v8" />
+          <rect width="20" height="12" x="2" y="10" rx="2" />
+        </svg>
+      </div>
+      <span class="brand-name" id="loginBrandName">Interview <em>Me</em></span>
+    </div>
+
+    <div class="login-card">
+      <h1>Admin Entry</h1>
+      <p class="subtitle">Welcome back. Please sign in to manage the platform.</p>
+
+      <!-- Error banner -->
+      <div id="loginError">
+        <i class="fas fa-circle-exclamation"></i>
+        <span id="loginErrorMsg">Invalid credentials.</span>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <!-- Username -->
+        <div class="form-field">
+          <label for="adminUsername">Username</label>
+          <div class="input-wrap">
+            <input type="text" id="adminUsername" name="username" autocomplete="username" required />
+
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-field">
+          <label for="adminPassword">Password</label>
+          <div class="input-wrap">
+            <input type="password" id="adminPassword" name="password" autocomplete="current-password" required />
+
+            <button type="button" class="toggle-pw" id="togglePw" aria-label="Toggle password visibility">
+              <i class="fas fa-eye-slash" id="pwEyeIcon"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" id="loginBtn" class="cta-btn">
+          <span class="btn-text">Log In to Dashboard</span>
+          <div class="spinner"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="dashboardScreen" class="hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 6-4 4-4-4" />
+            <path d="M12 2v8" />
+            <rect width="20" height="12" x="2" y="10" rx="2" />
+          </svg>
+        </div>
+        <h1 class="brand-name" id="sidebarBrandName">Interview <em>Me</em></h1>
+      </div>
+
+      <div class="user-profile">
+        <div class="avatar" id="topbarAvatar">
+          A
+        </div>
+        <div class="user-info">
+          <span class="user-name" id="topbarName">Admin Username</span>
+          <span class="user-email">Admin</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <span class="group-label">ADMIN MENU</span>
+          <ul>
+            <li class="active">
+              <button class="nav-item" data-section="overview">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="7" height="7" x="3" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="14" rx="1" />
+                  <rect width="7" height="7" x="3" y="14" rx="1" />
+                </svg>
+                <span>Dashboard</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item" data-section="users">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                <span>User Management</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item" data-section="questions">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                <span>Question Bank</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item" data-section="jobs">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+                <span>Job Management</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item" data-section="skills">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
+                  <path d="M7 7h.01" />
+                </svg>
+                <span>Skills & Synonyms</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item" data-section="settings">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>Settings</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="logout-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" x2="9" y1="12" y2="12" />
+          </svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-shell">
+      <!-- Topbar removed per request -->
+
+      <div class="dash-body">
+        <!-- ── SECTION: OVERVIEW ──────────────────────────────── -->
+        <section id="section_overview">
+          <div class="dash-greeting">
+            <h2 style="font-size: 2rem;">System Overview</h2>
+            <p>Real-time performance and platform health metrics.</p>
+          </div>
+
+          <!-- Global Stats Cards -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-info">
+                <div class="stat-label">Total Registered Users</div>
+                <div class="stat-value" id="statUsers">0</div>
+                <div class="stat-trend"><i class="fas fa-users"></i> Platform Growth</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-info">
+                <div class="stat-label">Completed Sessions</div>
+                <div class="stat-value" id="statCompleted">0</div>
+                <div class="stat-trend" style="color:#c084fc;"><i class="fas fa-certificate"></i> Success Rate</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-info">
+                <div class="stat-label">Recent Activity</div>
+                <div class="stat-value" id="statTrend">0</div>
+                <div class="stat-trend" style="color:#60a5fa;"><i class="fas fa-chart-line"></i> Last 7 Days</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview-details">
+            <!-- Quick Actions Panel -->
+            <div class="overview-card quick-actions">
+              <div class="card-header">
+                <h3>Quick Actions</h3>
+                <p>Common management tasks</p>
+              </div>
+              <div class="action-grid">
+                <button class="action-btn" onclick="switchSection('users')">
+                  <div class="icon-box"><i class="fas fa-user-plus"></i></div>
+                  <span>Add User</span>
+                </button>
+                <button class="action-btn" onclick="openQuestionModal()">
+                  <div class="icon-box"><i class="fas fa-plus"></i></div>
+                  <span>Add Question</span>
+                </button>
+                <button class="action-btn" onclick="openCsvModal()">
+                  <div class="icon-box"><i class="fas fa-file-csv"></i></div>
+                  <span>Upload CSV</span>
+                </button>
+                <button class="action-btn" onclick="switchSection('settings')">
+                  <div class="icon-box"><i class="fas fa-cog"></i></div>
+                  <span>Settings</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Skill Popularity Metrics -->
+            <div class="overview-card skill-popularity">
+              <div class="card-header">
+                <h3>Skill Popularity</h3>
+                <p>Top skills parsed from resumes</p>
+              </div>
+              <div id="skillPopularityContainer" class="skill-bars-list">
+                <div class="loading-state">
+                  <i class="fas fa-circle-notch fa-spin"></i>
+                  <span>Fetching analytics...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION: USER MANAGEMENT ───────────────────────── -->
+        <section id="section_users" class="hidden">
+          <div id="userListView">
+            <div class="dash-greeting">
+              <h2>User Management</h2>
+              <p>Search and manage registered platform users.</p>
+            </div>
+
+            <div class="management-header">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="userSearch" placeholder="Search by name or email…" />
+              </div>
+              <div class="stats-mini">
+                <span class="status-tag"><i class="fas fa-user-group"></i> <span id="totalUsersCount">0</span>
+                  Users</span>
+              </div>
+            </div>
+
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Email Address</th>
+                    <th>Joined Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="userTableBody">
+                  <!-- rows injected here -->
+                </tbody>
+              </table>
+              <div id="tableLoading" class="hidden" style="padding: 40px; text-align: center; color: var(--muted);">
+                <i class="fas fa-circle-notch fa-spin"></i> Loading users…
+              </div>
+            </div>
+        </section>
+
+        <!-- ── USER PROFILE DETAIL VIEW ────────────────────────── -->
+        <section id="userProfileView" class="hidden">
+          <button class="btn-back" id="btnBackToList">
+            <i class="fas fa-arrow-left"></i> Back to User List
+          </button>
+
+          <div class="profile-header">
+            <div class="profile-avatar-large" id="profAvatar">A</div>
+            <div class="profile-identity">
+              <h2 id="profName">User Name</h2>
+              <p id="profEmail">user@example.com</p>
+            </div>
+          </div>
+
+          <div class="detail-grid">
+            <!-- Left Col -->
+            <div class="detail-left">
+              <!-- Skills -->
+              <div class="detail-card">
+                <h3><i class="fas fa-brain"></i> Extracted Skills</h3>
+                <div class="skills-flex" id="profSkills">
+                  <!-- pills injected here -->
+                </div>
+              </div>
+
+              <!-- Resume -->
+              <div class="detail-card">
+                <h3><i class="fas fa-file-lines"></i> Extracted Resume Content</h3>
+                <div class="resume-box" id="profResume">
+                  Loading resume content…
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Col -->
+            <div class="detail-right">
+              <!-- History -->
+              <div class="detail-card">
+                <h3><i class="fas fa-history"></i> Interview History</h3>
+                <div class="history-list" id="profHistory">
+                  <!-- items injected here -->
+                </div>
+              </div>
+            </div>
+          </div> <!-- end of detail-grid -->
+        </section> <!-- end of userProfileView -->
+        </section> <!-- end of section_users -->
+
+        <!-- ── SECTION: QUESTION BANK ─────────────────────────── -->
+        <section id="section_questions" class="hidden">
+          <div class="dash-greeting">
+            <h2>Question Bank Management</h2>
+            <p>Maintain the repository of adaptive interview questions.</p>
+          </div>
+
+          <div class="question-controls">
+            <div class="filter-group">
+              <label>Filter by Skill</label>
+              <select id="filterSkill">
+                <option value="">All Skills</option>
+                <!-- options injected -->
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Difficulty</label>
+              <select id="filterDifficulty">
+                <option value="">All Levels</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Experience</label>
+              <select id="filterExp">
+                <option value="">All Experience</option>
+                <option value="fresher">Fresher</option>
+                <option value="junior">Junior</option>
+                <option value="mid">Mid-Level</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+            <div style="flex:1;"></div>
+            <div style="display: flex; gap: 12px;">
+              <button class="btn btn-secondary" id="btnShowCsv" onclick="toggleCsvPanel()">
+                <i class="fas fa-file-csv"></i> Upload CSV
+              </button>
+              <button class="btn btn-primary" id="btnShowAddQ" onclick="toggleQuestionPanel()">
+                <i class="fas fa-plus"></i> Add New Question
+              </button>
+            </div>
+          </div>
+
+          <!-- ── SLIDING ACTION PANEL ────────────────────────────── -->
+          <div id="actionPanel" class="action-panel-slide">
+            <!-- CSV Form Container -->
+            <div id="csvPanelContent" class="hidden">
+              <div class="action-panel-header">
+                <h3>Bulk Upload Questions</h3>
+                <button class="btn-close" onclick="closeActionPanel()"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="action-panel-body">
+                <div class="filter-group" style="margin-bottom: 20px;">
+                  <label class="modal-label">Target Skill</label>
+                  <select id="csvSkillSelect" required>
+                    <option value="">-- Choose skill --</option>
+                  </select>
+                </div>
+
+                <div class="filter-group" style="margin-bottom: 20px;">
+                  <label class="modal-label">CSV File</label>
+                  <div id="csvDropZone" class="upload-zone" onclick="document.getElementById('csvFileInput').click()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p id="csvFileName">Click to browse or drag & drop <strong>.csv</strong></p>
+                  </div>
+                  <input type="file" id="csvFileInput" accept=".csv" style="display:none;"
+                    onchange="onCsvFileChosen(event)" />
+                </div>
+
+                <div class="info-box-compact">
+                  <strong><i class="fas fa-info-circle"></i> CSV Format:</strong>
+                  <code>exp_level, difficulty, question, opt1, opt2, opt3, opt4, answer_num</code>
+                </div>
+
+                <div id="csvUploadStatus" class="hidden"></div>
+
+                <div class="modal-footer" style="margin-top:20px; padding-bottom:0; border:none;">
+                  <button type="button" class="btn btn-sm btn-secondary" onclick="closeActionPanel()">Cancel</button>
+                  <button type="button" class="btn btn-sm btn-primary" id="btnUploadCsv" onclick="doUploadCsv()">
+                    <i class="fas fa-upload"></i> Import Questions
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question Form Container -->
+            <div id="questionPanelContent" class="hidden">
+              <div class="action-panel-header">
+                <h3 id="qPanelTitle">Question Editor</h3>
+                <button class="btn-close" onclick="closeActionPanel()"><i class="fas fa-times"></i></button>
+              </div>
+              <form id="questionForm" class="modal-form" style="padding-top:24px;">
+                <input type="hidden" id="qIdInput" />
+
+                <div class="form-grid"
+                  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                  <div class="filter-group">
+                    <label class="modal-label">Skill</label>
+                    <select id="qSkillSelect" required>
+                      <option value="">Select...</option>
+                    </select>
+                  </div>
+                  <div class="filter-group">
+                    <label class="modal-label">Experience</label>
+                    <select id="qExpSelect" required>
+                      <option value="fresher">Fresher</option>
+                      <option value="junior">Junior</option>
+                      <option value="mid">Mid-Level</option>
+                      <option value="senior">Senior</option>
+                    </select>
+                  </div>
+                  <div class="filter-group">
+                    <label class="modal-label">Complexity</label>
+                    <select id="qDiffSelect" required>
+                      <option value="easy">Easy</option>
+                      <option value="medium">Medium</option>
+                      <option value="hard">Hard</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="filter-group" style="margin-bottom: 16px;">
+                  <label class="modal-label">Question Content</label>
+                  <textarea id="qTextInput" rows="2" placeholder="Enter the interview question here..." required
+                    class="modal-textarea"></textarea>
+                </div>
+
+                <div class="mcq-section">
+                  <span class="selection-label-compact">Multiple Choice Options</span>
+                  <div class="mcq-setup-compact">
+                    <div class="choice-input-group">
+                      <input type="radio" name="correctChoice" value="1" class="choice-radio" checked />
+                      <input type="text" id="qOpt1" placeholder="Option 1" required />
+                    </div>
+                    <div class="choice-input-group">
+                      <input type="radio" name="correctChoice" value="2" class="choice-radio" />
+                      <input type="text" id="qOpt2" placeholder="Option 2" required />
+                    </div>
+                    <div class="choice-input-group">
+                      <input type="radio" name="correctChoice" value="3" class="choice-radio" />
+                      <input type="text" id="qOpt3" placeholder="Option 3" required />
+                    </div>
+                    <div class="choice-input-group">
+                      <input type="radio" name="correctChoice" value="4" class="choice-radio" />
+                      <input type="text" id="qOpt4" placeholder="Option 4" required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer"
+                  style="margin-top:20px; padding-bottom:0; border:none; border-top: 1px solid var(--border); padding-top:16px;">
+                  <button type="button" class="btn btn-sm btn-secondary" onclick="closeActionPanel()">Cancel</button>
+                  <button type="submit" class="btn btn-sm btn-primary" id="btnSaveQuestion">Save Question</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Question Text</th>
+                  <th>Skill</th>
+                  <th>Exp. Level</th>
+                  <th>Difficulty</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="questionTableBody">
+                <!-- rows injected -->
+              </tbody>
+            </table>
+            <div id="qTableLoading" class="hidden" style="padding: 40px; text-align: center; color: var(--muted);">
+              <i class="fas fa-circle-notch fa-spin"></i> Loading questions…
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION: JOBS MANAGEMENT ─────────────────────────── -->
+        <section id="section_jobs" class="hidden">
+          <div class="dash-greeting">
+            <h2>Job Role Management</h2>
+            <p>Configure the roles used by the job recommendation engine.</p>
+          </div>
+
+          <div class="question-controls">
+            <div class="filter-group">
+              <label>Search Job Role</label>
+              <input type="text" id="jobSearch" placeholder="Search by title..." onkeyup="filterJobs()" />
+            </div>
+            <div style="flex:1;"></div>
+            <button class="btn btn-primary" onclick="toggleJobPanel()">
+              <i class="fas fa-plus"></i> Add New Job Role
+            </button>
+          </div>
+
+          <!-- ── SLIDING ACTION PANEL ────────────────────────────── -->
+          <div id="jobActionPanel" class="action-panel-slide">
+            <div class="action-panel-header">
+              <h3 id="jobPanelTitle">Job Role Editor</h3>
+              <button class="btn-close" onclick="closeJobActionPanel()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="action-panel-body">
+              <form id="jobForm" class="modal-form" style="padding-top:16px;">
+                <div class="form-field">
+                  <label class="modal-label">Job Title</label>
+                  <input type="text" id="jobTitleInp" required placeholder="e.g. Senior Backend Engineer" class="modal-input" />
+                </div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
+                  <div class="filter-group">
+                    <label class="modal-label">Min Exp (Years)</label>
+                    <input type="number" id="jobMinExpInp" value="0" min="0" required class="modal-input" />
+                  </div>
+                  <div class="filter-group">
+                    <label class="modal-label">Max Exp (Years)</label>
+                    <input type="number" id="jobMaxExpInp" placeholder="No limit" class="modal-input" />
+                  </div>
+                </div>
+
+                <div class="selection-label-compact">Required Skills & Target Level</div>
+                <div id="jobSkillsContainer" style="margin-bottom:15px; display: flex; flex-direction: column; gap: 8px;">
+                  <!-- skill rows added here -->
+                </div>
+                <button type="button" class="btn btn-sm btn-secondary btn-add-requirement" onclick="addSkillToJob()">
+                  <i class="fas fa-plus"></i> Add Requirement
+                </button>
+
+                <div class="modal-footer" style="margin-top:24px; padding-bottom:0; border:none; border-top: 1px solid var(--border); padding-top:16px;">
+                  <button type="button" class="btn btn-sm btn-secondary" onclick="closeJobActionPanel()">Cancel</button>
+                  <button type="submit" class="btn btn-sm btn-primary" id="btnSaveJob">Save Job Role</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Job Title</th>
+                  <th>Experience Range</th>
+                  <th>Required Skills</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="jobTableBody">
+                <!-- rows injected here -->
+              </tbody>
+            </table>
+            <div id="jobLoading" class="hidden" style="padding: 40px; text-align: center; color: var(--muted);">
+              <i class="fas fa-circle-notch fa-spin"></i> Loading jobs…
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION: ACTIVITY LOGS ────────────────────────────── -->
+
+        <!-- ── SECTION: SKILLS & SYNONYMS ────────────────────────── -->
+        <section id="section_skills" class="hidden">
+          <div class="dash-greeting">
+            <h2>Skills Management</h2>
+            <p>Define the technical skills and aliases used for resume parsing and interviews.</p>
+          </div>
+
+          <div class="question-controls">
+            <div class="filter-group">
+              <label>Search Skill</label>
+              <input type="text" id="skillSearch" placeholder="Search by name..." onkeyup="filterSkills()" />
+            </div>
+            <div style="flex:1;"></div>
+            <button class="btn btn-primary" onclick="toggleSkillPanel()">
+              <i class="fas fa-plus"></i> Add New Skill
+            </button>
+          </div>
+
+          <!-- ── SLIDING ACTION PANEL: SKILLS ────────────────────── -->
+          <div id="skillActionPanel" class="action-panel-slide">
+            <!-- Add Skill Container -->
+            <div id="skillPanelContent" class="hidden">
+              <div class="action-panel-header">
+                <h3 id="skillPanelTitle">Skill Editor</h3>
+                <button class="btn-close" onclick="closeSkillActionPanel()"><i class="fas fa-times"></i></button>
+              </div>
+              <form id="skillForm" class="modal-form" style="padding-top:24px;">
+                <div class="filter-group" style="margin-bottom: 16px;">
+                  <label class="modal-label">Skill Name (Official)</label>
+                  <input type="text" id="skillNameInput" placeholder="e.g. JavaScript" required class="modal-input" />
+                </div>
+                <div class="filter-group" style="margin-bottom: 16px;">
+                  <label class="modal-label">Category</label>
+                  <input type="text" id="skillCategoryInput" list="categorySuggestions" placeholder="Select or type category..." required class="modal-input" />
+                  <datalist id="categorySuggestions">
+                    <option value="Programming">
+                    <option value="DevOps">
+                    <option value="Databases">
+                    <option value="Soft Skills">
+                    <option value="Tools / Frameworks">
+                  </datalist>
+                </div>
+                <div class="filter-group" style="margin-bottom: 24px;">
+                  <label class="modal-label">Synonyms / Aliases (Optional)</label>
+                  <input type="text" id="skillSynonymsInput" placeholder="e.g. JS, ES6, Vanilla JS (comma separated)" class="modal-input" />
+                  <small style="color:var(--muted); font-size:0.75rem; display:block; margin-top:4px;">Separate multiple aliases with commas.</small>
+                </div>
+                <div class="modal-footer" style="padding-top:16px; border:none; border-top:1px solid var(--border);">
+                  <button type="button" class="btn btn-sm btn-secondary"
+                    onclick="closeSkillActionPanel()">Cancel</button>
+                  <button type="submit" class="btn btn-sm btn-primary">Save Skill</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Add Synonym Container -->
+            <div id="synonymPanelContent" class="hidden">
+              <div class="action-panel-header">
+                <h3>Add Synonym</h3>
+                <button class="btn-close" onclick="closeSkillActionPanel()"><i class="fas fa-times"></i></button>
+              </div>
+              <form id="synonymForm" class="modal-form" style="padding-top:24px;">
+                <input type="hidden" id="synBaseSkillId" />
+                <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 16px;">
+                  Adding an alias for <strong id="synBaseSkillName" style="color:var(--text);"></strong>
+                </p>
+                <div class="filter-group" style="margin-bottom: 24px;">
+                  <label class="modal-label">Synonym / Alternative Name</label>
+                  <input type="text" id="synonymInput" placeholder="e.g. JS" required class="modal-input" />
+                </div>
+                <div class="modal-footer" style="padding-top:16px; border:none; border-top:1px solid var(--border);">
+                  <button type="button" class="btn btn-sm btn-secondary"
+                    onclick="closeSkillActionPanel()">Cancel</button>
+                  <button type="submit" class="btn btn-sm btn-primary">Add Alias</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Skill Name</th>
+                  <th>Category</th>
+                  <th>Synonyms / Aliases</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="skillsTableBody">
+                <!-- rows injected -->
+              </tbody>
+            </table>
+            <div id="skillsLoading" class="hidden" style="padding: 40px; text-align: center; color: var(--muted);">
+              <i class="fas fa-circle-notch fa-spin"></i> Loading skills…
+            </div>
+          </div>
+        </section>
+
+        <!-- ── SECTION: SETTINGS ────────────────────────────────────── -->
+        <section id="section_settings" class="hidden">
+          <div class="dash-greeting">
+            <h2>Platform Settings</h2>
+            <p>Configure global parameters, branding assets, and administrative security.</p>
+          </div>
+
+          <div class="settings-tabs">
+            <button class="settings-tab active" onclick="switchSettingsTab('general')" id="tab-general">General & Account</button>
+            <button class="settings-tab" onclick="switchSettingsTab('images')" id="tab-images">Site Images</button>
+          </div>
+
+          <!-- General Tab -->
+          <div id="settingsTabGeneral" class="settings-grid">
+            <!-- Site Configuration Card -->
+            <div class="settings-card">
+              <h3 style="font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 20px;">General Configuration</h3>
+
+              <form id="generalSettingsForm">
+                <div class="settings-form-grid">
+                  <div class="form-group-custom settings-form-full">
+                    <label>Site Name</label>
+                    <input type="text" id="set_siteName" class="settings-input" placeholder="e.g. AdaptivePrep" />
+                  </div>
+                  <div class="form-group-custom settings-form-full">
+                    <label>Hero Tagline</label>
+                    <input type="text" id="set_siteTagline" class="settings-input" placeholder="Branding slogan" />
+                  </div>
+                </div>
+
+                <div class="settings-footer">
+                  <div id="settingsStatus" class="settings-status" style="display: none;"></div>
+                  <button type="submit" class="btn btn-primary" id="btnSaveSettings">
+                    <i class="fas fa-save"></i> Save Configuration
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Admin Account Settings Card -->
+            <div class="settings-card settings-form-full">
+              <h3 style="font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 20px;">Admin Account</h3>
+
+              <form id="adminAccountForm">
+                <div class="settings-form-grid">
+                  <div class="form-group-custom">
+                    <label>Full Name</label>
+                    <input type="text" id="acc_fullName" placeholder="Your Display Name" class="settings-input" required />
+                  </div>
+                  <div class="form-group-custom">
+                    <label>Username (Read-only)</label>
+                    <input type="text" id="acc_username" class="settings-input" style="background: var(--bg); cursor: not-allowed;" readonly />
+                  </div>
+                  <div class="form-group-custom">
+                    <label>New Password</label>
+                    <input type="password" id="acc_newPassword" placeholder="Leave blank to keep current" class="settings-input" autocomplete="new-password" />
+                  </div>
+                  <div class="form-group-custom">
+                    <label>Confirm Password</label>
+                    <input type="password" id="acc_confirmPassword" placeholder="Confirm new password" class="settings-input" autocomplete="new-password" />
+                  </div>
+                </div>
+
+                <div class="settings-footer" style="flex-direction: row; align-items: center; justify-content: space-between;">
+                  <div id="accountStatus" class="settings-status" style="display: none; flex: 1; margin-right: 20px;"></div>
+                  <button type="submit" class="btn btn-primary" id="btnSaveAccount" style="min-width: 240px;">
+                    <i class="fas fa-user-check"></i> Save Account Changes
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Images Tab -->
+          <div id="settingsTabImages" class="hidden">
+            <div class="image-settings-grid">
+
+              <!-- Hero Image -->
+              <div class="img-slot">
+                <label class="img-slot-label">Hero Background</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_hero_image_url" />
+                  <div id="img_empty_hero_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_hero_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'hero_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_hero_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('hero_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Audience 1 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Audience: Students</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_audience_1_image_url" />
+                  <div id="img_empty_audience_1_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_audience_1_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'audience_1_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_audience_1_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('audience_1_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Audience 2 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Audience: Job Seekers</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_audience_2_image_url" />
+                  <div id="img_empty_audience_2_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_audience_2_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'audience_2_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_audience_2_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('audience_2_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Audience 3 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Audience: Developers</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_audience_3_image_url" />
+                  <div id="img_empty_audience_3_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_audience_3_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'audience_3_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_audience_3_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('audience_3_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Advantage 1 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Advantage: Matching</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_advantage_1_image_url" />
+                  <div id="img_empty_advantage_1_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_advantage_1_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'advantage_1_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_advantage_1_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('advantage_1_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Advantage 2 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Advantage: Confidence</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_advantage_2_image_url" />
+                  <div id="img_empty_advantage_2_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_advantage_2_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'advantage_2_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_advantage_2_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('advantage_2_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+              <!-- Advantage 3 -->
+              <div class="img-slot">
+                <label class="img-slot-label">Advantage: Clarity</label>
+                <div class="img-slot-preview">
+                  <img src="" id="img_preview_advantage_3_image_url" />
+                  <div id="img_empty_advantage_3_image_url" class="img-slot-empty">No image set</div>
+                </div>
+                <div class="img-slot-actions">
+                  <input type="file" id="file_advantage_3_image_url" accept="image/*" style="display:none;" onchange="uploadSiteImage(event, 'advantage_3_image_url')" />
+                  <button class="btn btn-secondary btn-sm" onclick="document.getElementById('file_advantage_3_image_url').click()"><i class="fas fa-upload"></i> Upload</button>
+                  <button class="btn btn-sm" style="color:var(--red);border:1px solid rgba(239,68,68,0.3);" onclick="resetSiteImage('advantage_3_image_url')"><i class="fas fa-undo"></i> Reset</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div> <!-- end of dash-body -->
+    </main> <!-- end of main-shell -->
+  </div> <!-- end of dashboardScreen -->
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

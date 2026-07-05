@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Session - Interview Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/session.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="session-body">
+    <div class="session-wrapper">
+        <!-- Session Header -->
+        <header class="session-header">
+            <div class="header-inner full-width">
+                <div class="header-left">
+                    <div class="session-logo large">
+                        <i class="fas fa-brain"></i> <span>Interview Me</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button id="exitBtn" class="exit-btn" title="Exit Interview">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Interview Area -->
+        <main class="interview-container">
+            <div class="interview-content-wrapper">
+                <!-- Progress Tracker (Moved here) -->
+                <div class="progress-area-top">
+                    <div class="progress-container">
+                        <div class="progress-text">Question <span id="currentIdx">0</span> of <span
+                                id="totalQs">0</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div id="progressBar" class="progress-bar-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Card -->
+                <div id="questionCard" class="question-card">
+                    <div class="card-meta">
+                        <div class="skill-tag">
+                            <i class="fas fa-code"></i> <span id="skillName">Skill Name</span>
+                        </div>
+
+                        <div id="difficultyBadge" class="diff-badge">
+                            Level
+                        </div>
+                        <div id="expLevelBadge" class="exp-badge">
+                            EXPERIENCE LEVEL
+                        </div>
+                    </div>
+
+                    <div class="question-content">
+                        <h2 id="questionText">Loading your next question...</h2>
+                    </div>
+
+                    <div id="optionsGrid" class="options-grid">
+                        <!-- Options will be injected here -->
+                    </div>
+                    <!-- Confidence + Submit — below question card -->
+                    <div class="action-bar-inline">
+                        <div class="confidence-area">
+                            <div class="confidence-info">
+                                <div class="confidence-left">
+                                    <span id="confidenceEmoji" class="conf-emoji">😐</span>
+                                    <div class="confidence-labels">
+                                        <span class="label">How confident are you?</span>
+                                        <span id="confidenceMood" class="mood-label">Neutral</span>
+                                    </div>
+                                </div>
+                                <span id="confidenceValue" class="value">0.5</span>
+                            </div>
+                            <input type="range" id="confidenceSlider" min="0" max="1" step="0.1" value="0.5"
+                                class="confidence-slider">
+                        </div>
+                        <div class="button-area">
+                            <button id="nextBtn" class="cta-btn primary disabled" disabled>
+                                Confirm & Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loader / Transition Overlay -->
+                <div id="sessionLoader" class="session-loader hidden">
+                    <div class="loader-content">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Evaluating your answer...</p>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <!-- Exit Confirmation Modal (Optional) -->
+
+    <script src="../js/session.js"></script>
+</body>
+
+</html>

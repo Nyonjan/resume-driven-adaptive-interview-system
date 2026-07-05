@@ -1,0 +1,101 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+23,fresher,easy,What is the purpose of the urls.py file?,Store database credentials,Define model fields,Map URL patterns to views,Configure middleware,3
+23,fresher,easy,Which command starts the Django development server?,django-admin start,python manage.py runserver,python manage.py run,python start_django,2
+23,fresher,easy,What does the {% block %} tag do in Django templates?,Creates a Python loop,Imports a CSS file,Comments out code,Defines a section for child templates to override,4
+23,fresher,easy,Which method is used to retrieve a single object by its primary key?,filter(),all(),get(),select(),3
+23,fresher,medium,How do you pass data from a view to a template?,Via a dictionary called context,Via the request object,By importing the template,Through settings.py,1
+23,fresher,medium,What is the purpose of migrations in Django?,To move code to GitHub,To backup user passwords,To speed up HTML rendering,To propagate model changes into the database schema,4
+23,fresher,medium,Which field type should be used to store long-form text?,CharField,LongField,TextField,StringField,3
+23,fresher,medium,How do you register a model to appear in the Django Admin?,In admin.py using admin.site.register(),In settings.py under ADMIN_MODELS,In models.py using @admin_view,It happens automatically,1
+23,fresher,hard,What is the result of User.objects.filter(id=1).first() if no user exists?,Throws DoesNotExist error,Returns an empty list,Returns None,Throws 404 error,3
+23,fresher,hard,Which attribute in a Model class defines the database table name?,table_name,db_table,managed,meta_name,2
+23,junior,easy,Which command is used to create an administrative superuser?,python manage.py admin,django-admin adduser,python manage.py createsuperuser,python manage.py make_admin,3
+23,junior,easy,What does the redirect() function return?,A string,A rendered HTML page,An HttpResponseRedirect object,A JSON object,3
+23,junior,easy,How do you include another URLconf in your main urls.py?,import(),include(),use(),path_add(),2
+23,junior,medium,What is the purpose of 'self' in a Django model method?,Refers to the Model class,Refers to the database connection,Refers to the specific instance of the model,Refers to the request object,3
+23,junior,medium,How do you filter a QuerySet to find titles containing 'Django' (case-insensitive)?,filter(title__contains='Django'),filter(title='*Django*'),filter(title__search='Django'),filter(title__icontains='Django'),4
+23,junior,medium,Which setting determines where uploaded files are stored?,STATIC_ROOT,UPLOAD_PATH,MEDIA_ROOT,FILE_STORE,3
+23,junior,medium,What is the function of the login_required decorator?,Redirects unauthenticated users to login,Checks if database is up,Encrypts the password,Logs the IP address,1
+23,junior,hard,How do you handle a form submission that includes an image?,Check request.POST only,Check request.FILES and request.POST,Use request.IMAGES,Use request.DATA,2
+23,junior,hard,What does 'on_delete=models.CASCADE' do?,Prevents deletion of the parent,Sets the foreign key to null,Deletes the entire database,Deletes the child when the parent is deleted,4
+23,junior,hard,How do you exclude certain records from a QuerySet?,Query.objects.not(),Query.objects.remove(),Query.objects.exclude(),Query.objects.filter_out(),3
+23,mid,easy,What is Django Middleware?,A framework of hooks into request/response processing,A database plugin,A type of model field,A frontend library,1
+23,mid,easy,Which command compiles translation files?,makemessages,translate_build,compilemessages,gettext_compile,3
+23,mid,medium,How do you perform an 'OR' query in Django ORM?,Using the Q object,Using the | operator on filter,Both 1 and 2,Django ORM only supports AND,3
+23,mid,medium,What is the purpose of the select_related method?,To pre-cache many-to-many results,To perform a SQL JOIN and include related object data,To select specific columns only,To sort the results,2
+23,mid,medium,Which signal is sent after a model's save() method is called?,pre_save,save_done,after_commit,post_save,4
+23,mid,medium,How do you create a form directly from a Django model?,Subclass forms.Form,Subclass forms.ModelForm,Use admin.site.register,Use models.to_form(),2
+23,mid,hard,What is the difference between AbstractUser and AbstractBaseUser?,AbstractUser is empty,No difference,AbstractUser includes default fields,AbstractBaseUser includes groups,3
+23,mid,hard,How do you ensure code runs in a single DB transaction?,Use transaction.atomic() decorator,Use @db_secure,Use settings.AUTOCOMMIT=False,Use model.save(commit=True),1
+23,mid,hard,What does the 'F' expression do in an update query?,Updates value in Python memory,Finds the first entry,Updates value directly in the database,Formats the number,3
+23,mid,hard,How do you provide initial data for a model?,Using fixtures (JSON/XML),Hardcoding in views,Using CSS,In the __init__ method,1
+23,senior,easy,Which setting should be False in production?,SECURE_SSL_REDIRECT,ALLOWED_HOSTS,DEBUG,USE_I18N,3
+23,senior,medium,What is the primary advantage of ASGI over WSGI?,Better security,Support for asynchronous protocols like WebSockets,Faster database queries,Smaller file size,2
+23,senior,medium,How do you implement a custom template tag?,Add a function to settings.py,Create a templatetags directory and register with Library(),Modify Django source,Use @tag decorator in views,2
+23,senior,medium,Which tool is commonly used to manage background workers?,Gunicorn,Nginx,Celery,Memcached,3
+23,senior,hard,How do you implement field-level permissions in Admin?,Modify the database schema,Override get_fields() and has_change_permission(),Use custom CSS,Default in settings.py,2
+23,senior,hard,What is the purpose of the 'through' parameter?,To skip the join table,To specify a custom intermediate join table,To connect to a different database,To speed up the query,2
+23,senior,hard,How do you prevent 'N+1' query problems?,Use select_related and prefetch_related,Use a while loop,Increase database timeout,Decrease number of models,1
+23,senior,hard,What is a Database Router used for?,To balance server load,To map URLs to IP addresses,To determine which DB a query should use,To encrypt traffic,3
+23,senior,hard,How do you handle DB-level locking for a record?,queryset.lock(),queryset.secure(),queryset.select_for_update(),queryset.hold(),3
+23,senior,hard,What is the purpose of 'AppConfig.ready()'?,To initialize the server,To perform app initialization and register signals,To render the home page,To validate the secret key,2
+23,senior,hard,How do you optimize for high-concurrency reads?,Database indexing and caching (Redis),Adding more middleware,Using only AbstractModels,Increasing number of templates,1
+23,senior,hard,What is the role of Content-Security-Policy?,Prevents SQL injection,Encrypts user passwords,Mitigates XSS and data injection attacks,Manages session timeouts,3
+23,senior,hard,How do you implement multi-database support?,Run two separate instances,Use different ports for each model,It is not supported,Define DATABASES in settings and use routers,4
+23,senior,hard,What is the 'Squash Migrations' feature used for?,Deleting the database,Minifying Python code,Combining many migration files into a smaller set,Encrypting migration files,3
+23,senior,hard,Which class is used to create a custom user from scratch?,BaseUser,UserBuilder,AbstractBaseUser,IdentityModel,3
+23,senior,hard,What is the effect of using 'db_index=True'?,Makes field a primary key,Creates a database index for faster lookups,Encrypts the field data,Hides the field from Admin,2
+23,senior,hard,How do you serve static files in production?,Using the Django dev server,Using WhiteNoise or a dedicated CDN/Nginx,Storing them in the DB,Converting them to JSON,2
+23,senior,hard,What is the purpose of 'prefetch_related'?,To optimize Many-to-Many and Many-to-One relations,To optimize 1-to-1 relations,To delete old data,To create database triggers,1
+23,senior,hard,How do you implement validation for a whole form?,Use a try-except block,Add a validator to the model field,Define a clean() method in the Form class,Use a JavaScript alert,3
+23,senior,hard,What does 'select_for_update(nowait=True)' do?,Waits for the lock,Ignores the lock,Deletes the row,Raises an error if the row is already locked,4
+23,fresher,easy,What is the default database engine used by Django?,MySQL,PostgreSQL,SQLite,Oracle,3
+23,fresher,easy,Which file specifies project dependencies?,manage.py,requirements.txt,settings.py,wsgi.py,2
+23,fresher,easy,What does the {% include %} tag do?,Inherits a base template,Defines a block,Embeds another template,Loads a CSS file,3
+23,fresher,easy,How do you check the Django version?,python version,django-admin --version,django-check,manage.py check,2
+23,fresher,medium,Which QuerySet property limits results?,limit(),top(),head(),slice([:n]),4
+23,fresher,medium,How do you define a choice field?,choices=LIST,options=LIST,pick=LIST,type=CHOICE,1
+23,fresher,medium,What is the purpose of the 'render' function?,Returns JSON,Saves to DB,Combines template with context and returns HttpResponse,Logs users in,3
+23,fresher,medium,What is the default primary key created?,pk,id (AutoField),uid,key,2
+23,fresher,hard,Which is faster: count() or len()?,Count is faster as it runs in SQL,Len is faster,No difference,Len uses less memory,1
+23,fresher,hard,Which Meta attribute makes a model abstract?,is_base=True,virtual=True,abstract=True,meta=True,3
+23,junior,easy,What is 'python manage.py shell' used for?,Starts a web server,Deletes migrations,Opens an interactive Python environment with Django,Installs apps,3
+23,junior,easy,How do you redirect to URL name 'home'?,reverse('home'),redirect('home'),url('home'),go('home'),2
+23,junior,easy,Which method saves a form to the DB?,form.submit(),form.save(),form.commit(),form.push(),2
+23,junior,medium,How do you access original form data before changes?,form.old,form.initial,form.data,form.cleaned_data,2
+23,junior,medium,What is the role of the 'context' dictionary?,Stores DB settings,Stores session IDs,Passes variables to the template,Defines URL paths,3
+23,junior,medium,How do you validate that two password fields match?,Use a Meta attribute,Define a clean() method,Define a save() method,Check in settings.py,2
+23,junior,medium,What does 'User.objects.get()' return if multiple found?,The first record,MultipleObjectsReturned exception,A list of records,None,2
+23,junior,hard,Which parameter in a ForeignKey prevents deletion?,on_delete=models.STAY,on_delete=models.RESTRICT,Both 1 and 2,on_delete=models.PROTECT,3
+23,junior,hard,How do you perform a case-sensitive exact match?,filter(name='val'),filter(name__exact='val'),filter(name__cexact='val'),filter(name__match='val'),2
+23,junior,hard,What is the difference between 'save()' and 'update()'?,Update is slower,No difference,Save triggers signals update does not,Save only works for new records,3
+23,mid,easy,Which setting defines translation file locations?,LANG_ROOT,TRANS_DIR,TEXT_DOMAIN,LOCALE_PATHS,4
+23,mid,easy,What is 'django.contrib.auth'?,Django's built-in authentication system,A third-party app,A database driver,A template engine,1
+23,mid,medium,How do you implement 'search' using the ORM?,filter(field__has=term),filter(field__icontains=term),filter(field__search=term),filter(field__find=term),2
+23,mid,medium,Which signal is sent when an HTTP request starts?,pre_request,view_init,request_started,app_start,3
+23,mid,medium,What does the 'values()' method return?,A QuerySet of dictionaries,A list of model instances,A list of strings,An XML object,1
+23,mid,medium,How do you restrict access based on permission?,@permission_required,check_perm(),@allow_only,user.has_perm(),1
+23,mid,hard,What is the purpose of 'through_fields'?,Used for JSON storage,Disables the join table,Specifies specific columns for a custom join table,Renames primary key,3
+23,mid,hard,How do you avoid race conditions on counters?,Use a for loop,Use F() expressions,Use time.sleep(),Use a global variable,2
+23,mid,hard,What is the difference between 'exists()' and 'count() > 0'?,Exists is faster (stops at first record),Count is faster,No difference,Exists uses more memory,1
+23,mid,hard,How do you create a custom template filter?,Edit Django source code,Use @app.filter,In models.py,Use @register.filter decorator,4
+23,senior,easy,What is the role of 'collectstatic'?,Gathers static files into STATIC_ROOT,Minifies Javascript,Uploads files to S3,Deletes old CSS,1
+23,senior,medium,How do you handle custom auth using email?,Inherit from AbstractBaseUser and set USERNAME_FIELD,Modify the default User model,Change settings.py only,It is not possible,1
+23,senior,medium,What is 'iterator()' used for?,Speed up processing,Looping backwards,Reduce memory by not caching result,Async processing,3
+23,senior,medium,Which tool is best for caching view fragments?,A text file,Redis or Memcached,SQLite,Browser cache,2
+23,senior,hard,How do you handle massive migrations without downtime?,Break into chunks and use separate_database_and_state,Run them at night,Stop the server,Delete the DB,1
+23,senior,hard,What is the purpose of 'Prefetch' objects?,To speed up single record lookups,To allow custom filtering on prefetch_related results,To encrypt the query,To handle file uploads,2
+23,senior,hard,How do you implement a Global Request ID?,Custom Middleware,Using signals,Using the session,Hardcoding in views,1
+23,senior,hard,What is the risk of using 'MarkSafe'?,SQL Injection,CSRF,Session hijacking,Cross-Site Scripting (XSS),4
+23,senior,hard,How do you implement a Read-Replica strategy?,Use a Database Router to split read/write,Hardcode DB names,Use a middleware,Django handles automatically,1
+23,senior,hard,What is 'select_for_update(skip_locked=True)' used for?,Locks only available rows and skips locked ones,Waits indefinitely,Throws an error,Unlocks all rows,1
+23,senior,hard,How do you profile query count in a request?,Print 'hello' in loop,Check DB logs only,Use Django Debug Toolbar or connection.queries,Restart server,3
+23,senior,hard,What is the difference between URLconf and Resolver?,Resolver matches URL to view URLconf is the file,No difference,URLconf is faster,Resolver is for CSS,1
+23,senior,hard,How do you protect a stateless API from Replay Attacks?,Using CSRF tokens,Using Nonces or Timestamps in headers,Using sessions,Using GET requests only,2
+23,senior,hard,What does 'transaction.on_commit()' do?,Runs code before saving,Deletes the transaction,Runs code only after the DB transaction is successful,Rolls back the DB,3
+23,senior,hard,How do you implement a soft-delete?,Override delete() method to set a flag,Use models.CASCADE,Delete record manually,Use a middleware,1
+23,senior,hard,What is 'apps.get_model()' useful for?,Speeding up queries,Avoiding circular imports,Formatting JSON,Deleting models,2
+23,senior,hard,Which header detects HTTPS behind a proxy?,HTTPS_ORIGIN,SECURE_HEADER,HTTP_X_FORWARDED_PROTO,PROXY_SSL,3
+23,senior,hard,How do you ensure a signal only runs once?,Use a global boolean,Use the 'dispatch_uid' argument,Signals always run once,Delete signal after use,2
+23,senior,hard,What is the purpose of 'GzipMiddleware'?,Encrypts the DB,Minifies images,Compresses the HTTP response,Handles file uploads,3
+23,senior,hard,How do you handle large file downloads?,HttpResponse,render(),FileResponse with a generator,jsonify(),3

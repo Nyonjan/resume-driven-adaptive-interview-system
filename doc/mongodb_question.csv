@@ -1,0 +1,151 @@
+skill_id,experience_level,difficulty,question,option1,option2,option3,option4,correct
+31,fresher,easy,What is the primary data format used by MongoDB?,SQL,BSON,XML,CSV,2
+31,fresher,easy,Which command is used to show all databases?,list databases,get dbs,show dbs,display dbs,3
+31,fresher,easy,"What is a ""Collection"" in MongoDB equivalent to in SQL?",Row,Column,Database,Table,4
+31,fresher,easy,Which command is used to insert a single document?,db.col.add(),db.col.insertOne(),db.col.insert(),db.col.create(),2
+31,fresher,medium,What is the default unique identifier field in every document?,id,uuid,_id,guid,3
+31,fresher,medium,How do you select all documents from a collection?,db.col.get(),db.col.all(),db.col.find(),db.col.select(),3
+31,fresher,medium,"What does the ""limit()"" method do?",Restricts number of results,Filters fields,Sorts data,Deletes data,1
+31,fresher,medium,"Which operator is used for ""greater than"" comparisons?",$greater,$gt,$more,$high,2
+31,fresher,hard,What is BSON?,Basic JSON,Boolean JSON,Binary JSON,Buffered JSON,3
+31,fresher,hard,How do you count the number of documents in a collection?,db.col.size(),db.col.countDocuments(),db.col.length(),db.col.total(),2
+31,junior,easy,Which command is used to update a document?,db.col.update(),db.col.updateOne(),db.col.set(),Both 1 and 2,4
+31,junior,easy,"What does the ""$set"" operator do?",Replaces the document,Deletes fields,Updates specific fields,Creates an index,3
+31,junior,medium,"How do you sort results by ""age"" in ascending order?",sort({age: -1}),order({age: 1}),sort({age: 1}),arrange({age: 1}),3
+31,junior,medium,Which operator matches values in an array?,$all,$in,$match,$array,2
+31,junior,medium,What is the purpose of an Index in MongoDB?,Encrypt data,Improve query performance,Store files,Backup data,2
+31,junior,hard,"What is an ""Upsert""?",Upload and Insert,Update and Sort,User Insert,Update or Insert if missing,4
+31,junior,hard,How do you remove a single field from a document?,$remove,$unset,$delete,$pop,2
+31,mongodb,easy,"What is a ""Replica Set""?",A type of index,A data backup tool,Group of nodes for redundancy,A sharding strategy,3
+31,mid,easy,Which stage in aggregation is used to filter documents?,$filter,$where,$match,$find,3
+31,mid,medium,"What is ""Sharding"" in MongoDB?",Vertical scaling,Data encryption,Data compression,Horizontal scaling/partitioning,4
+31,mid,medium,Which aggregation stage is used to group documents?,$sum,$group,$collect,$combine,2
+31,mid,medium,How do you create a TTL (Time-To-Live) index?,deleteAfter,timeToLive,expireAfterSeconds,autoRemove,3
+31,mid,hard,"What is the ""Oplog"" used for?",Query logging,Replication,Error tracking,Authentication,2
+31,mid,hard,"What is a ""Covered Query""?",Query satisfied by index only,Query on hidden fields,Encrypted query,None,1
+31,mid,hard,How do you perform a left outer join in aggregation?,$join,$link,$lookup,$union,3
+31,senior,easy,"What is ""GridFS"" used for?",Fast indexing,Web sockets,User auth,Storing large files >16MB,4
+31,senior,medium,"What is the ""WiredTiger"" engine?",A backup tool,Default storage engine,A monitoring tool,An API,2
+31,senior,medium,"What is ""Write Concern"" in MongoDB?",Level of acknowledgment for writes,Write speed,Write encryption,Write error log,1
+31,senior,medium,How do you identify a slow query?,Database Profiler,Explain plan,Both 1 and 2,Oplog,3
+31,senior,hard,"What is ""Causal Consistency""?",Data compression,Read-your-writes guarantee,Index sorting,None,2
+31,senior,hard,"What is a ""Change Stream""?",A data backup,Real-time data change alerts,A migration tool,A query optimizer,2
+31,senior,hard,How do you handle transactions in MongoDB?,db.begin(),db.lock(),Not supported,session.startTransaction(),4
+31,senior,hard,"What is the ""Aggregation Pipeline""?",A backup route,A sharding tool,Framework for data transformation,None,3
+31,senior,hard,"What is ""Read Preference""?",Choosing which node to read from,Sorting preference,Indexing preference,None,1
+31,senior,hard,"What is a ""Partial Index""?",Index only for specific documents,A broken index,A small index,None,1
+31,senior,hard,"How do you avoid ""Split Brain"" in replica sets?",Restarting nodes,Voting and Majority,Manual intervention,None,2
+31,senior,hard,"What is the ""Primary"" node's role?",Handles only reads,Stores logs only,None,Handles all writes,4
+31,senior,hard,"What is a ""Hedge Read""?",Reading from multiple nodes at once,Encrypted read,A slow read,None,1
+31,senior,hard,"What is ""Schema Validation""?",Formatting JSON,Enforcing document structure,Deleting old data,None,2
+31,senior,hard,How do you optimize a multi-key index?,Indexing large strings,Indexing NULLs,Indexing array fields,None,3
+31,senior,hard,"What is the ""Election"" process?",Choosing a new Primary node,Voting for a shard,Deleting data,None,1
+31,senior,hard,"What is ""Journaling""?",User activity log,Error log,Write-ahead logging for recovery,None,3
+31,senior,hard,"What is the ""Bind IP"" setting?",Setting the port,Restricting network access,Setting the DB name,None,2
+31,senior,hard,"What is ""Compound Index""?",Index on multiple fields,Index on multiple DBs,Encrypted index,None,1
+31,senior,hard,"How do you perform ""Geospatial"" queries?",Using lat/long strings,Using regex,$near or $geoWithin,None,3
+31,senior,hard,"What is ""Collation"" in MongoDB?",Language-specific string rules,Data compression,Database merging,None,1
+31,senior,hard,"What is the purpose of ""mongodump""?",Performance monitor,Logical backup tool,Code editor,None,2
+31,senior,hard,"What is ""In-Memory Storage Engine""?",A fast SSD,A cache tool,None,Stores data in RAM only,4
+31,senior,hard,"How do you handle ""Large Document"" performance?",More RAM,More shards,Bucket pattern or Out-of-pattern,None,3
+31,senior,hard,"What is the ""Aggregation Stage"" $unwind used for?",Compresses data,Deconstructs an array field,Sorts data,None,2
+31,fresher,easy,What is the maximum size of a single BSON document?,8MB,32MB,64MB,16MB,4
+31,fresher,easy,Which command is used to delete a database?,db.remove(),db.delete(),db.dropDatabase(),db.clear(),3
+31,fresher,easy,How do you switch to a database named 'test'?,goto test,use test,switch test,select test,2
+31,fresher,medium,Which method is used to update multiple documents at once?,db.col.updateMany(),db.col.update(),db.col.updateAll(),db.col.modify(),1
+31,fresher,medium,How do you find documents where age is exactly 25?,find({age == 25}),find({age: 25}),find({age is 25}),find(age=25),2
+31,fresher,medium,What does the $ne operator stand for?,Next element,Near,Negative,Not equal,4
+31,fresher,hard,Which command returns the current database being used?,current(),db.get(),show db,db,4
+31,fresher,hard,How do you rename a collection?,db.col.move(),db.col.renameCollection(),db.col.changeName(),db.col.set(),2
+31,junior,easy,What is the purpose of the $exists operator?,Check if field is present,Check if DB is up,Check if index exists,None,1
+31,junior,easy,Which method returns only one document?,getFirst(),selectOne(),findOne(),fetchOne(),3
+31,junior,medium,How do you skip the first 5 documents in a result set?,skip(5),offset(5),jump(5),next(5),1
+31,junior,medium,Which operator is used to perform a logical OR?,$any,$or,$either,$union,2
+31,junior,medium,How do you append an item to an existing array field?,$add,$append,$push,$insert,3
+31,junior,hard,What does the $inc operator do?,Includes a field,Increments field value,Inverts a value,Increases index,2
+31,junior,hard,How do you select only the 'name' field in a find query?,find({name}),find({} {name: 1}),find({show: name}),find({} {name: True}),2
+31,mid,easy,What is a 'Hidden' member in a replica set?,Node that cannot become primary,A deleted node,A password-protected node,None,1
+31,mid,easy,Which aggregation stage is used to sort documents?,$order,$arrange,$rank,$sort,4
+31,mid,medium,What is the purpose of the $lookup stage?,Search text,Look for NULLs,Perform a join,None,3
+31,mid,medium,How do you index a field in descending order?,createIndex({f: 0}),createIndex({f: 'desc'}),createIndex({f: -1}),None,3
+31,mid,medium,What is the 'Explain Plan' in MongoDB?,A backup strategy,Query execution details,A database schema,None,2
+31,mid,hard,What is the '$unwind' stage used for?,Compressing documents,Removing fields,Flattening an array,None,3
+31,mid,hard,How do you check for current operations in MongoDB?,db.showRunning(),db.currentOp(),db.jobs(),None,2
+31,mid,hard,What is the 'Majority' write concern?,Acknowledged by primary,Acknowledged by >50% nodes,Acknowledged by all,None,2
+31,senior,easy,What is 'Arbiter' in a replica set?,Node used for voting only,Node that stores data,The primary node,None,1
+31,senior,medium,What is 'Shard Key'?,A security password,An index name,Field used to distribute data,None,3
+31,senior,medium,How do you implement 'Capped Collections'?,Password protection,Encrypted storage,fixed size/auto-delete old,None,3
+31,senior,medium,What is 'Secondary Index'?,A backup index,Index on non-id fields,A small index,None,2
+31,senior,hard,What is the 'Balancer' process in sharding?,Resets passwords,Backs up data,Moves data between shards,None,3
+31,senior,hard,How do you perform 'Transactions' across multiple docs?,db.sync(),db.lock(),Session.withTransaction(),None,3
+31,senior,hard,What is 'Write Conflict' in MongoDB?,Network error,Syntax error,Concurrent update collision,None,3
+31,senior,hard,How do you implement 'Client-Side Field Level Encryption'?,CSFLE,SSL only,Hashing fields,None,1
+31,senior,hard,What is 'Change Stream' used for?,Database migration,Log rotation,Real-time data changes,None,3
+31,senior,hard,How do you handle 'Read Isolation' levels?,readPreference,isolationLevel,readConcern,None,3
+31,senior,hard,What is 'Covered Query'?,Query on large files,A cached query,Query where index has all data,None,3
+31,senior,hard,What is 'Geospatial Index'?,Index for text,Index for coordinate data,Index for images,None,2
+31,senior,hard,What is 'TTL Index'?,Auto-deletes after time,Index for numbers,Index for strings,None,1
+31,senior,hard,How do you perform 'Map-Reduce' in MongoDB?,mapReduce(),aggregate(),Both 1 and 2,None,3
+31,senior,hard,What is 'WiredTiger'?,A data types,A CLI tool,A storage engine,None,3
+31,senior,hard,What is 'Oplog' size importance?,Window for replication sync,Disk space for images,Memory for cache,None,1
+31,senior,hard,How do you resolve 'Split Brain'?,Restarting server,Manual delete,Majority voting,None,3
+31,senior,hard,What is 'Primary Step Down'?,Primary shuts down,Primary becomes secondary,Primary deletes data,None,2
+31,senior,hard,What is 'Hedged Reads'?,Reads from disk,Reads from multiple nodes,Reads from cache,None,2
+31,senior,hard,What is 'Collation'?,Data compression,Language-specific sorting,Field renaming,None,2
+31,senior,hard,What is 'Schema Validation'?,JSON Schema enforcement,Removing fields,Renaming DB,None,1
+31,senior,hard,How do you monitor 'Disk I/O' issues?,db.find(),mongostat / mongotop,db.stats(),None,2
+31,senior,hard,What is 'Multi-Key Index'?,Index on 2 fields,Index on 2 DBs,Index on an array,None,3
+31,senior,hard,What is 'GridFS' chunk size default?,1 MB,16 MB,255 KB,None,3
+31,senior,hard,What is 'Internal Sort' limit in aggregation?,1 GB,100 MB,No limit,None,2
+31,senior,hard,How do you provide 'High Availability'?,Sharding,Single node,Replica Sets,None,3
+31,senior,hard,What is 'Atlas' in MongoDB context?,A local GUI,A type of join,Managed cloud service,None,3
+31,fresher,easy,Which command is used to display the help list in MongoDB shell?,list,help,show,info,2
+31,fresher,easy,What is the extension of a MongoDB data file?,.mdb,.bson,.json,.ns / .wt,4
+31,fresher,easy,Which command is used to delete a single document?,db.col.removeOne(),db.col.deleteOne(),db.col.pop(),db.col.clear(),2
+31,fresher,medium,How do you find documents where a field is NOT in a list?,$notIn,$nin,$exclude,$none,2
+31,fresher,medium,What is the default port for MongoDB?,3306,5432,27017,6379,3
+31,fresher,medium,How do you update a document and return the new version?,{returnNewDocument: true},{new: true},Both 1 and 2 depending on driver,None,3
+31,fresher,hard,What is the shell command to see the current connection status?,db.stats(),db.isMaster(),db.serverStatus(),db.hello(),3
+31,fresher,hard,Which method is used to create a unique index?,createUniqueIndex({f:1}),createIndex({f:1} {unique:true}),setUnique({f:1}),None,2
+31,junior,easy,Which operator is used to check for values between 10 and 20?,$gt:10 $lt:20,$between:[10 20],{10..20},None,1
+31,junior,easy,What does the $pretty() method do?,Changes colors,Minifies data,Indents JSON output,Encrypts data,3
+31,junior,medium,How do you find documents where an array has exactly 3 elements?,$length: 3,$size: 3,$count: 3,$elements: 3,2
+31,junior,medium,Which stage is used to project only specific fields in aggregation?,$select,$fields,$project,$map,3
+31,junior,medium,How do you rename a field in a document?,$set,$change,$rename,$move,3
+31,junior,hard,What is the purpose of the $type operator?,Check file size,Filter by BSON data type,Check CPU usage,None,2
+31,junior,hard,How do you sort by name (ASC) and then age (DESC)?,sort({name:1} {age:-1}),orderBy(name age),sort({name:1 age:-1}),None,3
+31,mid,easy,"What is a ""Secondary"" node in a replica set?",A backup server only,Node without data,Data-bearing node that replicates,None,3
+31,mid,easy,Which aggregation stage allows you to write results to a new collection?,$write,$save,$out,$into,3
+31,mid,medium,"What is the ""Aggregation Framework""?",A type of index,Pipeline-based data processing,A backup tool,None,2
+31,mid,medium,How do you perform text search in MongoDB?,Use regex only,Use $find,Create a 'text' index then $text,None,3
+31,mid,medium,"What is ""Cursor"" in MongoDB?",A mouse icon,Pointer to the result set,A database user,None,2
+31,mid,hard,What is the $facet stage used for?,Sorting data,Multiple parallel pipelines,Joining collections,None,2
+31,mid,hard,"How do you check for ""Index Intersection""?",Check logs,Using explain(),Manual calculation,None,2
+31,mid,hard,"What is ""Local"" database used for?",Replica set internal data,User data,Cache,None,1
+31,senior,easy,"What is ""Vertical Scaling""?",Adding more nodes,Deleting data,Adding more RAM/CPU to one node,None,3
+31,senior,medium,"What is ""Read Concern: Majority""?",Returns fastest data,Returns encrypted data,Returns data acknowledged by majority,None,3
+31,senior,medium,"How do you implement ""Database Sharding""?",Using Replica Sets only,Using more RAM,Defining a Shard Key,None,3
+31,senior,medium,"What is ""Write Concern: 0""?",Wait for primary,No acknowledgment required,Wait for all,None,2
+31,senior,hard,"What is ""Chunk Migration""?",Moving data between shards,Moving data to S3,Deleting data,None,1
+31,senior,hard,"How do you handle ""Orphaned Documents"" in shards?",Manual delete,Restarting server,CleanupOrphaned command,None,3
+31,senior,hard,"What is ""Zstd"" in MongoDB?",A storage engine,A data type,A compression algorithm,None,3
+31,senior,hard,"What is ""Point-In-Time"" recovery requirement?",Error logs,Oplog and consistent backups,Just the data files,None,2
+31,senior,hard,"What is ""Covered Index"" benefit?",Encrypts data,Reduces storage,Zero disk I/O for data fetch,None,3
+31,senior,hard,"What is ""Multi-Document Transaction"" limit?",No limit,1GB,16MB or 60 seconds (default),None,3
+31,senior,hard,"How do you provide ""High Availability"" across regions?",Using one node,Using S3,Multi-region Replica Sets,None,3
+31,senior,hard,"What is ""Mongos"" role?",Storage engine,Routing service for shards,Database shell,None,2
+31,senior,hard,"What is ""Config Server""?",Stores metadata for shards,Stores user passwords,Stores logs,None,1
+31,senior,hard,"How do you optimize ""Array"" indexing?",Single index,No index,Multikey Index,None,3
+31,senior,hard,"What is ""Pre-splitting"" chunks?",Deleting chunks,Defining chunks before data load,Renaming shards,None,2
+31,senior,hard,"What is ""Idempotent"" operation?",Operation that can run many times safely,Fast operation,Slow operation,None,1
+31,senior,hard,"What is ""Storage Stats"" command?",db.serverStatus(),db.stats(),db.info(),None,2
+31,senior,hard,"What is ""WiredTiger Ticket""?",Internal concurrency control,A support ticket,A license key,None,1
+31,senior,hard,"How do you fix ""Replica Set Lag""?",Decrease RAM,Delete indexes,Increase disk I/O or Oplog size,None,3
+31,senior,hard,"What is ""Natural Sort""?",Order of data on disk,$sort: 1,$sort: -1,None,1
+31,senior,hard,"What is ""Explain: executionStats""?",A summary only,A list of users,Detailed query performance info,None,3
+31,senior,hard,"What is ""Client Session""?",A user login,Context for causal consistency/txns,A web cookie,None,2
+31,senior,hard,"How do you implement ""Data Tiering""?",Using more shards,Using more RAM,Using TTL or custom scripts,None,3
+31,senior,hard,"What is ""Embedded Document"" vs ""Reference""?",Fast vs Slow,Denormalized vs Normalized,Big vs Small,None,2
+31,senior,hard,"What is ""Read Preference: Nearest""?",Read from Primary,Read from Slave,Read from lowest latency node,None,3
+31,senior,hard,"What is ""Security: RBAC""?",Random Backup,Role-Based Access Control,Route Based Auth,None,2
+31,senior,hard,"What is ""Working Set""?",The whole database,The logs,Data that fits in RAM,None,3
